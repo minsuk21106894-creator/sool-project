@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Amplitude Analytics -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+  <script>
+    window.amplitude.init("5c9108f6f1aeab52f56dad94c7fa81e8", { autocapture: true });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Sool Guide - Korean Traditional Liquor</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .page-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 24px 20px 8px;
+    }
+    /* Tab switcher */
+    .guide-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 20px 0;
+      border-bottom: 1px solid var(--cream-200);
+      position: sticky;
+      top: 0;
+      background: rgba(247,243,238,0.97);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 35;
+    }
+    .guide-tab-btn {
+      flex: 1;
+      padding: 12px 8px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--buncheong);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .guide-tab-btn.active {
+      color: var(--dancheong);
+      border-bottom-color: var(--dancheong);
+    }
+    /* Sool panel */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 20px;
+      background: rgba(247,243,238,0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .taste-filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 20px 12px;
+    }
+    .taste-chip {
+      flex-shrink: 0;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      border: 1px solid transparent;
+    }
+    .sool-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 20px 20px;
+    }
+    .sool-card {
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+      cursor: pointer;
+    }
+    .sool-thumb {
+      width: 80px;
+      height: 96px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .sool-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+    .sool-name {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--charcoal-900);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sool-sub {
+      font-size: 14px;
+      color: var(--charcoal-500);
+      margin-top: 4px;
+    }
+    .sool-tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .sool-match {
+      font-size: 12px;
+      color: var(--buncheong);
+      margin-top: 6px;
+      font-style: italic;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .abv-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 9999px;
+    }
+    .result-count {
+      font-size: 13px;
+      color: var(--buncheong);
+      padding: 0 20px 12px;
+    }
+    /* Places panel */
+    .place-filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 20px;
+      background: rgba(247,243,238,0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .place-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 20px 20px;
+    }
+    .place-card {
+      border-radius: 16px;
+      border: 1px solid var(--cream-200);
+      background: var(--cream-50);
+      box-shadow: 0 1px 3px rgba(45,41,38,0.06);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .place-card-img-wrap {
+      width: 100%;
+      height: 160px;
+      position: relative;
+      overflow: hidden;
+    }
+    .place-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .place-card-img-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      opacity: 0.3;
+      position: absolute;
+      inset: 0;
+    }
+    .place-card-badges {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 6px;
+    }
+    .place-card-cat-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      background: rgba(45,41,38,0.72);
+      color: #fff;
+      backdrop-filter: blur(4px);
+    }
+    .place-card-price-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      background: rgba(196,70,58,0.85);
+      color: #fff;
+      backdrop-filter: blur(4px);
+    }
+    .place-card-body {
+      padding: 14px 16px 12px;
+    }
+    .place-card-location {
+      font-size: 12px;
+      color: var(--buncheong);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .place-card-name-en {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--charcoal-900);
+    }
+    .place-card-name-ko {
+      font-size: 13px;
+      color: var(--charcoal-500);
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    .place-card-desc {
+      font-size: 13px;
+      color: var(--charcoal-700);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .place-card-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--buncheong);
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .place-card-footer {
+      padding: 0 16px 14px;
+    }
+    .place-map-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      background: var(--dancheong);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .place-map-btn:active { background: var(--dancheong-dark); }
+    .place-result-count {
+      font-size: 13px;
+      color: var(--buncheong);
+      padding: 0 20px 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-content">
+    <h1 class="page-title">Sool Guide</h1>
+
+    <!-- Tab Switcher -->
+    <div class="guide-tabs">
+      <button class="guide-tab-btn" id="tab-btn-sool" onclick="switchTab('sool')">🍶 Sool</button>
+      <button class="guide-tab-btn" id="tab-btn-places" onclick="switchTab('places')">📍 Places</button>
+    </div>
+
+    <!-- Sool Panel -->
+    <div id="panel-sool">
+      <div class="filter-row scrollbar-hide" id="category-filter"></div>
+      <div class="taste-filter-row scrollbar-hide" id="taste-filter"></div>
+      <div class="result-count" id="result-count"></div>
+      <div class="sool-list" id="sool-list"></div>
+    </div>
+
+    <!-- Places Panel -->
+    <div id="panel-places" style="display:none">
+      <div class="place-filter-row scrollbar-hide" id="place-filter"></div>
+      <div class="place-result-count" id="place-result-count"></div>
+      <div class="place-list" id="place-list"></div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script>
+    document.body.insertAdjacentHTML('beforeend', renderTabBar('list'));
+
+    // ── Tab switcher ──────────────────────────────────────────
+    let activeMainTab = 'sool';
+    function switchTab(tab) {
+      activeMainTab = tab;
+      document.getElementById('panel-sool').style.display = tab === 'sool' ? '' : 'none';
+      document.getElementById('panel-places').style.display = tab === 'places' ? '' : 'none';
+      document.getElementById('tab-btn-sool').classList.toggle('active', tab === 'sool');
+      document.getElementById('tab-btn-places').classList.toggle('active', tab === 'places');
+      const url = new URL(window.location.href);
+      url.searchParams.set('tab', tab);
+      history.replaceState(null, '', url);
+    }
+
+    // ── Sool panel ────────────────────────────────────────────
+    const categories = [
+      { id: 'all', label: 'All' },
+      { id: 'makgeolli', label: 'Makgeolli' },
+      { id: 'soju', label: 'Soju' },
+      { id: 'cheongju', label: 'Cheongju' },
+      { id: 'yakju', label: 'Yakju' },
+      { id: 'fruitWine', label: 'Fruit Wine' },
+      { id: 'distilledSpirit', label: 'Distilled Spirit' },
+      { id: 'other', label: 'Other' }
+    ];
+    const tastes = [
+      { id: 'sweet', label: 'Sweet', color: '#E8A87C' },
+      { id: 'dry', label: 'Dry', color: '#D4C5A9' },
+      { id: 'fruity', label: 'Fruity', color: '#C97B84' },
+      { id: 'earthy', label: 'Earthy', color: '#8B7355' }
+    ];
+    let activeCategory = 'all';
+    let activeTaste = null;
+    let allSools = [];
+
+    const catContainer = document.getElementById('category-filter');
+    categories.forEach(cat => {
+      const chip = document.createElement('button');
+      chip.className = `chip ${cat.id === 'all' ? 'active' : ''}`;
+      chip.textContent = cat.label;
+      chip.dataset.id = cat.id;
+      chip.onclick = () => {
+        activeCategory = cat.id;
+        catContainer.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        renderSoolList();
+      };
+      catContainer.appendChild(chip);
+    });
+
+    const tasteContainer = document.getElementById('taste-filter');
+    tastes.forEach(t => {
+      const chip = document.createElement('button');
+      chip.className = 'taste-chip';
+      chip.textContent = t.label;
+      chip.dataset.id = t.id;
+      chip.style.background = `${t.color}15`;
+      chip.style.color = t.color;
+      chip.style.borderColor = 'transparent';
+      chip.onclick = () => {
+        if (activeTaste === t.id) {
+          activeTaste = null;
+          chip.style.borderColor = 'transparent';
+        } else {
+          activeTaste = t.id;
+          tasteContainer.querySelectorAll('.taste-chip').forEach(c => c.style.borderColor = 'transparent');
+          chip.style.borderColor = t.color;
+        }
+        renderSoolList();
+      };
+      tasteContainer.appendChild(chip);
+    });
+
+    function renderSoolList() {
+      let filtered = allSools;
+      if (activeCategory !== 'all') filtered = filtered.filter(s => s.category === activeCategory);
+      if (activeTaste) filtered = filtered.filter(s => s.tasteProfile[activeTaste] >= 50);
+      document.getElementById('result-count').textContent = `${filtered.length} sools`;
+      const list = document.getElementById('sool-list');
+      list.innerHTML = '';
+      if (filtered.length === 0) {
+        list.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 32px;text-align:center">
+          <div style="font-size:48px;margin-bottom:16px;opacity:0.3">&#x1F376;</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No sools found</div>
+          <div style="font-size:14px;color:var(--buncheong)">Try adjusting your filters</div>
+        </div>`;
+        return;
+      }
+      filtered.forEach(sool => {
+        const topTastes = getTopTastes(sool.tasteProfile);
+        const imgUrl = _imgData ? getSoolImageUrl(_imgData, sool.id, sool.category) : null;
+        const card = document.createElement('div');
+        card.className = 'card sool-card';
+        card.onclick = () => window.location.href = `sool-detail.html?id=${sool.id}`;
+        card.innerHTML = `
+          <div class="sool-thumb" style="background:${getPlaceholderGradient(sool.category)}">
+            ${imgUrl
+              ? `<img src="${imgUrl}" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span style="display:none">${getCategoryEmoji(sool.category)}</span>`
+              : getCategoryEmoji(sool.category)
+            }
+          </div>
+          <div class="sool-content">
+            <div>
+              <div class="sool-name">${sool.name}</div>
+              <div class="sool-sub">
+                ${CATEGORY_NAMES[sool.category] || sool.category}
+                <span class="abv-badge ${abvBadgeClass(sool.abv)}" style="margin-left:8px">${sool.abv}%</span>
+              </div>
+            </div>
+            <div class="sool-tags">
+              ${topTastes.map(([taste, val]) => {
+                const dots = Math.round(val / 20);
+                const color = TASTE_COLORS[taste];
+                return `<span class="taste-tag" style="background:${color}15;color:${color}">
+                  ${taste.charAt(0).toUpperCase() + taste.slice(1)}
+                  <span style="letter-spacing:-1px">${'\u2022'.repeat(dots)}${'<span style="opacity:0.25">\u2022</span>'.repeat(5 - dots)}</span>
+                </span>`;
+              }).join('')}
+            </div>
+            ${sool.westernMatch ? `<div class="sool-match">"Like ${sool.westernMatch.similar}"</div>` : ''}
+          </div>
+        `;
+        list.appendChild(card);
+      });
+    }
+
+    // ── Places panel ──────────────────────────────────────────
+    const placeCategories = [
+      { id: 'all', label: 'All' },
+      { id: 'makgeolli_bar', label: 'Makgeolli Bar' },
+      { id: 'craft_beer', label: 'Craft Beer' },
+      { id: 'traditional_bar', label: 'Traditional Bar' },
+      { id: 'cocktail_bar', label: 'Cocktail Bar' },
+      { id: 'pojangmacha', label: 'Pojangmacha' },
+      { id: 'brewery_class', label: 'Brewery' },
+      { id: 'museum', label: 'Gallery' },
+      { id: 'market', label: 'Market' },
+      { id: 'guided_tour', label: 'Tour' },
+      { id: 'premium_experience', label: 'Premium' },
+      { id: 'bottle_shop', label: 'Bottle Shop' },
+      { id: 'outdoor', label: 'Outdoor' }
+    ];
+    let activePlaceCat = 'all';
+    let allPlaces = [];
+
+    const placeFilterContainer = document.getElementById('place-filter');
+    placeCategories.forEach(cat => {
+      const chip = document.createElement('button');
+      chip.className = `chip ${cat.id === 'all' ? 'active' : ''}`;
+      chip.textContent = cat.label;
+      chip.dataset.id = cat.id;
+      chip.onclick = () => {
+        activePlaceCat = cat.id;
+        placeFilterContainer.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        renderPlaceList();
+      };
+      placeFilterContainer.appendChild(chip);
+    });
+
+    function getPlaceFallbackGradient(category) {
+      const g = {
+        makgeolli_bar: 'linear-gradient(135deg,#F7F3EE,#D4C5A9)',
+        craft_beer: 'linear-gradient(135deg,#FFF8E1,#FFD54F)',
+        traditional_bar: 'linear-gradient(135deg,#FCE4EC,#E57373)',
+        cocktail_bar: 'linear-gradient(135deg,#E8EAF6,#9FA8DA)',
+        pojangmacha: 'linear-gradient(135deg,#E8F5E9,#81C784)',
+        brewery_class: 'linear-gradient(135deg,#FFF3E0,#FF8A65)',
+        museum: 'linear-gradient(135deg,#F3E5F5,#CE93D8)',
+        market: 'linear-gradient(135deg,#E0F7FA,#4DD0E1)',
+        guided_tour: 'linear-gradient(135deg,#E8F5E9,#66BB6A)',
+        premium_experience: 'linear-gradient(135deg,#FFF8E1,#FFD700)',
+        bottle_shop: 'linear-gradient(135deg,#EDE7F6,#B39DDB)',
+        bar_street: 'linear-gradient(135deg,#E3F2FD,#64B5F6)',
+        local_bar: 'linear-gradient(135deg,#EFEBE9,#A1887F)',
+        beer_alley: 'linear-gradient(135deg,#FFF9C4,#F9A825)',
+        cultural_bar: 'linear-gradient(135deg,#FCE4EC,#F06292)',
+        outdoor: 'linear-gradient(135deg,#E8F5E9,#A5D6A7)'
+      };
+      return g[category] || 'linear-gradient(135deg,#F0ECE8,#D0C8BC)';
+    }
+
+    function renderPlaceList() {
+      let filtered = allPlaces;
+      if (activePlaceCat !== 'all') filtered = filtered.filter(p => p.category === activePlaceCat);
+      document.getElementById('place-result-count').textContent = `${filtered.length} places`;
+      const list = document.getElementById('place-list');
+      list.innerHTML = '';
+      if (filtered.length === 0) {
+        list.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 32px;text-align:center">
+          <div style="font-size:48px;margin-bottom:16px;opacity:0.3">📍</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No places found</div>
+          <div style="font-size:14px;color:var(--buncheong)">Try a different category</div>
+        </div>`;
+        return;
+      }
+      filtered.forEach(place => {
+        const catEmoji = PLACE_CATEGORY_EMOJI[place.category] || '📍';
+        const catLabel = PLACE_CATEGORY_LABELS[place.category] || place.category;
+        const gradient = getPlaceFallbackGradient(place.category);
+        const card = document.createElement('div');
+        card.className = 'place-card';
+        card.innerHTML = `
+          <div class="place-card-img-wrap" style="background:${gradient}">
+            ${place.imageUrl
+              ? `<img src="${place.imageUrl}" alt="${place.nameEn}" loading="lazy" onerror="this.style.display='none'">`
+              : ''}
+            <div class="place-card-img-fallback">${catEmoji}</div>
+            <div class="place-card-badges">
+              <span class="place-card-cat-badge">${catEmoji} ${catLabel}</span>
+              <span class="place-card-price-badge">${place.priceRange || ''}</span>
+            </div>
+          </div>
+          <div class="place-card-body">
+            <div class="place-card-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              ${place.gu || ''}${place.neighborhood ? ' · ' + place.neighborhood : ''}
+            </div>
+            <div class="place-card-name-en">${place.nameEn}</div>
+            <div class="place-card-name-ko">${place.nameKo}</div>
+            <div class="place-card-desc">${place.description || place.descriptionKo || ''}</div>
+            <div class="place-card-meta">
+              ${place.signatureDrinks ? `<span>🍶 ${place.signatureDrinks}</span>` : ''}
+              ${place.hours ? `<span>🕐 ${place.hours}</span>` : ''}
+            </div>
+          </div>
+          <div class="place-card-footer">
+            <a class="place-map-btn" href="${place.googleMapsUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open Map
+            </a>
+          </div>
+        `;
+        list.appendChild(card);
+      });
+    }
+
+    // ── Init ──────────────────────────────────────────────────
+    let _imgData = null;
+    async function init() {
+      const [soolData, imgData, placesData] = await Promise.all([getSools(), getImages(), getPlaces()]);
+      _imgData = imgData;
+      allSools = soolData.items;
+      allSools.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+      allPlaces = placesData.places || placesData.items || placesData;
+      renderSoolList();
+      renderPlaceList();
+
+      // Auto-switch tab from URL param
+      const tabParam = new URLSearchParams(window.location.search).get('tab');
+      if (tabParam === 'places') switchTab('places');
+      else switchTab('sool');
+    }
+
+    init();
+  </script>
+</body>
+</html>

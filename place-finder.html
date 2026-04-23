@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Amplitude Analytics -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+  <script>
+    window.amplitude.init("5c9108f6f1aeab52f56dad94c7fa81e8", { autocapture: true });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Place Finder - Find Your Seoul Spot</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--cream-50);
+    }
+    body { padding-bottom: 0; }
+
+    .finder-wrapper {
+      display: flex; flex-direction: column;
+      height: 100dvh; height: 100vh;
+    }
+    @supports (height: 100dvh) { .finder-wrapper { height: 100dvh; } }
+
+    /* Header */
+    .finder-header {
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 16px;
+      background: var(--cream-50);
+      border-bottom: 1px solid var(--cream-200);
+      z-index: 30;
+    }
+    .finder-back, .finder-close {
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      background: none; border: none; cursor: pointer;
+      color: var(--charcoal-900); text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .finder-close { color: var(--charcoal-500); }
+
+    /* Question screens */
+    .question-screen {
+      display: none; flex-direction: column;
+      flex: 1; min-height: 0;
+      padding: 20px 20px 24px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .question-screen.active {
+      display: flex;
+      animation: slideIn 0.2s ease-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .q-number {
+      font-size: 12px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--celadon);
+      margin-bottom: 4px;
+    }
+    .q-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px; font-weight: 700;
+      color: var(--charcoal-900); line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .q-subtitle {
+      font-size: 13px; color: var(--buncheong); margin-bottom: 20px;
+    }
+
+    /* 2×2 grid choices */
+    .choices-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; flex: 1; align-content: start;
+    }
+    .choice-card {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px; padding: 16px 12px;
+      border-radius: 14px;
+      border: 2px solid var(--cream-200);
+      background: var(--cream-50);
+      cursor: pointer; transition: all 0.15s;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+      min-height: 0;
+    }
+    .choice-card:active, .choice-card.selected {
+      border-color: #2A5C45;
+      background: rgba(42,92,69,0.05);
+    }
+    .choice-icon { font-size: 28px; line-height: 1; }
+    .choice-label { font-size: 14px; font-weight: 600; color: var(--charcoal-900); line-height: 1.3; }
+    .choice-desc { font-size: 11px; color: var(--buncheong); line-height: 1.3; }
+
+    /* Vertical list choices */
+    .choices-list {
+      display: flex; flex-direction: column;
+      gap: 10px; flex: 1; align-content: start;
+    }
+    .choices-list .choice-card {
+      flex-direction: row; align-items: center;
+      justify-content: flex-start;
+      padding: 14px 16px; text-align: left; gap: 14px;
+    }
+    .choices-list .choice-icon { font-size: 22px; flex-shrink: 0; }
+    .choices-list .choice-text { flex: 1; min-width: 0; }
+    .choices-list .choice-label { font-size: 15px; }
+    .choices-list .choice-desc { font-size: 12px; margin-top: 2px; }
+
+    /* Loading */
+    .loading-screen {
+      display: none; flex: 1; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 20px; padding: 40px 20px;
+    }
+    .loading-screen.active { display: flex; }
+    .loading-icon {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: rgba(42,92,69,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+    .loading-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px; font-weight: 600;
+      color: var(--charcoal-900); text-align: center;
+    }
+    .loading-sub { font-size: 13px; color: var(--buncheong); text-align: center; }
+
+    /* Results */
+    .results-screen {
+      display: none; flex: 1; min-height: 0;
+      overflow-y: auto; -webkit-overflow-scrolling: touch;
+      padding: 20px 20px 40px;
+    }
+    .results-screen.active { display: block; animation: fadeIn 0.3s ease-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .results-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px; font-weight: 700;
+      text-align: center; margin: 16px 0 4px;
+    }
+    .results-subtitle {
+      font-size: 13px; color: var(--buncheong);
+      text-align: center; margin-bottom: 24px;
+    }
+
+    /* Result place card */
+    .result-place-card {
+      background: var(--cream-50);
+      border-radius: 18px; border: 1px solid var(--cream-200);
+      box-shadow: 0 2px 10px rgba(45,41,38,0.07);
+      overflow: hidden; margin-bottom: 16px;
+    }
+    .result-place-hero {
+      position: relative; width: 100%; aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+    .result-place-hero img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .result-place-hero-fallback {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 48px; opacity: 0.25;
+    }
+    .result-place-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.05) 55%, transparent 100%);
+    }
+    .result-place-badge {
+      position: absolute; top: 12px; left: 12px;
+      font-size: 11px; font-weight: 700;
+      padding: 4px 10px; border-radius: 9999px;
+      color: white;
+    }
+    .result-place-cat-chip {
+      position: absolute; top: 12px; right: 12px;
+      font-size: 11px; font-weight: 600;
+      padding: 4px 10px; border-radius: 9999px;
+      background: rgba(0,0,0,0.5); color: white;
+      backdrop-filter: blur(4px);
+    }
+    .result-place-location {
+      position: absolute; bottom: 12px; left: 14px; right: 14px;
+      display: flex; align-items: center; gap: 4px;
+      font-size: 12px; color: rgba(255,255,255,0.85);
+    }
+    .result-place-body { padding: 14px 16px 0; }
+    .result-place-name-en {
+      font-size: 20px; font-weight: 700;
+      color: var(--charcoal-900);
+      line-height: 1.3;
+    }
+    .result-place-name-ko {
+      font-size: 13px; color: var(--charcoal-500); margin-top: 2px; margin-bottom: 10px;
+    }
+    .result-place-desc {
+      font-size: 13px; color: var(--charcoal-700); line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .result-place-meta {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 14px; font-size: 12px; color: var(--buncheong);
+    }
+    .result-place-meta span { display: flex; align-items: center; gap: 4px; }
+    .result-place-footer {
+      padding: 0 16px 16px;
+    }
+    .place-map-btn-result {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      width: 100%; padding: 12px;
+      border-radius: 12px; background: #2A5C45; color: white;
+      font-size: 15px; font-weight: 600; border: none; cursor: pointer;
+      text-decoration: none; transition: background 0.15s;
+    }
+    .place-map-btn-result:active { background: #1E4D38; }
+
+    /* Similar section */
+    .similar-label {
+      font-size: 12px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--buncheong);
+      margin-bottom: 12px; padding: 0 2px;
+    }
+
+    /* CTAs */
+    .result-actions {
+      display: flex; gap: 10px; margin-top: 20px;
+    }
+
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .results-screen { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+      .question-screen { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="finder-wrapper">
+
+    <!-- Header -->
+    <div class="finder-header">
+      <button class="finder-back" id="back-btn" style="visibility:hidden" onclick="goBack()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+      </button>
+      <div class="progress-dots" id="progress-dots">
+        <div class="progress-dot active"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+      </div>
+      <a href="index.html" class="finder-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </a>
+    </div>
+
+    <!-- Q1: Vibe (2×2) -->
+    <div class="question-screen active" id="q1">
+      <div class="q-number">Question 1 of 5</div>
+      <div class="q-title">What kind of vibe?</div>
+      <div class="q-subtitle">Pick the atmosphere that fits your mood</div>
+      <div class="choices-grid">
+        <div class="choice-card" onclick="selectAnswer(1,'traditional')">
+          <div class="choice-icon">🏮</div>
+          <div class="choice-label">Traditional & Cultural</div>
+          <div class="choice-desc">History, craft, heritage</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(1,'lively')">
+          <div class="choice-icon">🍻</div>
+          <div class="choice-label">Lively & Social</div>
+          <div class="choice-desc">Crowds, noise, fun</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(1,'romantic')">
+          <div class="choice-icon">🕯️</div>
+          <div class="choice-label">Romantic / Date</div>
+          <div class="choice-desc">Intimate, cozy, quiet</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(1,'unique')">
+          <div class="choice-icon">✨</div>
+          <div class="choice-label">Unique Experience</div>
+          <div class="choice-desc">One-of-a-kind, memorable</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2: Budget (2×2) -->
+    <div class="question-screen" id="q2">
+      <div class="q-number">Question 2 of 5</div>
+      <div class="q-title">What's your budget?</div>
+      <div class="q-subtitle">Per person, drinks included</div>
+      <div class="choices-grid">
+        <div class="choice-card" onclick="selectAnswer(2,'budget')">
+          <div class="choice-icon">🪙</div>
+          <div class="choice-label">Under ₩15,000</div>
+          <div class="choice-desc">~$10 USD</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(2,'mid')">
+          <div class="choice-icon">💵</div>
+          <div class="choice-label">₩15K – 30K</div>
+          <div class="choice-desc">~$10–22 USD</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(2,'splurge')">
+          <div class="choice-icon">💳</div>
+          <div class="choice-label">₩30,000+</div>
+          <div class="choice-desc">~$22+ USD</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(2,'any')">
+          <div class="choice-icon">💎</div>
+          <div class="choice-label">No limit</div>
+          <div class="choice-desc">Best match only</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3: Area (vertical list) -->
+    <div class="question-screen" id="q3">
+      <div class="q-number">Question 3 of 5</div>
+      <div class="q-title">Which area of Seoul?</div>
+      <div class="q-subtitle">We'll prioritize spots near you</div>
+      <div class="choices-list">
+        <div class="choice-card" onclick="selectAnswer(3,'jongno')">
+          <div class="choice-icon">🏯</div>
+          <div class="choice-text">
+            <div class="choice-label">Jongno / Insadong / Seochon</div>
+            <div class="choice-desc">종로구 · 중구 — Historic center</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(3,'mapo')">
+          <div class="choice-icon">🎸</div>
+          <div class="choice-text">
+            <div class="choice-label">Hongdae / Mapo / Sinchon</div>
+            <div class="choice-desc">마포구 · 서대문구 — Youthful &amp; indie</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(3,'yongsan')">
+          <div class="choice-icon">🌏</div>
+          <div class="choice-text">
+            <div class="choice-label">Itaewon / Yongsan / Gyeongidan</div>
+            <div class="choice-desc">용산구 — International &amp; hip</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(3,'seongsu')">
+          <div class="choice-icon">🏭</div>
+          <div class="choice-text">
+            <div class="choice-label">Seongsu / Gangnam</div>
+            <div class="choice-desc">성동구 · 강남구 — Trendy &amp; modern</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(3,'any')">
+          <div class="choice-icon">🗺️</div>
+          <div class="choice-text">
+            <div class="choice-label">Anywhere in Seoul</div>
+            <div class="choice-desc">Show me the best overall match</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4: Who are you going with? (vertical list) -->
+    <div class="question-screen" id="q4">
+      <div class="q-number">Question 4 of 5</div>
+      <div class="q-title">Who are you going with?</div>
+      <div class="q-subtitle">We'll find the right size and setting</div>
+      <div class="choices-list">
+        <div class="choice-card" onclick="selectAnswer(4,'solo')">
+          <div class="choice-icon">🧍</div>
+          <div class="choice-text">
+            <div class="choice-label">Solo / Just exploring</div>
+            <div class="choice-desc">Peaceful, no awkward small talk</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(4,'romantic')">
+          <div class="choice-icon">💑</div>
+          <div class="choice-text">
+            <div class="choice-label">Romantic date</div>
+            <div class="choice-desc">Special ambience for two</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(4,'group')">
+          <div class="choice-icon">👥</div>
+          <div class="choice-text">
+            <div class="choice-label">Group of friends</div>
+            <div class="choice-desc">The more the merrier</div>
+          </div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(4,'cultural')">
+          <div class="choice-icon">🎌</div>
+          <div class="choice-text">
+            <div class="choice-label">Cultural experience</div>
+            <div class="choice-desc">Learn something while I drink</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5: Drink focus (2×2) -->
+    <div class="question-screen" id="q5">
+      <div class="q-number">Question 5 of 5</div>
+      <div class="q-title">What do you want to drink?</div>
+      <div class="q-subtitle">Last one — promise</div>
+      <div class="choices-grid">
+        <div class="choice-card" onclick="selectAnswer(5,'makgeolli')">
+          <div class="choice-icon">🍶</div>
+          <div class="choice-label">Makgeolli / Traditional</div>
+          <div class="choice-desc">Soju, cheongju, yakju</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(5,'beer')">
+          <div class="choice-icon">🍺</div>
+          <div class="choice-label">Beer / Craft</div>
+          <div class="choice-desc">Hof, IPA, lager</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(5,'cocktail')">
+          <div class="choice-icon">🍸</div>
+          <div class="choice-label">Cocktails / Spirits</div>
+          <div class="choice-desc">Mixed drinks, premium pours</div>
+        </div>
+        <div class="choice-card" onclick="selectAnswer(5,'any')">
+          <div class="choice-icon">🥳</div>
+          <div class="choice-label">Anything goes</div>
+          <div class="choice-desc">Just take me somewhere great</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="loading-screen" id="loading">
+      <div class="loading-icon">📍</div>
+      <div class="loading-text">Finding your perfect spot...</div>
+      <div class="loading-sub">Matching across 30 Seoul locations</div>
+      <div class="spinner" style="margin-top:12px;border-top-color:#2A5C45"></div>
+    </div>
+
+    <!-- Results -->
+    <div class="results-screen" id="results"></div>
+
+  </div>
+
+  <script src="shared.js"></script>
+  <script>
+    let currentStep = 1;
+    const TOTAL_STEPS = 5;
+    let answers = {};
+    let allPlaces = [];
+
+    // ── Progress ──────────────────────────────────────────────
+    function updateProgress() {
+      const dots = document.querySelectorAll('.progress-dot');
+      dots.forEach((dot, i) => {
+        dot.className = 'progress-dot';
+        if (i + 1 < currentStep) dot.classList.add('done');
+        else if (i + 1 === currentStep) dot.classList.add('active');
+      });
+      document.getElementById('back-btn').style.visibility = currentStep > 1 ? 'visible' : 'hidden';
+    }
+
+    function goBack() {
+      if (currentStep <= 1) return;
+      document.getElementById(`q${currentStep}`).classList.remove('active');
+      currentStep--;
+      document.getElementById(`q${currentStep}`).classList.add('active');
+      delete answers[currentStep];
+      updateProgress();
+    }
+
+    function selectAnswer(step, value) {
+      answers[step] = value;
+      const screen = document.getElementById(`q${step}`);
+      screen.querySelectorAll('.choice-card').forEach(c => c.classList.remove('selected'));
+      event.currentTarget.classList.add('selected');
+      setTimeout(() => {
+        screen.classList.remove('active');
+        if (step < TOTAL_STEPS) {
+          currentStep = step + 1;
+          document.getElementById(`q${currentStep}`).classList.add('active');
+          updateProgress();
+        } else {
+          showLoading();
+        }
+      }, 250);
+    }
+
+    function showLoading() {
+      document.querySelector('.finder-header').style.display = 'none';
+      document.getElementById('loading').classList.add('active');
+      setTimeout(() => {
+        document.getElementById('loading').classList.remove('active');
+        showResults();
+      }, 1600);
+    }
+
+    // ── Scoring ───────────────────────────────────────────────
+    function scorePlace(place) {
+      const q1 = answers[1], q2 = answers[2], q3 = answers[3], q4 = answers[4], q5 = answers[5];
+      let score = 0;
+      const cat = place.category || '';
+      const gu = place.gu || '';
+      const pr = place.priceRange || '';
+      const bestFor = place.bestFor || [];
+      const vibe = place.vibe || [];
+      const df = place.drinkFocus || '';
+
+      // Q1: Vibe / Atmosphere
+      if (q1 === 'traditional') {
+        if (['traditional_bar','makgeolli_bar','museum','brewery_class','market','guided_tour'].includes(cat)) score += 4;
+        if (vibe.some(v => ['traditional','heritage','educational','authentic'].includes(v))) score += 2;
+      } else if (q1 === 'lively') {
+        if (['beer_alley','bar_street','pojangmacha','craft_beer','local_bar','outdoor'].includes(cat)) score += 4;
+        if (vibe.some(v => ['lively','fun','bustling','street'].includes(v))) score += 2;
+        if (bestFor.includes('group_fun')) score += 1;
+      } else if (q1 === 'romantic') {
+        if (bestFor.includes('couple_date')) score += 4;
+        if (['cocktail_bar','cultural_bar','premium_experience'].includes(cat)) score += 3;
+        if (['makgeolli_bar','traditional_bar'].includes(cat)) score += 1;
+        if (vibe.some(v => ['romantic','intimate','quiet','elegant','cozy'].includes(v))) score += 2;
+      } else if (q1 === 'unique') {
+        if (['brewery_class','museum','guided_tour','premium_experience','outdoor','bottle_shop'].includes(cat)) score += 4;
+        if (vibe.some(v => ['educational','hands-on','hidden_gem','alternative','underground','artisan','innovative'].includes(v))) score += 2;
+        if (bestFor.includes('enthusiast') || bestFor.includes('adventure')) score += 1;
+      }
+
+      // Q2: Budget
+      if (q2 === 'budget') {
+        if (pr === '₩') score += 3;
+        else if (pr === '₩₩') score += 1;
+        else if (pr === '₩₩₩') score -= 1;
+        else score += 1; // mixed ranges
+      } else if (q2 === 'mid') {
+        if (pr === '₩₩') score += 3;
+        else if (pr === '₩–₩₩₩' || pr === '₩₩–₩₩₩') score += 2;
+        else if (pr === '₩' || pr === '₩₩₩') score += 1;
+      } else if (q2 === 'splurge') {
+        if (pr === '₩₩₩') score += 3;
+        else if (pr === '₩₩–₩₩₩') score += 2;
+        else if (pr === '₩₩') score += 1;
+      } else { // any
+        score += 1;
+      }
+
+      // Q3: Area
+      if (q3 === 'jongno') {
+        if (gu === '종로구') score += 4;
+        else if (gu === '중구') score += 3;
+        else if (['서울 전역','여러 구'].includes(gu)) score += 1;
+      } else if (q3 === 'mapo') {
+        if (gu === '마포구') score += 4;
+        else if (gu === '서대문구') score += 3;
+        else if (['서울 전역','여러 구'].includes(gu)) score += 1;
+      } else if (q3 === 'yongsan') {
+        if (gu === '용산구') score += 4;
+        else if (['서울 전역','여러 구'].includes(gu)) score += 1;
+      } else if (q3 === 'seongsu') {
+        if (['성동구','강남구'].includes(gu)) score += 4;
+        else if (['서울 전역','여러 구'].includes(gu)) score += 1;
+      } else { // anywhere
+        score += 1;
+      }
+
+      // Q4: Who are you with
+      if (q4 === 'solo') {
+        if (bestFor.includes('solo')) score += 3;
+        if (bestFor.includes('tourist_cultural')) score += 2;
+        if (vibe.some(v => ['quiet','educational','artisan','curated'].includes(v))) score += 1;
+      } else if (q4 === 'romantic') {
+        if (bestFor.includes('couple_date')) score += 3;
+        if (vibe.some(v => ['romantic','intimate','quiet','elegant','cozy'].includes(v))) score += 2;
+      } else if (q4 === 'group') {
+        if (bestFor.includes('group_fun')) score += 3;
+        if (bestFor.includes('work_after') || bestFor.includes('late_night')) score += 1;
+        if (vibe.some(v => ['lively','fun','bustling','variety'].includes(v))) score += 1;
+      } else if (q4 === 'cultural') {
+        if (bestFor.includes('tourist_cultural')) score += 3;
+        if (vibe.some(v => ['educational','heritage','traditional','authentic','hands-on'].includes(v))) score += 2;
+        if (bestFor.includes('enthusiast')) score += 1;
+      }
+
+      // Q5: Drink focus
+      if (q5 === 'makgeolli') {
+        if (['makgeolli','soju'].includes(df)) score += 3;
+        if (['makgeolli_bar','traditional_bar','museum','brewery_class'].includes(cat)) score += 2;
+      } else if (q5 === 'beer') {
+        if (['craft_beer','beer'].includes(df)) score += 3;
+        if (['craft_beer','beer_alley','bar_street'].includes(cat)) score += 2;
+      } else if (q5 === 'cocktail') {
+        if (df === 'cocktail') score += 3;
+        if (['cocktail_bar','cultural_bar','premium_experience'].includes(cat)) score += 2;
+      } else { // any
+        if (df === 'variety') score += 2;
+        score += 1;
+      }
+
+      return score;
+    }
+
+    function pickRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function getRecommendations() {
+      const scored = allPlaces
+        .map(p => ({ ...p, _score: scorePlace(p) }))
+        .sort((a, b) => b._score - a._score);
+
+      const maxScore = scored[0]._score;
+      // Top group: all places within 2 points of the best
+      const topGroup = scored.filter(p => p._score >= maxScore - 2);
+      const mainPick = pickRandom(topGroup);
+
+      // Similar: same category, different place — random among them
+      const sameCat = scored.filter(p => p.id !== mainPick.id && p.category === mainPick.category);
+      let similar = sameCat.length > 0
+        ? pickRandom(sameCat)
+        : scored.find(p => p.id !== mainPick.id && p.drinkFocus === mainPick.drinkFocus)
+          || scored.find(p => p.id !== mainPick.id);
+
+      return { main: mainPick, similar };
+    }
+
+    // ── Render result card ────────────────────────────────────
+    function renderPlaceCard(place, badge, badgeColor) {
+      const catEmoji = PLACE_CATEGORY_EMOJI[place.category] || '📍';
+      const catLabel = PLACE_CATEGORY_LABELS[place.category] || place.category;
+      const gradient = `linear-gradient(135deg, #1E4D38, #7BA68C)`;
+      return `
+        <div class="result-place-card">
+          <div class="result-place-hero" style="background:${gradient}">
+            ${place.imageUrl
+              ? `<img src="${place.imageUrl}" alt="${place.nameEn}" loading="lazy" onerror="this.style.display='none'">`
+              : ''
+            }
+            <div class="result-place-hero-fallback">${catEmoji}</div>
+            <div class="result-place-hero-overlay"></div>
+            <div class="result-place-badge" style="background:${badgeColor}">${badge}</div>
+            <div class="result-place-cat-chip">${catEmoji} ${catLabel}</div>
+            <div class="result-place-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              ${place.gu}${place.neighborhood ? ' · ' + place.neighborhood : ''}
+            </div>
+          </div>
+          <div class="result-place-body">
+            <div class="result-place-name-en">${place.nameEn}</div>
+            <div class="result-place-name-ko">${place.nameKo}</div>
+            <div class="result-place-desc">${place.description || ''}</div>
+            <div class="result-place-meta">
+              ${place.priceRange ? `<span>💰 ${place.priceRange}</span>` : ''}
+              ${place.signatureDrinks ? `<span>🍶 ${place.signatureDrinks}</span>` : ''}
+              ${place.hours ? `<span>🕐 ${place.hours}</span>` : ''}
+            </div>
+          </div>
+          <div class="result-place-footer">
+            <a class="place-map-btn-result" href="${place.googleMapsUrl}" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>`;
+    }
+
+    function showResults() {
+      const { main, similar } = getRecommendations();
+      const c = document.getElementById('results');
+      c.innerHTML = `
+        <div class="results-title">Your Spot! 📍</div>
+        <div class="results-subtitle">Based on your preferences</div>
+        ${renderPlaceCard(main, '⭐ Best Match', '#2A5C45')}
+        <div class="similar-label">You Might Also Like</div>
+        ${renderPlaceCard(similar, '✦ Similar Pick', '#7BA68C')}
+        <div class="result-actions">
+          <button class="btn-secondary" onclick="restart()" style="flex:1">Try Again</button>
+          <a href="index.html" class="btn-primary" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+            Home
+          </a>
+        </div>`;
+      c.classList.add('active');
+      document.querySelector('.finder-header').style.display = 'none';
+    }
+
+    function restart() {
+      answers = {}; currentStep = 1;
+      const r = document.getElementById('results');
+      r.classList.remove('active'); r.innerHTML = '';
+      document.querySelector('.finder-header').style.display = 'flex';
+      document.querySelectorAll('.question-screen').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.choice-card').forEach(c => c.classList.remove('selected'));
+      document.getElementById('q1').classList.add('active');
+      updateProgress();
+    }
+
+    async function init() {
+      const data = await getPlaces();
+      allPlaces = data.places || data.items || data;
+    }
+    init();
+  </script>
+</body>
+</html>
