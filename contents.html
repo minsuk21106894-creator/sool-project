@@ -295,14 +295,29 @@
       box-shadow: 0 2px 6px rgba(45,41,38,0.08);
     }
     .region-sool-thumb {
-      width: 44px;
-      height: 56px;
+      width: 48px;
+      height: 60px;
       border-radius: 8px;
       flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .region-sool-thumb img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .region-sool-thumb-fb {
+      position: absolute;
+      inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 22px;
+      opacity: 0.5;
     }
     .region-sool-info {
       flex: 1;
@@ -358,8 +373,25 @@
       <p class="page-subtitle">Videos &amp; stories from Team Jumak.</p>
     </div>
 
+    <!-- ── By Region ──────────────────────────── -->
+    <section class="region-section" style="margin-top:16px">
+      <div class="section-header">
+        <h2>By Region</h2>
+      </div>
+      <p style="padding:0 20px 14px;font-size:13px;color:var(--buncheong);line-height:1.5">
+        Each region brews its own way — pick one to see what's local.
+      </p>
+      <div class="region-chips scrollbar-hide" id="region-chips"></div>
+      <div class="region-panel" id="region-panel">
+        <div class="region-skeleton">
+          <div class="skeleton" style="height:80px;margin-bottom:14px"></div>
+          <div class="skeleton" style="height:140px"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── Latest videos ──────────────────────── -->
-    <section style="margin-top:16px;margin-bottom:36px">
+    <section style="margin-top:24px;margin-bottom:36px">
       <div class="section-header">
         <h2>Latest Videos</h2>
         <a href="https://www.youtube.com/@soolysoolsool" target="_blank" rel="noopener">
@@ -384,23 +416,6 @@
         A quick history of each kind of Korean drink.
       </p>
       <div class="story-list" id="story-list"></div>
-    </section>
-
-    <!-- ── By Region ──────────────────────────── -->
-    <section class="region-section">
-      <div class="section-header">
-        <h2>By Region</h2>
-      </div>
-      <p style="padding:0 20px 14px;font-size:13px;color:var(--buncheong);line-height:1.5">
-        Each region brews its own way — pick one to see what's local.
-      </p>
-      <div class="region-chips scrollbar-hide" id="region-chips"></div>
-      <div class="region-panel" id="region-panel">
-        <div class="region-skeleton">
-          <div class="skeleton" style="height:80px;margin-bottom:14px"></div>
-          <div class="skeleton" style="height:140px"></div>
-        </div>
-      </div>
     </section>
 
   </div>
@@ -518,7 +533,7 @@
     }
 
     // ── Render By Region ──────────────────────────────────────
-    function renderRegions(regionData, soolData) {
+    function renderRegions(regionData, soolData, imageData) {
       const chipsEl = document.getElementById('region-chips');
       const panelEl = document.getElementById('region-panel');
       const regions = regionData.regions || [];
@@ -527,6 +542,28 @@
       chipsEl.innerHTML = regions.map(r =>
         `<button class="chip" data-id="${r.id}">${r.icon} ${r.label}</button>`
       ).join('');
+
+      function soolCardHtml(s) {
+        const imgUrl = getSoolImageUrl(imageData, s.id, s.category);
+        const gradient = getPlaceholderGradient(s.category);
+        const emoji = getCategoryEmoji(s.category);
+        const safeName = (s.name || '').replace(/"/g, '&quot;');
+        return `
+          <a class="region-sool-card" href="sool-detail.html?id=${s.id}">
+            <div class="region-sool-thumb" style="background:${gradient}">
+              ${imgUrl
+                ? `<img src="${imgUrl}" alt="${safeName}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+                : ''
+              }
+              <span class="region-sool-thumb-fb" style="${imgUrl ? 'display:none' : 'display:flex'}">${emoji}</span>
+            </div>
+            <div class="region-sool-info">
+              <div class="region-sool-name">${s.name}</div>
+              <div class="region-sool-sub">${CATEGORY_NAMES[s.category] || s.category} · ${s.abv}%</div>
+            </div>
+          </a>
+        `;
+      }
 
       function showRegion(id) {
         chipsEl.querySelectorAll('button').forEach(b =>
@@ -539,17 +576,7 @@
 
         const cardsHtml = matched.length === 0
           ? `<div class="region-empty">No sools yet for this region.</div>`
-          : matched.map(s => `
-              <a class="region-sool-card" href="sool-detail.html?id=${s.id}">
-                <div class="region-sool-thumb" style="background:${getPlaceholderGradient(s.category)}">
-                  <span style="opacity:0.5">${getCategoryEmoji(s.category)}</span>
-                </div>
-                <div class="region-sool-info">
-                  <div class="region-sool-name">${s.name}</div>
-                  <div class="region-sool-sub">${CATEGORY_NAMES[s.category] || s.category} · ${s.abv}%</div>
-                </div>
-              </a>
-            `).join('');
+          : matched.map(soolCardHtml).join('');
 
         panelEl.innerHTML = `
           <div class="region-intro" style="--accent-color:${tone.color}">
@@ -570,12 +597,12 @@
 
     async function init() {
       try {
-        const [videos, stories, regions, sools] = await Promise.all([
-          getVideos(), getStories(), getRegions(), getSools()
+        const [videos, stories, regions, sools, images] = await Promise.all([
+          getVideos(), getStories(), getRegions(), getSools(), getImages()
         ]);
         renderVideos(videos);
         renderStories(stories);
-        renderRegions(regions, sools);
+        renderRegions(regions, sools, images);
       } catch (err) {
         console.error('Failed to load contents data', err);
       }
