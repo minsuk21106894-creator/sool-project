@@ -227,6 +227,115 @@
       color: var(--charcoal-900);
     }
 
+    /* ── By Region ──────────────────────────────────── */
+    .region-section { margin-top: 8px; padding-bottom: 16px; }
+
+    .region-chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 20px 14px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .region-chips .chip {
+      flex-shrink: 0;
+    }
+
+    .region-panel { padding: 0 20px 24px; }
+
+    .region-intro {
+      padding: 14px 16px;
+      background: var(--cream-50);
+      border: 1px solid var(--cream-200);
+      border-left: 4px solid var(--accent-color, var(--buncheong));
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+    .region-intro-head {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-color, var(--charcoal-900));
+      margin-bottom: 6px;
+    }
+    .region-intro p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--charcoal-700);
+    }
+
+    .region-meta {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--buncheong);
+      margin-bottom: 10px;
+    }
+
+    .region-sools {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .region-sool-card {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      background: var(--cream-50);
+      border: 1px solid var(--cream-200);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s, box-shadow 0.15s;
+      min-width: 0;
+    }
+    .region-sool-card:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 6px rgba(45,41,38,0.08);
+    }
+    .region-sool-thumb {
+      width: 44px;
+      height: 56px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .region-sool-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .region-sool-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--charcoal-900);
+      line-height: 1.25;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .region-sool-sub {
+      font-size: 10px;
+      color: var(--buncheong);
+      margin-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .region-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--buncheong);
+    }
+
     /* Loading skeleton */
     .skeleton {
       background: linear-gradient(90deg, var(--cream-100) 0%, var(--cream-200) 50%, var(--cream-100) 100%);
@@ -266,15 +375,32 @@
       </div>
     </section>
 
-    <!-- ── Stories ────────────────────────────── -->
+    <!-- ── Sool Types (per-category history) ──── -->
     <section class="stories-section">
       <div class="section-header">
-        <h2>Sool Stories</h2>
+        <h2>Sool Types</h2>
       </div>
       <p style="padding:0 20px 14px;font-size:13px;color:var(--buncheong);line-height:1.5">
-        Quick reads on the history, culture, and modern revival of Korean drinking.
+        A quick history of each kind of Korean drink.
       </p>
       <div class="story-list" id="story-list"></div>
+    </section>
+
+    <!-- ── By Region ──────────────────────────── -->
+    <section class="region-section">
+      <div class="section-header">
+        <h2>By Region</h2>
+      </div>
+      <p style="padding:0 20px 14px;font-size:13px;color:var(--buncheong);line-height:1.5">
+        Each region brews its own way — pick one to see what's local.
+      </p>
+      <div class="region-chips scrollbar-hide" id="region-chips"></div>
+      <div class="region-panel" id="region-panel">
+        <div class="region-skeleton">
+          <div class="skeleton" style="height:80px;margin-bottom:14px"></div>
+          <div class="skeleton" style="height:140px"></div>
+        </div>
+      </div>
     </section>
 
   </div>
@@ -391,11 +517,65 @@
       });
     }
 
+    // ── Render By Region ──────────────────────────────────────
+    function renderRegions(regionData, soolData) {
+      const chipsEl = document.getElementById('region-chips');
+      const panelEl = document.getElementById('region-panel');
+      const regions = regionData.regions || [];
+      const sools = soolData.items || [];
+
+      chipsEl.innerHTML = regions.map(r =>
+        `<button class="chip" data-id="${r.id}">${r.icon} ${r.label}</button>`
+      ).join('');
+
+      function showRegion(id) {
+        chipsEl.querySelectorAll('button').forEach(b =>
+          b.classList.toggle('active', b.dataset.id === id)
+        );
+        const region = regions.find(r => r.id === id);
+        if (!region) return;
+        const matched = sools.filter(s => (region.matchRegions || []).includes(s.region));
+        const tone = ACCENT[region.accent] || ACCENT.buncheong;
+
+        const cardsHtml = matched.length === 0
+          ? `<div class="region-empty">No sools yet for this region.</div>`
+          : matched.map(s => `
+              <a class="region-sool-card" href="sool-detail.html?id=${s.id}">
+                <div class="region-sool-thumb" style="background:${getPlaceholderGradient(s.category)}">
+                  <span style="opacity:0.5">${getCategoryEmoji(s.category)}</span>
+                </div>
+                <div class="region-sool-info">
+                  <div class="region-sool-name">${s.name}</div>
+                  <div class="region-sool-sub">${CATEGORY_NAMES[s.category] || s.category} · ${s.abv}%</div>
+                </div>
+              </a>
+            `).join('');
+
+        panelEl.innerHTML = `
+          <div class="region-intro" style="--accent-color:${tone.color}">
+            <div class="region-intro-head">${region.icon} ${region.label} <span style="font-size:12px;font-weight:500;color:var(--buncheong);font-family:'Inter',sans-serif">${region.labelKo}</span></div>
+            <p>${region.intro}</p>
+          </div>
+          <div class="region-meta">${matched.length} sool${matched.length === 1 ? '' : 's'} from here</div>
+          <div class="region-sools">${cardsHtml}</div>
+        `;
+      }
+
+      chipsEl.querySelectorAll('button').forEach(btn => {
+        btn.onclick = () => showRegion(btn.dataset.id);
+      });
+
+      if (regions.length > 0) showRegion(regions[0].id);
+    }
+
     async function init() {
       try {
-        const [videos, stories] = await Promise.all([getVideos(), getStories()]);
+        const [videos, stories, regions, sools] = await Promise.all([
+          getVideos(), getStories(), getRegions(), getSools()
+        ]);
         renderVideos(videos);
         renderStories(stories);
+        renderRegions(regions, sools);
       } catch (err) {
         console.error('Failed to load contents data', err);
       }

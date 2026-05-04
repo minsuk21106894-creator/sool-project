@@ -1,58 +1,67 @@
 {
   "stories": [
     {
-      "id": "soju-strength",
-      "category": "History",
-      "icon": "🍶",
-      "accent": "onggi",
-      "title": "Soju Was Once Twice as Strong",
-      "body": "Until the 1960s, traditional Korean soju was distilled to 35–45% alcohol. After the Korean War, to save grain, the government promoted a cheaper ‘diluted soju’ (희석식) made from sweet potato or tapioca. Modern green-bottle soju started at 25% in 1965 — and has steadily dropped to around 16% today.",
-      "didYouKnow": "Distilled-style soju (증류식) still exists — it's the premium kind you'll see on craft menus, and it's making a serious comeback."
-    },
-    {
-      "id": "mongol-distillation",
-      "category": "History",
-      "icon": "⚔️",
-      "accent": "onggi",
-      "title": "The Mongols Brought Distillation 700 Years Ago",
-      "body": "When Mongol forces occupied Korea in the 13th century, they set up a military base in Andong to launch attacks on Japan. They brought distillation know-how learned from Persia — and left it behind. Andong Soju (안동소주), still produced today, descends directly from that lineage.",
-      "didYouKnow": "The Mongol word ‘arak’ for distilled spirit shows up in old Korean records as 아락주."
-    },
-    {
-      "id": "two-handed-pour",
-      "category": "Etiquette",
-      "icon": "🤲",
-      "accent": "dancheong",
-      "title": "Why You Pour With Two Hands",
-      "body": "In the Joseon era, scholars wore robes with very long sleeves. Using both hands when pouring kept the sleeve from dragging into the food or the cup — a practical fix that hardened into etiquette. Today, two-handed pouring still signals respect, especially toward elders.",
-      "didYouKnow": "If only one hand is free, place your free hand on your pouring forearm — it counts the same."
-    },
-    {
-      "id": "anju-culture",
-      "category": "Culture",
-      "icon": "🥢",
-      "accent": "celadon",
-      "title": "No Drink Without Anju",
-      "body": "Koreans almost never drink without food. The word ‘anju’ (안주) literally means ‘with the cup,’ and the tradition mixes Confucian table manners with practical wisdom — food slows alcohol absorption. Even at a convenience store run, a packet of dried squid counts as anju.",
-      "didYouKnow": "Asking ‘what's the anju?’ before ordering drinks is normal — and totally expected."
-    },
-    {
-      "id": "makgeolli-comeback",
-      "category": "Modern",
+      "id": "type-makgeolli",
+      "category": "Makgeolli",
       "icon": "🌾",
-      "accent": "celadon",
-      "title": "Makgeolli's Surprise Comeback",
-      "body": "For decades, makgeolli was dismissed as a poor farmer's drink — cheap, cloudy, unfashionable. Then in 2009, Japanese tourists started ordering it at Seoul restaurants, and the trend boomeranged. Korean breweries reinvented makgeolli with cleaner fermentation, fancy bottles, and craft variants. Today it's the face of Korean craft drinking.",
-      "didYouKnow": "Modern craft makgeolli ranges from sparkling-dry to dessert-sweet — closer to natural wine than beer."
+      "accent": "onggi",
+      "title": "From Field to Festival",
+      "body": "Korea's oldest popular drink — cloudy, slightly sparkling rice wine brewed for over a thousand years. For most of its history it was the farmer's daily fuel: cheap, nourishing, drunk straight from the bowl. Government rice rationing in the 1960s nearly killed it, but a 2009 craft revival brought it roaring back. Today's brewers experiment with everything from buckwheat to bananas.",
+      "didYouKnow": "The 2009 makgeolli boom started with Japanese tourists ordering it at Seoul restaurants — they made it cool again."
     },
     {
-      "id": "somaek-origin",
-      "category": "Modern",
-      "icon": "🍻",
+      "id": "type-soju",
+      "category": "Soju",
+      "icon": "🍶",
+      "accent": "dancheong",
+      "title": "Two Drinks, One Name",
+      "body": "Two completely different liquors hide behind the same word. Traditional 증류식 soju is rice spirit distilled in clay, brought to Andong by Mongol forces 700 years ago. Modern green-bottle 희석식 soju is a post-war invention — neutral spirit from sweet potato or tapioca, diluted with water. Same name, two universes.",
+      "didYouKnow": "Diluted soju started at 25% ABV in 1965 and has steadily dropped to around 16% today."
+    },
+    {
+      "id": "type-cheongju",
+      "category": "Cheongju",
+      "icon": "🏯",
       "accent": "buncheong",
-      "title": "So-Maek: A Bomb Drink Built for After Work",
-      "body": "Mixing soju into beer (소맥, so-maek) became a Korean ritual in the 1990s during after-work salaryman culture. The trick — pour soju into a small glass, drop it into beer, drink in one go — let groups level up the buzz fast without slowing the meal. The ratio still gets debated like a serious recipe.",
-      "didYouKnow": "Classic ratio: 3 parts beer to 1 part soju. Anything stronger has its own nickname."
+      "title": "The Drink of Kings",
+      "body": "When unfiltered rice brew sat undisturbed, the clear top layer was skimmed off and reserved for nobility and ancestral rites. That clear top became cheongju. Polished, dry, aromatic — closer to Japanese sake but with a fuller rice character. Still poured in jesa (ancestor ceremonies) today.",
+      "didYouKnow": "The Korean word 윗물 ('top water') literally refers to this practice of skimming clear cheongju from cloudy brew."
+    },
+    {
+      "id": "type-yakju",
+      "category": "Yakju",
+      "icon": "🌿",
+      "accent": "celadon",
+      "title": "When Liquor Was Medicine",
+      "body": "Yakju literally means 'medicinal liquor.' Joseon-era physicians infused rice wine with ginseng, pine pollen, deodeok root, and dozens of other herbs — many recipes survive in 17th-century texts like Donguibogam. Modern hits like Baekseju (백세주, 'hundred-year liquor') still lean into the heritage.",
+      "didYouKnow": "Joseon kings were prescribed yakju daily — court doctors logged each pour in the royal medical journals."
+    },
+    {
+      "id": "type-fruit-wine",
+      "category": "Fruit Wine",
+      "icon": "🍑",
+      "accent": "celadon",
+      "title": "Year-Long Patience",
+      "body": "Korea's home-fermentation tradition: fruit + sugar + spirit, sealed in a clay jar, forgotten for months or years. Maesilju (plum), bokbunjaju (black raspberry), yujaju (yuzu), meoruju (wild grape) — every Korean home has at least one jar quietly working in a corner. The longer the wait, the smoother the result.",
+      "didYouKnow": "A bottle of homemade maesilju aged 10 years can sell for more than commercial whisky."
+    },
+    {
+      "id": "type-distilled-spirit",
+      "category": "Distilled Spirit",
+      "icon": "🔥",
+      "accent": "dancheong",
+      "title": "Korea's Whisky Moment",
+      "body": "The premium tier. Rice or grain spirit distilled to high proof and aged in clay onggi jars. Andong Soju, Munbaeju, Hwayo, the temple-aged Songhwa Baekiljoo — the headliners. After decades eclipsed by mass soju, they're now positioned as Korea's answer to single-malt whisky, and tasting menus are taking notice.",
+      "didYouKnow": "The clay onggi jar gives Korean spirits their unique aging character — porous walls let micro-air exchange, similar to oak in whisky."
+    },
+    {
+      "id": "type-other",
+      "category": "Specialty",
+      "icon": "✨",
+      "accent": "buncheong",
+      "title": "The Living Edge",
+      "body": "Some sools defy the standard categories. Dansul (sweet, near-zero-alcohol rice drink for kids and elders), Dongdongju (rice grains floating on top), regional one-offs only made in three villages, modern bombs like somaek (소맥). This is where Korean drinking culture stays alive and weird. Most disappear, a few become the next big thing.",
+      "didYouKnow": "The white floating grains in Dongdongju are called 동동 because they 'float-float' on top — pure onomatopoeia."
     }
   ]
 }

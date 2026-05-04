@@ -52,6 +52,12 @@ async function getStories() {
   return _storiesCache;
 }
 
+let _regionsCache = null;
+async function getRegions() {
+  if (!_regionsCache) _regionsCache = await loadJSON('regions.json');
+  return _regionsCache;
+}
+
 // Category labels for places
 const PLACE_CATEGORY_LABELS = {
   makgeolli_bar: 'Makgeolli Bar',

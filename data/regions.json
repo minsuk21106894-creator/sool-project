@@ -1,0 +1,58 @@
+{
+  "regions": [
+    {
+      "id": "capital",
+      "label": "Seoul & Gyeonggi",
+      "labelKo": "수도권",
+      "icon": "🏙️",
+      "accent": "buncheong",
+      "intro": "The capital region — where mass-market icons (Chamisul, Jangsoo) and revived royal-court spirits (Munbaeju, Hwayo) coexist. The largest catalog by sheer number, from convenience-store soju to premium Hwayo X.",
+      "matchRegions": ["Seoul", "Gyeonggi-do", "Yangpyeong", "Pocheon"]
+    },
+    {
+      "id": "gangwon",
+      "label": "Gangwon",
+      "labelKo": "강원",
+      "icon": "⛰️",
+      "accent": "celadon",
+      "intro": "Korea's mountain province. Steep terrain and cool air give Gangwon's sools a forest-floor character — buckwheat from Bongpyeong, deodeok root from Jeongseon, pine mushroom from Yangyang, all foraged or farmed in the highlands.",
+      "matchRegions": ["Gangwon-do", "Pyeongchang", "Jeongseon", "Yangyang"]
+    },
+    {
+      "id": "chungcheong",
+      "label": "Chungcheong",
+      "labelKo": "충청",
+      "icon": "🌾",
+      "accent": "onggi",
+      "intro": "The classic heartland of Korean rice brewing. Flat plains and abundant water made Chungcheong the birthplace of legendary yakju like Hansan Sogokju and the modern mass-market Kooksoondang line.",
+      "matchRegions": ["Chungcheong-do", "Seocheon", "Chungju", "Yeongdong"]
+    },
+    {
+      "id": "jeolla",
+      "label": "Jeolla",
+      "labelKo": "전라",
+      "icon": "🍲",
+      "accent": "dancheong",
+      "intro": "Korea's culinary capital, and its sools follow suit — bold, often medicinal, richly storied. Home to Korea's only red liquor (Jindo Hongju) and the 100-day temple-aged Songhwa Baekiljoo.",
+      "matchRegions": ["Jeonju", "Damyang", "Gochang", "Goheung", "Muju", "Jindo", "Wanju", "Jeongeup"]
+    },
+    {
+      "id": "gyeongsang",
+      "label": "Gyeongsang",
+      "labelKo": "경상",
+      "icon": "🏯",
+      "accent": "onggi",
+      "intro": "The deepest distilling lineage in Korea. Andong's continuous 700-year tradition since the Mongol era, Gyeongju's royal Beopju, Busan's mountain-fortress Geumjeongsanseong makgeolli — the south coast of sool history.",
+      "matchRegions": ["Andong", "Busan", "Gyeongju", "Mungyeong", "Sangju", "Hadong", "Gyeongnam", "Ulsan"]
+    },
+    {
+      "id": "jeju",
+      "label": "Jeju",
+      "labelKo": "제주",
+      "icon": "🌋",
+      "accent": "celadon",
+      "intro": "An island with its own brewing tradition. Volcanic water and stone-jar fermentation produce Jeju's distinctive sools — Hallasan Soju, Omegisul made with millet instead of rice, and the rare distilled Gosorisul.",
+      "matchRegions": ["Jeju"]
+    }
+  ]
+}
