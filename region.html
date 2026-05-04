@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Region - Jumak</title>
+  <link rel="stylesheet" href="shared.css">
+  <!-- Amplitude Analytics -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+  <script>
+    window.amplitude.init("5c9108f6f1aeab52f56dad94c7fa81e8", { autocapture: true });
+  </script>
+  <style>
+    /* ── Hero ─────────────────────────────────────────── */
+    .region-hero {
+      position: relative;
+      padding: 28px 20px 26px;
+      background: var(--accent-bg-soft, var(--cream-100));
+      border-bottom: 1px solid var(--cream-200);
+      overflow: hidden;
+    }
+    .region-hero-accent-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent-color, var(--dancheong));
+    }
+    .region-hero-icon {
+      font-size: 44px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .region-hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--charcoal-900);
+      line-height: 1.2;
+    }
+    .region-hero-subtitle {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--buncheong);
+      margin-top: 2px;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .region-hero-intro {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--charcoal-700);
+      margin-top: 14px;
+    }
+
+    /* ── Category sub-chips (only for large regions) ── */
+    .region-cat-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 14px 20px 8px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .region-cat-row .chip { flex-shrink: 0; }
+
+    /* ── Result count ─────────────────────────────────── */
+    .region-result-count {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--buncheong);
+      padding: 16px 20px 10px;
+    }
+    .has-cat-row .region-result-count { padding-top: 6px; }
+
+    /* ── Sool grid (compact card style) ──────────────── */
+    .region-sool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 0 20px 28px;
+    }
+    .rsg-card {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      background: var(--cream-50);
+      border: 1px solid var(--cream-200);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      min-width: 0;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .rsg-card:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 6px rgba(45,41,38,0.08);
+    }
+    .rsg-thumb {
+      width: 56px;
+      height: 70px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .rsg-thumb img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .rsg-thumb-fb {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      opacity: 0.5;
+    }
+    .rsg-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .rsg-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--charcoal-900);
+      line-height: 1.25;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .rsg-sub {
+      font-size: 11px;
+      color: var(--buncheong);
+      margin-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── Empty / loading ─────────────────────────────── */
+    .region-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 24px;
+      font-size: 13px;
+      color: var(--buncheong);
+    }
+    .skeleton {
+      background: linear-gradient(90deg, var(--cream-100) 0%, var(--cream-200) 50%, var(--cream-100) 100%);
+      background-size: 200% 100%;
+      animation: skeleton 1.4s ease-in-out infinite;
+      border-radius: 12px;
+    }
+    @keyframes skeleton {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ── Bottom back link ────────────────────────────── */
+    .region-back-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 0 20px 24px;
+      padding: 12px;
+      background: var(--cream-100);
+      border: 1px solid var(--cream-200);
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--charcoal-900);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .region-back-link:active { background: var(--cream-200); }
+  </style>
+</head>
+<body>
+  <!-- Top nav -->
+  <nav class="top-nav">
+    <button class="back-btn" onclick="goBack()" aria-label="Back">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+    </button>
+    <span class="nav-title" id="nav-title"></span>
+    <span class="nav-action"></span>
+  </nav>
+
+  <div class="page-content" id="region-content">
+    <!-- Loading skeleton -->
+    <div class="region-hero">
+      <div class="skeleton" style="height:44px;width:44px;margin-bottom:10px"></div>
+      <div class="skeleton" style="height:28px;width:60%;margin-bottom:8px"></div>
+      <div class="skeleton" style="height:14px;width:40%;margin-bottom:14px"></div>
+      <div class="skeleton" style="height:60px"></div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script>
+    document.body.insertAdjacentHTML('beforeend', renderTabBar('contents'));
+
+    function goBack() {
+      if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
+        history.back();
+      } else {
+        window.location.href = 'contents.html';
+      }
+    }
+
+    const ACCENT = {
+      onggi:     { color: '#A67C52', bgSoft: 'rgba(166,124,82,0.08)' },
+      celadon:   { color: '#5C8A72', bgSoft: 'rgba(123,166,140,0.10)' },
+      dancheong: { color: '#C4463A', bgSoft: 'rgba(196,70,58,0.06)' },
+      buncheong: { color: '#6B6562', bgSoft: 'rgba(107,101,98,0.06)' }
+    };
+
+    let _imgData = null;
+    let _matched = [];
+    let _activeCat = 'all';
+
+    function soolCardHtml(s) {
+      const imgUrl = getSoolImageUrl(_imgData, s.id, s.category);
+      const gradient = getPlaceholderGradient(s.category);
+      const emoji = getCategoryEmoji(s.category);
+      const safeName = (s.name || '').replace(/"/g, '&quot;');
+      return `
+        <a class="rsg-card" href="sool-detail.html?id=${s.id}">
+          <div class="rsg-thumb" style="background:${gradient}">
+            ${imgUrl
+              ? `<img src="${imgUrl}" alt="${safeName}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+              : ''
+            }
+            <span class="rsg-thumb-fb" style="${imgUrl ? 'display:none' : 'display:flex'}">${emoji}</span>
+          </div>
+          <div class="rsg-info">
+            <div class="rsg-name">${s.name}</div>
+            <div class="rsg-sub">${CATEGORY_NAMES[s.category] || s.category} · ${s.abv}%</div>
+          </div>
+        </a>
+      `;
+    }
+
+    function rerenderGrid() {
+      const filtered = _activeCat === 'all'
+        ? _matched
+        : _matched.filter(s => s.category === _activeCat);
+      document.getElementById('result-count').textContent =
+        `${filtered.length} sool${filtered.length === 1 ? '' : 's'}`;
+      const grid = document.getElementById('sool-grid');
+      grid.innerHTML = filtered.length === 0
+        ? `<div class="region-empty">No sools in this category for this region.</div>`
+        : filtered.map(soolCardHtml).join('');
+    }
+
+    async function init() {
+      const regionId = new URLSearchParams(window.location.search).get('id');
+      if (!regionId) { window.location.replace('contents.html'); return; }
+
+      const [regionData, soolData, imgData] = await Promise.all([
+        getRegions(), getSools(), getImages()
+      ]);
+      const region = (regionData.regions || []).find(r => r.id === regionId);
+      if (!region) { window.location.replace('contents.html'); return; }
+
+      _imgData = imgData;
+      const matchSet = new Set(region.matchRegions || []);
+      _matched = soolData.items.filter(s => matchSet.has(s.region));
+
+      const tone = ACCENT[region.accent] || ACCENT.buncheong;
+      document.getElementById('nav-title').textContent = region.label;
+      document.title = `${region.label} - Jumak`;
+
+      // Sub-chips only worth showing when many sools exist.
+      const showCats = _matched.length > 6;
+      const catsInRegion = [...new Set(_matched.map(s => s.category))];
+      const catChipsHtml = !showCats ? '' : `
+        <div class="region-cat-row scrollbar-hide" id="cat-row">
+          <button class="chip active" data-cat="all">All</button>
+          ${catsInRegion.map(c =>
+            `<button class="chip" data-cat="${c}">${CATEGORY_NAMES[c] || c}</button>`
+          ).join('')}
+        </div>
+      `;
+
+      const container = document.getElementById('region-content');
+      container.className = 'page-content' + (showCats ? ' has-cat-row' : '');
+      container.innerHTML = `
+        <div class="region-hero" style="--accent-color:${tone.color};--accent-bg-soft:${tone.bgSoft}">
+          <div class="region-hero-accent-bar"></div>
+          <div class="region-hero-icon">${region.icon}</div>
+          <h1 class="region-hero-title">${region.label}</h1>
+          <div class="region-hero-subtitle">${region.labelKo}</div>
+          <p class="region-hero-intro">${region.intro}</p>
+        </div>
+        ${catChipsHtml}
+        <div class="region-result-count" id="result-count"></div>
+        <div class="region-sool-grid" id="sool-grid"></div>
+        <a class="region-back-link" href="contents.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+          Back to Contents
+        </a>
+      `;
+
+      if (showCats) {
+        document.querySelectorAll('#cat-row .chip').forEach(btn => {
+          btn.onclick = () => {
+            _activeCat = btn.dataset.cat;
+            document.querySelectorAll('#cat-row .chip').forEach(b =>
+              b.classList.toggle('active', b === btn)
+            );
+            rerenderGrid();
+          };
+        });
+      }
+
+      rerenderGrid();
+    }
+
+    init();
+  </script>
+</body>
+</html>

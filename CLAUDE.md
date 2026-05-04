@@ -29,6 +29,7 @@ sool-project/
 ├── sool-finder.html    # 전통주 추천 퀴즈 (4문항 → 상위 3종)
 ├── place-finder.html   # 장소 추천 퀴즈 (5문항 → 1곳 + 유사 1곳)
 ├── sool-detail.html    # 개별 술 상세 (?id=xxx)
+├── region.html         # 지역 상세 (?id=gangwon 등) — Contents의 'View all'에서 진입
 ├── shared.js           # 공통 유틸 (데이터 로더, 탭바, 헬퍼)
 ├── shared.css          # 디자인 시스템 (CSS 변수, 컴포넌트)
 ├── vercel.json         # Vercel 정적 사이트 설정 (캐시 헤더 포함)

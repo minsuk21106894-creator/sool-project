@@ -275,38 +275,6 @@
       color: var(--buncheong);
       padding: 0 20px 12px;
     }
-    /* Region filter banner (set via ?region= URL param) */
-    .region-banner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 20px 12px;
-      padding: 10px 14px;
-      background: rgba(196,70,58,0.08);
-      border: 1px solid rgba(196,70,58,0.18);
-      border-radius: 12px;
-    }
-    .region-banner-info {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--dancheong);
-      min-width: 0;
-    }
-    .region-banner-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .region-banner-clear {
-      background: none;
-      border: none;
-      color: var(--dancheong);
-      font-size: 22px;
-      cursor: pointer;
-      padding: 0 6px;
-      line-height: 0.8;
-      flex-shrink: 0;
-      -webkit-tap-highlight-color: transparent;
-    }
   </style>
 </head>
 <body>
@@ -321,7 +289,6 @@
 
     <!-- Sool Panel -->
     <div id="panel-sool">
-      <div id="region-banner-slot"></div>
       <div class="filter-row scrollbar-hide" id="category-filter"></div>
       <div class="taste-filter-row scrollbar-hide" id="taste-filter"></div>
       <div class="result-count" id="result-count"></div>
@@ -412,10 +379,8 @@
       tasteContainer.appendChild(chip);
     });
 
-    let _activeRegion = null;       // {id, label, labelKo, icon, matchSet}
     function renderSoolList() {
       let filtered = allSools;
-      if (_activeRegion) filtered = filtered.filter(s => _activeRegion.matchSet.has(s.region));
       if (activeCategory !== 'all') filtered = filtered.filter(s => s.category === activeCategory);
       if (activeTaste) filtered = filtered.filter(s => s.tasteProfile[activeTaste] >= 50);
       document.getElementById('result-count').textContent = `${filtered.length} sools`;
@@ -578,61 +543,20 @@
       });
     }
 
-    // ── Region filter banner (entered via ?region=) ──────────
-    function renderRegionBanner() {
-      const slot = document.getElementById('region-banner-slot');
-      if (!_activeRegion) { slot.innerHTML = ''; return; }
-      slot.innerHTML = `
-        <div class="region-banner">
-          <div class="region-banner-info">
-            <span>${_activeRegion.icon}</span>
-            <span class="region-banner-label">Region: ${_activeRegion.label} <span style="color:var(--buncheong);font-weight:500">${_activeRegion.labelKo}</span></span>
-          </div>
-          <button class="region-banner-clear" aria-label="Clear region filter" onclick="clearRegionFilter()">×</button>
-        </div>
-      `;
-    }
-    function clearRegionFilter() {
-      const url = new URL(window.location.href);
-      url.searchParams.delete('region');
-      window.location.replace(url.pathname + (url.search || ''));
-    }
-
     // ── Init ──────────────────────────────────────────────────
     let _imgData = null;
     async function init() {
-      const params = new URLSearchParams(window.location.search);
-      const regionParam = params.get('region');
-
-      const promises = [getSools(), getImages(), getPlaces()];
-      if (regionParam) promises.push(getRegions());
-      const [soolData, imgData, placesData, regionData] = await Promise.all(promises);
+      const [soolData, imgData, placesData] = await Promise.all([getSools(), getImages(), getPlaces()]);
       _imgData = imgData;
       allSools = soolData.items;
       allSools.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       allPlaces = placesData.places || placesData.items || placesData;
-
-      // Apply region filter if URL param present and matches a known region
-      if (regionParam && regionData) {
-        const region = (regionData.regions || []).find(r => r.id === regionParam);
-        if (region) {
-          _activeRegion = {
-            id: region.id,
-            label: region.label,
-            labelKo: region.labelKo,
-            icon: region.icon,
-            matchSet: new Set(region.matchRegions || [])
-          };
-        }
-      }
-      renderRegionBanner();
       renderSoolList();
       renderPlaceList();
 
-      // Auto-switch tab from URL param (region forces sool tab)
-      const tabParam = params.get('tab');
-      if (_activeRegion) switchTab('sool');
-      else if (tabParam === 'places') switchTab('places');
+      // Auto-switch tab from URL param
+      const tabParam = new URLSearchParams(window.location.search).get('tab');
+      if (tabParam === 'places') switchTab('places');
       else switchTab('sool');
     }
 
