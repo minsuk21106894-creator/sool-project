@@ -1,0 +1,287 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-03-24",
+  "displayCount": 5,
+  "items": [
+    {
+      "soolId": "makgeolli-boksoondoga",
+      "title": "The Champagne of Makgeolli",
+      "subtitle": "Creamy organic rice wine with a remarkably clean finish. Korea's most celebrated makgeolli."
+    },
+    {
+      "soolId": "makgeolli-neurin-maul",
+      "title": "Slow-Brewed Perfection",
+      "subtitle": "From a master brewer who revived forgotten techniques. Silky layers you won't forget."
+    },
+    {
+      "soolId": "makgeolli-jipyeong",
+      "title": "The Classic Starter",
+      "subtitle": "Brewed since 1925. The perfect first makgeolli for any newcomer to Korean drinks."
+    },
+    {
+      "soolId": "makgeolli-sparkling",
+      "title": "Bubbly Rice Prosecco",
+      "subtitle": "Fine bubbles meet bright acidity. Serve chilled in a wine glass for the full experience."
+    },
+    {
+      "soolId": "makgeolli-geumjeongsanseong",
+      "title": "500 Years of Busan Soul",
+      "subtitle": "Hand-pressed nuruk, 100% rice. Fuller body and a bold character from Korea's southern coast."
+    },
+    {
+      "soolId": "makgeolli-seouljangsoo",
+      "title": "Seoul's Pub Classic",
+      "subtitle": "Found at every traditional Korean pub. The go-to draft makgeolli for a real local experience."
+    },
+    {
+      "soolId": "makgeolli-ihwaju",
+      "title": "Spoonable Rice Wine",
+      "subtitle": "A Goryeo-dynasty recipe so thick you eat it with a spoon. Unlike anything you've tried."
+    },
+    {
+      "soolId": "makgeolli-wolmae",
+      "title": "Named After a Folktale",
+      "subtitle": "Light, slightly sweet, from the Chunhyangjeon legend. Easy drinking for any occasion."
+    },
+    {
+      "soolId": "makgeolli-gyeongtak-rose",
+      "title": "Pink Rice Wine",
+      "subtitle": "Naturally colored with red rice — no artificial anything. Gorgeous, wine-like, Instagram-ready."
+    },
+    {
+      "soolId": "makgeolli-golmok",
+      "title": "Craft Beer Meets Tradition",
+      "subtitle": "Seoul micro-brewery making crisp, slightly carbonated makgeolli for the modern palate."
+    },
+    {
+      "soolId": "makgeolli-jirangigyo",
+      "title": "A Friendship Worth Sharing",
+      "subtitle": "Named after a proverb about deep friendship. Rich, floral, best enjoyed with good company."
+    },
+    {
+      "soolId": "makgeolli-banana",
+      "title": "Your Fun Starter Drink",
+      "subtitle": "Banana-flavored makgeolli that's a party favorite. Sweet, easy, and everyone's first Korean drink."
+    },
+    {
+      "soolId": "makgeolli-dongdongju",
+      "title": "Floating Rice Magic",
+      "subtitle": "Watch rice grains float in your bowl. A rustic style of makgeolli with earthy charm."
+    },
+    {
+      "soolId": "makgeolli-nuruk",
+      "title": "The House-Made Original",
+      "subtitle": "Brewed with hand-crafted nuruk starter. Taste what makgeolli was like centuries ago."
+    },
+    {
+      "soolId": "makgeolli-omegisul",
+      "title": "Jeju Island in a Glass",
+      "subtitle": "Made with Jeju millet and volcanic water. A taste of the island you can't get anywhere else."
+    },
+    {
+      "soolId": "soju-hwayo-41",
+      "title": "Korea's Finest Spirit",
+      "subtitle": "Triple-distilled from 100% rice. At 41%, this is soju elevated to whisky-level sophistication."
+    },
+    {
+      "soolId": "soju-hwayo-25",
+      "title": "The Smooth Upgrade",
+      "subtitle": "Premium rice soju at an approachable 25%. A huge step up from convenience store bottles."
+    },
+    {
+      "soolId": "soju-hwayo-17",
+      "title": "Premium Goes Easy",
+      "subtitle": "Hwayo's most accessible expression. Premium rice soju quality at a gentle 17% ABV."
+    },
+    {
+      "soolId": "soju-andong",
+      "title": "Heritage Spirit of Andong",
+      "subtitle": "Traditional distillation passed down for generations. Bold, complex, and deeply Korean."
+    },
+    {
+      "soolId": "soju-andong-ilpum-gold",
+      "title": "The Gold Standard",
+      "subtitle": "Andong Soju's ultimate expression at 40%. For the serious spirit enthusiast only."
+    },
+    {
+      "soolId": "soju-hallasan",
+      "title": "Volcanic Island Soju",
+      "subtitle": "From Jeju's Hallasan mountain water. Uniquely smooth with a mineral character all its own."
+    },
+    {
+      "soolId": "soju-cham-yi-sul",
+      "title": "Korea's #1 Drink",
+      "subtitle": "The world's best-selling spirit. Every Korean has a Chamisul story — now it's your turn."
+    },
+    {
+      "soolId": "soju-cham-yi-sul-fruit-peach",
+      "title": "Peachy & Playful",
+      "subtitle": "Fruity soju that started a global trend. Sweet peach flavor makes soju approachable for everyone."
+    },
+    {
+      "soolId": "soju-cham-yi-sul-fruit-grape",
+      "title": "Green Grape Crush",
+      "subtitle": "The viral green grape soju. Light, sweet, and the reason fruit soju took over the world."
+    },
+    {
+      "soolId": "soju-good-day",
+      "title": "Smooth as a Good Day",
+      "subtitle": "The softest soju on the market. Clean finish that lives up to its optimistic name."
+    },
+    {
+      "soolId": "soju-cheoeum-cheoreom",
+      "title": "Like the First Time",
+      "subtitle": "Alkaline water base makes this the smoothest mainstream soju. Gentle on the throat."
+    },
+    {
+      "soolId": "soju-jinro-gold",
+      "title": "Retro Gold Revival",
+      "subtitle": "Jinro's premium throwback to the original 1970s recipe. 24% of golden nostalgia."
+    },
+    {
+      "soolId": "distilled-munbaeju",
+      "title": "The Phantom Pear",
+      "subtitle": "Smells like pear but contains no fruit. An intangible cultural heritage distilled into a bottle."
+    },
+    {
+      "soolId": "distilled-igangju",
+      "title": "Ginger-Pear Alchemy",
+      "subtitle": "Steeped with pear, ginger, turmeric, and cinnamon. A 500-year-old Korean herbal spirit."
+    },
+    {
+      "soolId": "distilled-gamhongro",
+      "title": "Triple-Distilled Legend",
+      "subtitle": "Three layers of distillation, infused with rare herbs. One of Korea's most precious spirits."
+    },
+    {
+      "soolId": "distilled-gosorisul",
+      "title": "Jeju's Ancient Fire",
+      "subtitle": "Distilled in a traditional clay 'gosori' pot on Jeju island. Raw, powerful, unforgettable."
+    },
+    {
+      "soolId": "distilled-hwayo-53",
+      "title": "The Ultimate Hwayo",
+      "subtitle": "At 53%, this is Korea's answer to cask-strength whisky. For collectors and connoisseurs."
+    },
+    {
+      "soolId": "cheongju-gyeongju-beopju",
+      "title": "Thousand-Year Royal Wine",
+      "subtitle": "Once served to Silla dynasty royalty. Clear, refined, and steeped in a millennium of history."
+    },
+    {
+      "soolId": "cheongju-kooksoondang",
+      "title": "Clear Rice Elegance",
+      "subtitle": "The most approachable cheongju. Think of it as Korean sake — clean, light, and versatile."
+    },
+    {
+      "soolId": "yakju-hansan-sogokju",
+      "title": "The Intoxicating Brew",
+      "subtitle": "So good it once kept scholars from studying. Sweet, layered, and dangerously drinkable."
+    },
+    {
+      "soolId": "yakju-baekseju",
+      "title": "100-Year-Life Wine",
+      "subtitle": "Brewed with ginseng and 12 herbs. The health-conscious Korean's drink of choice."
+    },
+    {
+      "soolId": "yakju-chuseongju",
+      "title": "Autumn Harvest Elixir",
+      "subtitle": "A refined rice wine with chrysanthemum and herbal notes. Tastes like Korean autumn."
+    },
+    {
+      "soolId": "yakju-sansachun",
+      "title": "Mountain Berry Bliss",
+      "subtitle": "Made with wild Korean hawthorn berries. Sweet-tart and beautifully balanced."
+    },
+    {
+      "soolId": "yakju-sogokju-clear",
+      "title": "Crystal-Clear Temptation",
+      "subtitle": "The clear version of the famous Sogokju. Same legendary taste, refined presentation."
+    },
+    {
+      "soolId": "fruitwine-maehwasu",
+      "title": "Plum Blossom in a Glass",
+      "subtitle": "Korea's most popular fruit wine. Delicate plum flavor that pairs with everything."
+    },
+    {
+      "soolId": "fruitwine-bokbunja",
+      "title": "Wild Berry Power",
+      "subtitle": "Deep purple Korean black raspberry wine. Bold, fruity, and famous for its 'stamina' reputation."
+    },
+    {
+      "soolId": "fruitwine-maesilju",
+      "title": "Green Plum Refresher",
+      "subtitle": "Every Korean home has a jar of this. Tangy, sweet, and the ultimate summer sipper."
+    },
+    {
+      "soolId": "fruitwine-omijaju",
+      "title": "Five Flavors, One Sip",
+      "subtitle": "Sweet, sour, salty, bitter, and spicy — all from one tiny omija berry. A Korean marvel."
+    },
+    {
+      "soolId": "fruitwine-gamgyulju",
+      "title": "Jeju Tangerine Wine",
+      "subtitle": "Sunshine-sweet Jeju tangerines turned into wine. Bright, citrusy, and impossibly cheerful."
+    },
+    {
+      "soolId": "fruitwine-yujaju",
+      "title": "Citrus from the South",
+      "subtitle": "Korean yuzu wine from Goheung. Fragrant, tart, and a perfect aperitif."
+    },
+    {
+      "soolId": "fruitwine-seokryuju",
+      "title": "Pomegranate Poetry",
+      "subtitle": "Ruby-red pomegranate wine. Light, elegant, and surprisingly complex for a fruit wine."
+    },
+    {
+      "soolId": "fruitwine-meoru",
+      "title": "Wild Grape Discovery",
+      "subtitle": "Korean wild mountain grapes make a tannic, earthy wine unlike any Western grape wine."
+    },
+    {
+      "soolId": "fruitwine-masheobeurang",
+      "title": "Korean Blanc",
+      "subtitle": "A modern Korean fruit wine with white wine aspirations. Fresh, floral, and date-night ready."
+    },
+    {
+      "soolId": "fruitwine-podoju",
+      "title": "Korea's Own Grape Wine",
+      "subtitle": "Korean-grown grapes, Korean-made wine. A surprisingly good domestic grape wine."
+    },
+    {
+      "soolId": "fruitwine-gamnoju",
+      "title": "Sweet Persimmon Nectar",
+      "subtitle": "Made from Korea's prized persimmons. Honey-sweet, autumn-scented, completely unique."
+    },
+    {
+      "soolId": "other-gukhwaju",
+      "title": "Chrysanthemum Ceremony",
+      "subtitle": "Steeped with autumn chrysanthemum flowers. Floral, herbal, and deeply traditional."
+    },
+    {
+      "soolId": "other-dugyeonju",
+      "title": "Azalea Flower Wine",
+      "subtitle": "Made with wild azalea petals. A rare, beautiful, and almost mythical Korean brew."
+    },
+    {
+      "soolId": "other-dansul",
+      "title": "Sweet Rice Starter",
+      "subtitle": "Barely alcoholic and naturally sweet. The gentlest introduction to Korean fermented drinks."
+    },
+    {
+      "soolId": "other-somaek",
+      "title": "Korea's Signature Mix",
+      "subtitle": "Soju + beer = somaek. Learn the golden ratio and drink like a real Korean."
+    },
+    {
+      "soolId": "makgeolli-idong",
+      "title": "Grandma s Bold Recipe",
+      "subtitle": "Thick, earthy, countryside-style makgeolli from Pocheon. Not for the faint-hearted."
+    },
+    {
+      "soolId": "makgeolli-kooksoondang-raw",
+      "title": "Best Budget Find",
+      "subtitle": "Complex, grainy makgeolli at convenience store prices. 100% rice, real nuruk."
+    }
+  ]
+}

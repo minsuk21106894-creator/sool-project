@@ -1,0 +1,307 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-24",
+  "fallbacks": {
+    "makgeolli": "https://d38cxpfv0ljg7q.cloudfront.net/admin_contents/detail/hVej-1711956131265-boksoondoga.jpg",
+    "soju": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/0547b2c5-93d9-4cce-b814-4635be4bbc32.webp",
+    "distilledSpirit": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/71d6a915-43cb-4f81-bc04-006f2faf718a.webp",
+    "cheongju": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/2755f544-032b-467f-8eee-edc1a5268a6f.webp",
+    "yakju": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/801e80ca-bdd2-468f-a545-44aaf662ec9e.webp",
+    "fruitWine": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/d6b719f1-2bf9-4fe7-9442-0a71a1639c60.webp",
+    "other": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/7210c69e-89cf-44e8-902d-c6dd2b59cc8b.webp"
+  },
+  "images": {
+    "makgeolli-boksoondoga": {
+      "url": "https://d38cxpfv0ljg7q.cloudfront.net/admin_contents/detail/hVej-1711956131265-boksoondoga.jpg",
+      "source": "Sooldamhwa",
+      "alt": "Boksoondoga Makgeolli bottle"
+    },
+    "makgeolli-neurin-maul": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/dd5891e7-cc41-4885-afb6-28d566bb44bd.webp",
+      "source": "DailyShot",
+      "alt": "Neurin Maul Makgeolli bottle"
+    },
+    "makgeolli-jipyeong": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/b5c6fde2-e64a-417e-a048-e953234faef4.webp",
+      "source": "DailyShot",
+      "alt": "Jipyeong Makgeolli bottle"
+    },
+    "makgeolli-sparkling": {
+      "url": null,
+      "source": null,
+      "alt": "Damgeumju Sparkling Makgeolli bottle",
+      "fallback": "makgeolli"
+    },
+    "makgeolli-geumjeongsanseong": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/9e5a72a3-c3ac-48bb-a7ba-988590875d72.webp",
+      "source": "DailyShot",
+      "alt": "Geumjeongsanseong Makgeolli bottle"
+    },
+    "makgeolli-seouljangsoo": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/7b5d0acb-a5d3-4d01-92c3-8913245cb2d9.webp",
+      "source": "DailyShot",
+      "alt": "Seoul Jangsoo Makgeolli bottle"
+    },
+    "makgeolli-ihwaju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/636944f5-d537-4867-ba31-006c00e839a6.webp",
+      "source": "DailyShot",
+      "alt": "Ihwaju (Pear Blossom Wine) bottle"
+    },
+    "makgeolli-wolmae": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/53e6f86a-3c17-47d0-a4a7-6b3c6e89b338.webp",
+      "source": "DailyShot",
+      "alt": "Wolmae Makgeolli bottle"
+    },
+    "makgeolli-gyeongtak-rose": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/437dfdc8-b638-4630-88fb-409aa27fe6bb.webp",
+      "source": "DailyShot",
+      "alt": "Gyeongtakju Rose 12 bottle"
+    },
+    "makgeolli-golmok": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/c4f3bcf7-cdc6-414e-99a4-918a2b8af9ea.webp",
+      "source": "DailyShot",
+      "alt": "Golmok Makgeolli bottle"
+    },
+    "makgeolli-jirangigyo": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/8adb85ef-7241-4c86-ba91-6e75a634ca48.webp",
+      "source": "DailyShot",
+      "alt": "Jirangjigyo Makgeolli bottle"
+    },
+    "soju-hwayo-41": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/0547b2c5-93d9-4cce-b814-4635be4bbc32.webp",
+      "source": "DailyShot",
+      "alt": "Hwayo 41 bottle"
+    },
+    "soju-hwayo-25": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/smartorder_reservation/product/thumbnail/0c2c9b98-e03e-4403-a9da-05ed3738b34a.webp",
+      "source": "DailyShot",
+      "alt": "Hwayo 25 bottle"
+    },
+    "soju-andong": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/93e1e751-b716-47bf-9d1b-bb26373d2a85.webp",
+      "source": "DailyShot",
+      "alt": "Andong Soju bottle"
+    },
+    "soju-andong-ilpum-gold": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/fe83d019-01ef-4fad-b4e0-8c93ccd9e958.webp",
+      "source": "DailyShot",
+      "alt": "Ilpum Andong Soju Gold 40 bottle"
+    },
+    "soju-hallasan": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/360164cd-abfe-43d8-bebf-eb9a16c01442.webp",
+      "source": "DailyShot",
+      "alt": "Hallasan Soju bottle"
+    },
+    "soju-cham-yi-sul": {
+      "url": "https://cdn.veluga.kr/files/supplier/228/drinks/%EC%B0%B8%EC%9D%B4%EC%8A%AC%20%ED%9B%84%EB%A0%88%EC%89%AC%20%EC%86%8C%EC%A3%BC(JINRO%20CHAMISUL%20FRESH%20SOJU)_%ED%95%98%EC%9D%B4%ED%8A%B8%EC%A7%84%EB%A1%9C(hitejinro).png",
+      "source": "Veluga",
+      "alt": "Chamisul Fresh bottle"
+    },
+    "distilled-munbaeju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/71d6a915-43cb-4f81-bc04-006f2faf718a.webp",
+      "source": "DailyShot",
+      "alt": "Munbaeju bottle"
+    },
+    "distilled-igangju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/50ca0696-89aa-45d2-a837-063eb1b708be.webp",
+      "source": "DailyShot",
+      "alt": "Igangju bottle"
+    },
+    "distilled-gamhongro": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/smartorder_reservation/product/thumbnail/d338b950-f731-49ad-8bb2-ed7a7204fb0d.webp",
+      "source": "DailyShot",
+      "alt": "Gamhongro bottle"
+    },
+    "distilled-gosorisul": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/smartorder_reservation/product/thumbnail/d6694078-4970-4d83-b37c-29c247c50a4e.webp",
+      "source": "DailyShot",
+      "alt": "Gosorisul bottle"
+    },
+    "cheongju-gyeongju-beopju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/2755f544-032b-467f-8eee-edc1a5268a6f.webp",
+      "source": "DailyShot",
+      "alt": "Gyeongju Beopju bottle"
+    },
+    "cheongju-kooksoondang": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/1466bde4-31a3-4fba-8e1e-08fd3c8883ee.webp",
+      "source": "DailyShot",
+      "alt": "Kooksoondang Cheongju bottle"
+    },
+    "yakju-hansan-sogokju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/801e80ca-bdd2-468f-a545-44aaf662ec9e.webp",
+      "source": "DailyShot",
+      "alt": "Hansan Sogokju bottle"
+    },
+    "yakju-baekseju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/5a7ce81e-7418-4939-b1ad-fb9d110a6865.webp",
+      "source": "DailyShot",
+      "alt": "Baekseju bottle"
+    },
+    "yakju-chuseongju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/c06613ac-6409-4044-b00a-66d6dcd2c76b.webp",
+      "source": "DailyShot",
+      "alt": "Chuseongju bottle"
+    },
+    "yakju-sansachun": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/7f591054-a591-4b54-ad5f-36b442254339.webp",
+      "source": "DailyShot",
+      "alt": "Sansachun bottle"
+    },
+    "fruitwine-maehwasu": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/d6b719f1-2bf9-4fe7-9442-0a71a1639c60.webp",
+      "source": "DailyShot",
+      "alt": "Maehwasu Plum Wine bottle"
+    },
+    "fruitwine-bokbunja": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/6595e41b-846d-4745-b26d-9bb5239766f1.webp",
+      "source": "DailyShot",
+      "alt": "Bokbunjaju (Black Raspberry Wine) bottle"
+    },
+    "fruitwine-maesilju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/0004dac7-6a97-48aa-a125-e202931bb5e6.webp",
+      "source": "DailyShot",
+      "alt": "Maesilju (Green Plum Wine) bottle"
+    },
+    "fruitwine-omijaju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/962de935-e43a-402c-a47f-7fa8f8129755.webp",
+      "source": "DailyShot",
+      "alt": "Myungjak Omijaju bottle"
+    },
+    "fruitwine-gamgyulju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/f8093908-683a-4e74-993c-835c216045b5.webp",
+      "source": "DailyShot",
+      "alt": "Jeju Gamgyulju (Citrus Wine) bottle"
+    },
+    "fruitwine-yujaju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/smartorder_reservation/product/thumbnail/bb051883-3384-4082-b48e-1f40f4cbf8e9.webp",
+      "source": "DailyShot",
+      "alt": "Gohung Yujaju (Yuzu Wine) bottle"
+    },
+    "fruitwine-seokryuju": {
+      "url": null,
+      "source": null,
+      "alt": "Seokryu Yiyagi (Pomegranate Wine) bottle",
+      "fallback": "fruitWine"
+    },
+    "fruitwine-meoru": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/abf8aee7-3216-49cb-9572-1dbbe0a935ec.webp",
+      "source": "DailyShot",
+      "alt": "Meoruju (Wild Grape Wine) bottle"
+    },
+    "fruitwine-masheobeurang": {
+      "url": null,
+      "source": null,
+      "alt": "Ma She Blanc bottle",
+      "fallback": "fruitWine"
+    },
+    "other-gukhwaju": {
+      "url": null,
+      "source": null,
+      "alt": "Gukhwaju (Chrysanthemum Wine) bottle",
+      "fallback": "other"
+    },
+    "other-dugyeonju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/7210c69e-89cf-44e8-902d-c6dd2b59cc8b.webp",
+      "source": "DailyShot",
+      "alt": "Dugyeonju (Azalea Wine) bottle"
+    },
+    "other-dansul": {
+      "url": null,
+      "source": null,
+      "alt": "Dansul (Sweet Rice Drink) bottle",
+      "fallback": "other"
+    },
+    "soju-cham-yi-sul-fruit-peach": {
+      "url": null,
+      "source": null,
+      "alt": "Chamisul Peach Soju bottle",
+      "fallback": "soju"
+    },
+    "soju-cham-yi-sul-fruit-grape": {
+      "url": "https://file.hitejinro.com/hitejinro2016/upFiles/brand/KR/category/20220804_71950631.jpg",
+      "source": "HiteJinro",
+      "alt": "Chamisul Green Grape Soju bottle"
+    },
+    "soju-good-day": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/7c5f2fd2-14f1-486a-9739-b89a23d98a63.webp",
+      "source": "DailyShot",
+      "alt": "Good Day Soju bottle"
+    },
+    "soju-cheoeum-cheoreom": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/a774c791-1a1c-4cfe-a878-f661f766d13e.webp",
+      "source": "DailyShot",
+      "alt": "Cheoeum Cheoreom bottle"
+    },
+    "other-somaek": {
+      "url": null,
+      "source": null,
+      "alt": "Somaek (Soju + Beer Bomb) bottle",
+      "fallback": "other"
+    },
+    "makgeolli-nuruk": {
+      "url": null,
+      "source": null,
+      "alt": "Nuruk Makgeolli (House Makgeolli) bottle",
+      "fallback": "makgeolli"
+    },
+    "soju-hwayo-17": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/09f9cd6a-ce03-4660-a519-f1eb93d9f4b3.webp",
+      "source": "DailyShot",
+      "alt": "Hwayo X Premium bottle"
+    },
+    "distilled-hwayo-53": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/748cd19e-f725-4ef7-bf4d-fd6ba52e6853.webp",
+      "source": "DailyShot",
+      "alt": "Hwayo 53 bottle"
+    },
+    "yakju-sogokju-clear": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/6d06bd8b-02a7-401f-9a35-ecd64454b3a0.webp",
+      "source": "DailyShot",
+      "alt": "Hansan Sogokju Clear bottle"
+    },
+    "fruitwine-podoju": {
+      "url": null,
+      "source": null,
+      "alt": "Korean Grape Wine (Podoju) bottle",
+      "fallback": "fruitWine"
+    },
+    "soju-jinro-gold": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/05624783-91aa-4cbb-82c1-84321cfab28f.webp",
+      "source": "DailyShot",
+      "alt": "Jinro 24 Gold bottle"
+    },
+    "fruitwine-gamnoju": {
+      "url": null,
+      "source": null,
+      "alt": "Gamnoju (Persimmon Wine) bottle",
+      "fallback": "fruitWine"
+    },
+    "makgeolli-banana": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/59c30405-01f4-4740-b276-76ef30a06a86.webp",
+      "source": "DailyShot",
+      "alt": "Banana Makgeolli bottle"
+    },
+    "makgeolli-dongdongju": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/336e599e-6676-4d94-9ba5-9cb981b8c306.webp",
+      "source": "DailyShot",
+      "alt": "Dongdongju bottle"
+    },
+    "makgeolli-omegisul": {
+      "url": "https://d1e2y5wc27crnp.cloudfront.net/media/core/product/thumbnail/ca4e6e93-da62-4211-868c-2057feefc2a6.webp",
+      "source": "DailyShot",
+      "alt": "Omegisul bottle"
+    },
+    "makgeolli-idong": {
+      "url": null,
+      "source": null,
+      "alt": "Idong Makgeolli bottle",
+      "fallback": "makgeolli"
+    },
+    "makgeolli-kooksoondang-raw": {
+      "url": null,
+      "source": null,
+      "alt": "Kooksoondang Raw Makgeolli bottle",
+      "fallback": "makgeolli"
+    }
+  }
+}

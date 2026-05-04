@@ -1,0 +1,58 @@
+{
+  "stories": [
+    {
+      "id": "soju-strength",
+      "category": "History",
+      "icon": "🍶",
+      "accent": "onggi",
+      "title": "Soju Was Once Twice as Strong",
+      "body": "Until the 1960s, traditional Korean soju was distilled to 35–45% alcohol. After the Korean War, to save grain, the government promoted a cheaper ‘diluted soju’ (희석식) made from sweet potato or tapioca. Modern green-bottle soju started at 25% in 1965 — and has steadily dropped to around 16% today.",
+      "didYouKnow": "Distilled-style soju (증류식) still exists — it's the premium kind you'll see on craft menus, and it's making a serious comeback."
+    },
+    {
+      "id": "mongol-distillation",
+      "category": "History",
+      "icon": "⚔️",
+      "accent": "onggi",
+      "title": "The Mongols Brought Distillation 700 Years Ago",
+      "body": "When Mongol forces occupied Korea in the 13th century, they set up a military base in Andong to launch attacks on Japan. They brought distillation know-how learned from Persia — and left it behind. Andong Soju (안동소주), still produced today, descends directly from that lineage.",
+      "didYouKnow": "The Mongol word ‘arak’ for distilled spirit shows up in old Korean records as 아락주."
+    },
+    {
+      "id": "two-handed-pour",
+      "category": "Etiquette",
+      "icon": "🤲",
+      "accent": "dancheong",
+      "title": "Why You Pour With Two Hands",
+      "body": "In the Joseon era, scholars wore robes with very long sleeves. Using both hands when pouring kept the sleeve from dragging into the food or the cup — a practical fix that hardened into etiquette. Today, two-handed pouring still signals respect, especially toward elders.",
+      "didYouKnow": "If only one hand is free, place your free hand on your pouring forearm — it counts the same."
+    },
+    {
+      "id": "anju-culture",
+      "category": "Culture",
+      "icon": "🥢",
+      "accent": "celadon",
+      "title": "No Drink Without Anju",
+      "body": "Koreans almost never drink without food. The word ‘anju’ (안주) literally means ‘with the cup,’ and the tradition mixes Confucian table manners with practical wisdom — food slows alcohol absorption. Even at a convenience store run, a packet of dried squid counts as anju.",
+      "didYouKnow": "Asking ‘what's the anju?’ before ordering drinks is normal — and totally expected."
+    },
+    {
+      "id": "makgeolli-comeback",
+      "category": "Modern",
+      "icon": "🌾",
+      "accent": "celadon",
+      "title": "Makgeolli's Surprise Comeback",
+      "body": "For decades, makgeolli was dismissed as a poor farmer's drink — cheap, cloudy, unfashionable. Then in 2009, Japanese tourists started ordering it at Seoul restaurants, and the trend boomeranged. Korean breweries reinvented makgeolli with cleaner fermentation, fancy bottles, and craft variants. Today it's the face of Korean craft drinking.",
+      "didYouKnow": "Modern craft makgeolli ranges from sparkling-dry to dessert-sweet — closer to natural wine than beer."
+    },
+    {
+      "id": "somaek-origin",
+      "category": "Modern",
+      "icon": "🍻",
+      "accent": "buncheong",
+      "title": "So-Maek: A Bomb Drink Built for After Work",
+      "body": "Mixing soju into beer (소맥, so-maek) became a Korean ritual in the 1990s during after-work salaryman culture. The trick — pour soju into a small glass, drop it into beer, drink in one go — let groups level up the buzz fast without slowing the meal. The ratio still gets debated like a serious recipe.",
+      "didYouKnow": "Classic ratio: 3 parts beer to 1 part soju. Anything stronger has its own nickname."
+    }
+  ]
+}

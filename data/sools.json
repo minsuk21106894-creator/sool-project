@@ -1,0 +1,3714 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-03-24",
+  "items": [
+    {
+      "id": "makgeolli-boksoondoga",
+      "name": "Boksoondoga Makgeolli",
+      "nameKo": "복순도가 손막걸리",
+      "category": "makgeolli",
+      "subcategory": "unfiltered",
+      "abv": 6.5,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Ulsan",
+      "brewery": "Boksoondoga",
+      "description": "A premium unfiltered makgeolli made with organic rice. Creamy texture with subtle sweetness and a remarkably clean finish. Often called the 'champagne of makgeolli.'",
+      "oneLiner": "The champagne of makgeolli",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 50,
+        "earthy": 25,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Unfiltered Sake (Nigori)",
+        "description": "If you like unfiltered sake, you'll love this creamy rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Pajeon",
+          "nameKo": "파전",
+          "description": "Pajeon"
+        },
+        {
+          "name": "Bossam",
+          "nameKo": "보쌈",
+          "description": "Bossam"
+        },
+        {
+          "name": "Jeon",
+          "nameKo": "전",
+          "description": "Jeon"
+        }
+      ],
+      "tags": "sweet, fruity, creamy, premium",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "복순도가 한 병 주세요",
+          "romanized": "Boksoondoga han byeong juseyo",
+          "english": "One bottle of Boksoondoga, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-neurin-maul",
+      "name": "Neurin Maul Makgeolli",
+      "nameKo": "느린마을 막걸리",
+      "category": "makgeolli",
+      "subcategory": "filtered",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Baehaebang",
+      "description": "A premium makgeolli from Baehaejung Doga (Slow Village Brewery), founded by master brewer Bae Hae-jung who revived forgotten slow-fermentation techniques. Unlike commercial makgeolli that ferments in days, Neurin Maul undergoes extended low-temperature fermentation for a silky, layered flavor with subtle lactic tang. The name means 'Slow Village,' reflecting a philosophy that great rice wine cannot be rushed.",
+      "oneLiner": "Smooth rice elegance",
+      "tasteProfile": {
+        "sweet": 55,
+        "dry": 45,
+        "fruity": 30,
+        "earthy": 40,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Wheat Beer (Hefeweizen)",
+        "description": "If you like wheat beer, try this smooth rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Kimchi Jeon",
+          "nameKo": "김치전",
+          "description": "Kimchi Jeon"
+        },
+        {
+          "name": "Dubu Kimchi",
+          "nameKo": "두부김치",
+          "description": "Dubu Kimchi"
+        },
+        {
+          "name": "Ojingeo Sundae",
+          "nameKo": "오징어순대",
+          "description": "Ojingeo Sundae"
+        }
+      ],
+      "tags": "balanced, smooth, traditional",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "느린마을 막걸리 한 병 주세요",
+          "romanized": "Neurin-maul makgeolli han byeong juseyo",
+          "english": "One bottle of Neurin Maul makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-jipyeong",
+      "name": "Jipyeong Makgeolli",
+      "nameKo": "지평 막걸리",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 5.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Yangpyeong",
+      "brewery": "Jipyeong Brewery",
+      "description": "A classic Korean makgeolli from a brewery established in 1925. Clean, light, and easy to drink. A great entry point for first-time makgeolli drinkers.",
+      "oneLiner": "Korea's classic starter",
+      "tasteProfile": {
+        "sweet": 45,
+        "dry": 55,
+        "fruity": 20,
+        "earthy": 55,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Light Lager",
+        "description": "If you like easy-drinking lagers, start with this approachable rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Bindaetteok",
+          "nameKo": "빈대떡",
+          "description": "Bindaetteok"
+        },
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Sundae",
+          "nameKo": "순대",
+          "description": "Sundae"
+        }
+      ],
+      "tags": "balanced, light, classic, beginner-friendly",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "clean_crisp",
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "지평 막걸리 한 병 주세요",
+          "romanized": "Jipyeong makgeolli han byeong juseyo",
+          "english": "One bottle of Jipyeong makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-sparkling",
+      "name": "Damgeumju Sparkling Makgeolli",
+      "nameKo": "담금주 스파클링 막걸리",
+      "category": "makgeolli",
+      "subcategory": "sparkling",
+      "abv": 7.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Seoul",
+      "brewery": "Seoul Makgeolli Co.",
+      "description": "A modern sparkling makgeolli with fine bubbles and bright acidity. Served chilled in a wine glass, it bridges traditional rice wine and contemporary cocktail culture.",
+      "oneLiner": "Bubbly rice prosecco",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 75,
+        "earthy": 0,
+        "acidic": 35
+      },
+      "westernMatch": {
+        "similar": "Prosecco",
+        "description": "If you like prosecco, try this sparkling Korean rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Cheese Plate",
+          "nameKo": "치즈 플레이트",
+          "description": "Cheese Plate"
+        },
+        {
+          "name": "Tteokbokki",
+          "nameKo": "떡볶이",
+          "description": "Tteokbokki"
+        },
+        {
+          "name": "Hwajeon",
+          "nameKo": "화전",
+          "description": "Hwajeon"
+        }
+      ],
+      "tags": "sparkling, fruity, modern, refreshing",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "스파클링 막걸리 한 잔 주세요",
+          "romanized": "Seupakeulling makgeolli han jan juseyo",
+          "english": "One glass of sparkling makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-geumjeongsanseong",
+      "name": "Geumjeongsanseong Makgeolli",
+      "nameKo": "금정산성 막걸리",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 8.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Busan",
+      "brewery": "Geumjeongsanseong Tosanju",
+      "description": "A robust makgeolli from Busan made with 100% rice and hand-pressed nuruk (traditional fermentation starter). 500 years of tradition packed into every sip. Fuller body and higher ABV than typical makgeolli.",
+      "oneLiner": "500 years of Busan soul",
+      "tasteProfile": {
+        "sweet": 40,
+        "dry": 60,
+        "fruity": 20,
+        "earthy": 85,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Belgian Witbier",
+        "description": "If you like full-bodied Belgian wheat beer, try this rich rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Dongnae Pajeon",
+          "nameKo": "동래파전",
+          "description": "Dongnae Pajeon"
+        },
+        {
+          "name": "Dwaeji Gukbap",
+          "nameKo": "돼지국밥",
+          "description": "Dwaeji Gukbap"
+        },
+        {
+          "name": "Ssiat Hotteok",
+          "nameKo": "씨앗호떡",
+          "description": "Ssiat Hotteok"
+        }
+      ],
+      "tags": "traditional, strong, full-bodied, heritage",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "금정산성 막걸리 한 병 주세요",
+          "romanized": "Geumjeongsanseong makgeolli han byeong juseyo",
+          "english": "One bottle of Geumjeongsanseong makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-seouljangsoo",
+      "name": "Seoul Jangsoo Makgeolli",
+      "nameKo": "서울 장수 생막걸리",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "Seoul Takju",
+      "description": "The most iconic draft makgeolli in Seoul, found at every traditional Korean pub. Affordable, refreshing, and the go-to drink for a classic Korean drinking experience.",
+      "oneLiner": "Seoul's go-to pub drink",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 15,
+        "earthy": 50,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Draft Beer (Pint)",
+        "description": "If you like ordering a draft pint at the pub, this is the Korean equivalent"
+      },
+      "foodPairings": [
+        {
+          "name": "Pajeon",
+          "nameKo": "파전",
+          "description": "Pajeon"
+        },
+        {
+          "name": "Gamja Jeon",
+          "nameKo": "감자전",
+          "description": "Gamja Jeon"
+        },
+        {
+          "name": "Sundae",
+          "nameKo": "순대",
+          "description": "Sundae"
+        }
+      ],
+      "tags": "classic, affordable, beginner-friendly, pub-staple",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "clean_crisp",
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "장수 막걸리 한 주전자 주세요",
+          "romanized": "Jangsoo makgeolli han jujeonja juseyo",
+          "english": "One kettle of Jangsoo makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-ihwaju",
+      "name": "Ihwaju (Pear Blossom Wine)",
+      "nameKo": "이화주",
+      "category": "makgeolli",
+      "subcategory": "unfiltered",
+      "abv": 6.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Kooksoondang",
+      "description": "A restored Goryeo-dynasty recipe. Extremely thick and spoonable -- more like a rice pudding than a drink. Sweet-sour balance with rich grain aroma. A truly unique tasting experience.",
+      "oneLiner": "Spoonable rice pudding wine",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 0,
+        "fruity": 50,
+        "earthy": 75,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Dessert Wine (Sauternes)",
+        "description": "If you like thick, sweet dessert wines, this spoonable rice wine is an adventure"
+      },
+      "foodPairings": [
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        },
+        {
+          "name": "Yakgwa",
+          "nameKo": "약과",
+          "description": "Yakgwa"
+        },
+        {
+          "name": "Gotgam",
+          "nameKo": "곶감",
+          "description": "Gotgam"
+        }
+      ],
+      "tags": "sweet, thick, historic, unique-experience",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "adventurous",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "이화주 한 병 주세요",
+          "romanized": "Ihwaju han byeong juseyo",
+          "english": "One bottle of Ihwaju, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-wolmae",
+      "name": "Wolmae Makgeolli",
+      "nameKo": "월매 막걸리",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "Seoul Takju",
+      "description": "Another Seoul classic, lighter and slightly sweeter than Jangsoo. Named after a character from the famous Korean folktale Chunhyangjeon. Easy drinking and widely available.",
+      "oneLiner": "Light and easygoing",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 45,
+        "fruity": 25,
+        "earthy": 25,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Light Ale (Kolsch)",
+        "description": "If you like light, easy-drinking ales like Kolsch, this is a great casual rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Sundae",
+          "nameKo": "순대",
+          "description": "Sundae"
+        },
+        {
+          "name": "Jokbal",
+          "nameKo": "족발",
+          "description": "Jokbal"
+        },
+        {
+          "name": "Tteokbokki",
+          "nameKo": "떡볶이",
+          "description": "Tteokbokki"
+        }
+      ],
+      "tags": "light, casual, affordable, classic",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "월매 막걸리 한 병 주세요",
+          "romanized": "Wolmae makgeolli han byeong juseyo",
+          "english": "One bottle of Wolmae makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-gyeongtak-rose",
+      "name": "Gyeongtakju Rose 12",
+      "nameKo": "경탁주 로제 12도",
+      "category": "makgeolli",
+      "subcategory": "modern",
+      "abv": 12.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Gyeongtakju",
+      "description": "A stunning pink makgeolli naturally colored with Korean red rice -- no artificial coloring. Higher ABV at 12% gives it wine-like depth. Beautiful to look at and even better to drink.",
+      "oneLiner": "Instagram-worthy pink rice wine",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 80,
+        "earthy": 25,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Rose Wine",
+        "description": "If you like rose wine, this pink rice wine is a must-try"
+      },
+      "foodPairings": [
+        {
+          "name": "Cheese Plate",
+          "nameKo": "치즈 플레이트",
+          "description": "Cheese Plate"
+        },
+        {
+          "name": "Salad",
+          "nameKo": "샐러드",
+          "description": "Salad"
+        },
+        {
+          "name": "Hwajeon",
+          "nameKo": "화전",
+          "description": "Hwajeon"
+        }
+      ],
+      "tags": "modern, fruity, instagram-worthy, premium",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "경탁주 로제 한 병 주세요",
+          "romanized": "Gyeongtakju roje han byeong juseyo",
+          "english": "One bottle of Gyeongtakju Rose, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-golmok",
+      "name": "Golmok Makgeolli",
+      "nameKo": "골목 막걸리",
+      "category": "makgeolli",
+      "subcategory": "modern",
+      "abv": 5.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Seoul",
+      "brewery": "Golmok Brewing",
+      "description": "A trendy craft makgeolli from a Seoul micro-brewery. Clean, crisp, and slightly carbonated. Popular among young Koreans and a bridge between craft beer and traditional makgeolli.",
+      "oneLiner": "Craft beer meets makgeolli",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 50,
+        "earthy": 25,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Craft Cider",
+        "description": "If you like dry craft cider, this crisp makgeolli hits the same spot"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Tteokbokki",
+          "nameKo": "떡볶이",
+          "description": "Tteokbokki"
+        },
+        {
+          "name": "Gimbap",
+          "nameKo": "김밥",
+          "description": "Gimbap"
+        }
+      ],
+      "tags": "modern, crisp, craft, trendy",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "골목 막걸리 한 병 주세요",
+          "romanized": "Golmok makgeolli han byeong juseyo",
+          "english": "One bottle of Golmok makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-jirangigyo",
+      "name": "Jirangjigyo Makgeolli",
+      "nameKo": "지란지교 막걸리",
+      "category": "makgeolli",
+      "subcategory": "modern",
+      "abv": 9.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Chungcheong-do",
+      "brewery": "Jirangjigyo Brewery",
+      "description": "A premium makgeolli named after a Chinese proverb meaning 'friendship like orchid and iris.' Rich flavor with floral notes and higher alcohol content. Great for sharing among friends.",
+      "oneLiner": "Share among friends",
+      "tasteProfile": {
+        "sweet": 55,
+        "dry": 45,
+        "fruity": 45,
+        "earthy": 55,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Belgian Tripel",
+        "description": "If you like complex Belgian ales, this high-ABV makgeolli has similar depth"
+      },
+      "foodPairings": [
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Dubu Jeon",
+          "nameKo": "두부전",
+          "description": "Dubu Jeon"
+        },
+        {
+          "name": "Haemul Pajeon",
+          "nameKo": "해물파전",
+          "description": "Haemul Pajeon"
+        }
+      ],
+      "tags": "premium, floral, strong, sharing",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "지란지교 한 병 주세요",
+          "romanized": "Jirangjigyo han byeong juseyo",
+          "english": "One bottle of Jirangjigyo, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-hwayo-41",
+      "name": "Hwayo 41",
+      "nameKo": "화요 41",
+      "category": "soju",
+      "subcategory": "premium",
+      "abv": 41.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Kwangjuyo",
+      "description": "A premium distilled soju from Kwangjuyo, the renowned Korean ceramics company that has been crafting fine pottery for over 40 years. Made from 100% Korean rice and distilled through a meticulous process that yields extraordinary purity -- clean, smooth, with a subtle grain sweetness at 41% ABV. Served in Kwangjuyo's own handcrafted ceramic cups, Hwayo bridges Korea's pottery heritage and its distilling tradition in one elegant experience.",
+      "oneLiner": "Korea's finest rice spirit",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 25,
+        "earthy": 50,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Premium Vodka (Grey Goose)",
+        "description": "If you like premium vodka, try this refined rice spirit"
+      },
+      "foodPairings": [
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Sashimi",
+          "nameKo": "회",
+          "description": "Sashimi"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        }
+      ],
+      "tags": "dry, strong, premium, clean",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "room",
+      "featured": true,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "화요 41 한 병 주세요",
+          "romanized": "Hwayo sasib-il han byeong juseyo",
+          "english": "One bottle of Hwayo 41, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-hwayo-25",
+      "name": "Hwayo 25",
+      "nameKo": "화요 25",
+      "category": "soju",
+      "subcategory": "premium",
+      "abv": 25.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Kwangjuyo",
+      "description": "The most approachable Hwayo, at 25% ABV. Smooth and mild with a clean rice sweetness. Perfect for those who want to explore premium soju without the high alcohol punch.",
+      "oneLiner": "Smooth premium gateway",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 25,
+        "earthy": 25,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Smooth Vodka (Belvedere)",
+        "description": "If you like smooth, sippable vodka, this lower-proof soju is an easy entry"
+      },
+      "foodPairings": [
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Jokbal",
+          "nameKo": "족발",
+          "description": "Jokbal"
+        },
+        {
+          "name": "Haemul Pajeon",
+          "nameKo": "해물파전",
+          "description": "Haemul Pajeon"
+        }
+      ],
+      "tags": "smooth, premium, mild, beginner-friendly",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "화요 25 한 병 주세요",
+          "romanized": "Hwayo isib-o han byeong juseyo",
+          "english": "One bottle of Hwayo 25, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-andong",
+      "name": "Andong Soju",
+      "nameKo": "안동소주",
+      "category": "soju",
+      "subcategory": "traditional",
+      "abv": 45.0,
+      "volume": "400ml",
+      "productionType": "artisanal",
+      "region": "Andong",
+      "brewery": "Andong Soju",
+      "description": "Traditional distilled soju from Andong, handcrafted by master distiller Cho Ok-hwa using the sojutgori (traditional copper still) method passed down for centuries. Rich and complex at 45% ABV, with deep grain aromatics developed through a double-distillation process unique to the Andong region. Designated as Gyeongsangbuk-do Intangible Cultural Heritage, this spirit survived Japanese colonial prohibition and remains a symbol of Korean distilling resilience.",
+      "oneLiner": "Heritage soju, centuries old",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 0,
+        "earthy": 100,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Single Malt Whisky",
+        "description": "If you like complex whisky, try this heritage Korean spirit"
+      },
+      "foodPairings": [
+        {
+          "name": "Jjimdak",
+          "nameKo": "찜닭",
+          "description": "Jjimdak"
+        },
+        {
+          "name": "Dried Fish",
+          "nameKo": "마른안주",
+          "description": "Dried Fish"
+        },
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        }
+      ],
+      "tags": "strong, earthy, heritage, complex",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "안동소주 한 잔 주세요",
+          "romanized": "Andong-soju han jan juseyo",
+          "english": "One glass of Andong soju, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-andong-ilpum-gold",
+      "name": "Ilpum Andong Soju Gold 40",
+      "nameKo": "일품 안동소주 골드 40",
+      "category": "soju",
+      "subcategory": "premium",
+      "abv": 40.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Andong",
+      "brewery": "Andong Soju",
+      "description": "A premium oak-aged Andong soju. Grain aroma blended with oak barrel aging creates a smooth, whisky-like finish. 40% ABV but drinks remarkably gentle.",
+      "oneLiner": "Oak-aged Korean whisky cousin",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 25,
+        "earthy": 75,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Aged Bourbon",
+        "description": "If you like oak-aged bourbon, this barrel-blended Korean soju has similar warmth"
+      },
+      "foodPairings": [
+        {
+          "name": "Jjimdak",
+          "nameKo": "찜닭",
+          "description": "Jjimdak"
+        },
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        }
+      ],
+      "tags": "oak-aged, premium, smooth, complex",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "일품 안동소주 골드 한 병 주세요",
+          "romanized": "Ilpum Andong-soju goldeu han byeong juseyo",
+          "english": "One bottle of Ilpum Andong Soju Gold, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-hallasan",
+      "name": "Hallasan Soju",
+      "nameKo": "한라산 소주",
+      "category": "soju",
+      "subcategory": "commercial",
+      "abv": 21.0,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Jeju",
+      "brewery": "Hallasan Corp",
+      "description": "Jeju Island's local soju, made with water from Hallasan volcano's underground springs. Slightly softer and cleaner than mainland soju. A must-try while visiting Jeju.",
+      "oneLiner": "Jeju's volcanic soju",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 0,
+        "earthy": 40,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Vodka Soda",
+        "description": "If you drink vodka sodas, try this clean Korean spirit neat or with a mixer"
+      },
+      "foodPairings": [
+        {
+          "name": "Heuk Dwaeji",
+          "nameKo": "흑돼지",
+          "description": "Heuk Dwaeji"
+        },
+        {
+          "name": "Galchi Jorim",
+          "nameKo": "갈치조림",
+          "description": "Galchi Jorim"
+        },
+        {
+          "name": "Jeonbokjuk",
+          "nameKo": "전복죽",
+          "description": "Jeonbokjuk"
+        }
+      ],
+      "tags": "regional, clean, volcanic-water, jeju",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique",
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "한라산 한 병 주세요",
+          "romanized": "Hallasan han byeong juseyo",
+          "english": "One bottle of Hallasan, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-cham-yi-sul",
+      "name": "Chamisul Fresh",
+      "nameKo": "참이슬 후레쉬",
+      "category": "soju",
+      "subcategory": "commercial",
+      "abv": 16.5,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "HiteJinro",
+      "description": "The world's best-selling spirit by volume. This is what most Koreans drink nightly at BBQ restaurants and bars. Not a craft spirit, but an essential Korean cultural experience.",
+      "oneLiner": "World's best-selling spirit",
+      "tasteProfile": {
+        "sweet": 20,
+        "dry": 80,
+        "fruity": 0,
+        "earthy": 20,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "House Vodka",
+        "description": "If you drink well vodka, this is Korea's universal spirit -- order it to drink like a local"
+      },
+      "foodPairings": [
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Gopchang",
+          "nameKo": "곱창",
+          "description": "Gopchang"
+        },
+        {
+          "name": "Budae Jjigae",
+          "nameKo": "부대찌개",
+          "description": "Budae Jjigae"
+        }
+      ],
+      "tags": "classic, affordable, cultural-staple, ubiquitous",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "참이슬 한 병 주세요",
+          "romanized": "Chamisul han byeong juseyo",
+          "english": "One bottle of Chamisul, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-munbaeju",
+      "name": "Munbaeju",
+      "nameKo": "문배주",
+      "category": "distilledSpirit",
+      "subcategory": "heritage",
+      "abv": 40.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Seoul",
+      "brewery": "Munbaeju Brewery",
+      "description": "Designated as Important Intangible Cultural Heritage No. 86-1. Made from wheat, millet, and sorghum -- no fruit is used, yet it has a mysterious pear-like aroma (munbae = wild pear). Served at the 2000 Inter-Korean Summit.",
+      "oneLiner": "Mysterious pear-scented spirit",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 50,
+        "earthy": 75,
+        "acidic": 10
+      },
+      "westernMatch": {
+        "similar": "Grappa",
+        "description": "If you like Italian grappa's aromatic complexity, Munbaeju's mysterious pear scent will fascinate you"
+      },
+      "foodPairings": [
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        },
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        },
+        {
+          "name": "Songpyeon",
+          "nameKo": "송편",
+          "description": "Songpyeon"
+        }
+      ],
+      "tags": "heritage, aromatic, historic, premium",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": true,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "문배주 한 잔 주세요",
+          "romanized": "Munbaeju han jan juseyo",
+          "english": "One glass of Munbaeju, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-igangju",
+      "name": "Igangju",
+      "nameKo": "이강주",
+      "category": "distilledSpirit",
+      "subcategory": "heritage",
+      "abv": 25.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jeonju",
+      "brewery": "Igangju Brewery",
+      "description": "One of the Three Great Wines of Joseon Dynasty. Infused with pear, ginger, turmeric, and honey. Complex layers of sweetness, spice, and warmth. A true taste of Korean history.",
+      "oneLiner": "Joseon Dynasty's finest",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 75,
+        "earthy": 50,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Spiced Rum",
+        "description": "If you like spiced rum's warmth and sweetness, Igangju's pear-ginger infusion is a revelation"
+      },
+      "foodPairings": [
+        {
+          "name": "Bibimbap",
+          "nameKo": "비빔밥",
+          "description": "Bibimbap"
+        },
+        {
+          "name": "Kongnamul Gukbap",
+          "nameKo": "콩나물국밥",
+          "description": "Kongnamul Gukbap"
+        },
+        {
+          "name": "Jeonju Hanjeongsik",
+          "nameKo": "전주한정식",
+          "description": "Jeonju Hanjeongsik"
+        }
+      ],
+      "tags": "heritage, sweet, spiced, historic",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": true,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "이강주 한 잔 주세요",
+          "romanized": "Igangju han jan juseyo",
+          "english": "One glass of Igangju, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-gamhongro",
+      "name": "Gamhongro",
+      "nameKo": "감홍로",
+      "category": "distilledSpirit",
+      "subcategory": "heritage",
+      "abv": 40.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Seoul",
+      "brewery": "Gamhongro Lee Ki-sook",
+      "description": "One of the Three Great Wines of Joseon, meaning 'sweet red dew.' Triple-distilled and infused with herbs, creating a reddish hue and complex sweet-bitter finish. Made by Food Master artisan Lee Ki-sook.",
+      "oneLiner": "Sweet red dew, triple-distilled",
+      "tasteProfile": {
+        "sweet": 45,
+        "dry": 55,
+        "fruity": 50,
+        "earthy": 80,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Amaro (Italian Bitter)",
+        "description": "If you like Italian amaro's herbal complexity, Gamhongro offers a similar bitter-sweet journey"
+      },
+      "foodPairings": [
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        },
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        }
+      ],
+      "tags": "heritage, herbal, historic, triple-distilled",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "감홍로 한 잔 주세요",
+          "romanized": "Gamhongro han jan juseyo",
+          "english": "One glass of Gamhongro, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-gosorisul",
+      "name": "Gosorisul",
+      "nameKo": "고소리술",
+      "category": "distilledSpirit",
+      "subcategory": "heritage",
+      "abv": 40.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jeju",
+      "brewery": "Jeju Gosorisul",
+      "description": "Jeju's traditional distilled spirit, Intangible Cultural Heritage of Jeju. Made from millet with a sweet grain aroma and surprisingly gentle feel despite 40% ABV. 'Gosori' refers to the traditional Jeju still.",
+      "oneLiner": "Jeju's millet moonshine",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 25,
+        "earthy": 75,
+        "acidic": 10
+      },
+      "westernMatch": {
+        "similar": "Mezcal",
+        "description": "If you like mezcal's earthy, artisanal character, Gosorisul has similar craft spirit depth"
+      },
+      "foodPairings": [
+        {
+          "name": "Heuk Dwaeji",
+          "nameKo": "흑돼지",
+          "description": "Heuk Dwaeji"
+        },
+        {
+          "name": "Jeonbokjuk",
+          "nameKo": "전복죽",
+          "description": "Jeonbokjuk"
+        },
+        {
+          "name": "Okdom Gui",
+          "nameKo": "옥돔구이",
+          "description": "Okdom Gui"
+        }
+      ],
+      "tags": "heritage, jeju, earthy, artisanal",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "고소리술 한 잔 주세요",
+          "romanized": "Gosorisul han jan juseyo",
+          "english": "One glass of Gosorisul, please"
+        }
+      ]
+    },
+    {
+      "id": "cheongju-gyeongju-beopju",
+      "name": "Gyeongju Beopju",
+      "nameKo": "경주법주",
+      "category": "cheongju",
+      "subcategory": "traditional",
+      "abv": 16.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeongju",
+      "brewery": "Gyeongju Beopju",
+      "description": "Korea's most celebrated cheongju (clear rice wine), brewed by the Choi family of Gyeongju for over 300 years across multiple generations. Designated as Important Intangible Cultural Heritage No. 86-3, it uses a secret nuruk recipe passed down through the family. Refined and elegant with a golden hue, it was traditionally served at ancestral rites and royal banquets -- a living thread connecting modern Korea to the Silla Dynasty.",
+      "oneLiner": "300 years of refined elegance",
+      "tasteProfile": {
+        "sweet": 45,
+        "dry": 55,
+        "fruity": 20,
+        "earthy": 70,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Sake (Junmai Daiginjo)",
+        "description": "If you like premium sake, you'll appreciate this refined Korean rice wine"
+      },
+      "foodPairings": [
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        },
+        {
+          "name": "Hangwa",
+          "nameKo": "한과",
+          "description": "Hangwa"
+        }
+      ],
+      "tags": "elegant, traditional, heritage, earthy",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "warm",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "경주법주 한 병 주세요",
+          "romanized": "Gyeongju-beopju han byeong juseyo",
+          "english": "One bottle of Gyeongju Beopju, please"
+        }
+      ]
+    },
+    {
+      "id": "cheongju-kooksoondang",
+      "name": "Kooksoondang Cheongju",
+      "nameKo": "국순당 청주",
+      "category": "cheongju",
+      "subcategory": "modern",
+      "abv": 15.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Chungcheong-do",
+      "brewery": "Kooksoondang",
+      "description": "A widely available premium cheongju. Crystal clear with a delicate rice aroma and clean finish. Good for those exploring Korean clear rice wine for the first time.",
+      "oneLiner": "Korean sake, crystal clear",
+      "tasteProfile": {
+        "sweet": 40,
+        "dry": 60,
+        "fruity": 20,
+        "earthy": 55,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Sake (Junmai)",
+        "description": "If you like everyday-quality sake, this is a great Korean equivalent"
+      },
+      "foodPairings": [
+        {
+          "name": "Saengseon Gui",
+          "nameKo": "생선구이",
+          "description": "Saengseon Gui"
+        },
+        {
+          "name": "Jeon",
+          "nameKo": "전",
+          "description": "Jeon"
+        },
+        {
+          "name": "Haemul Jeon",
+          "nameKo": "해물전",
+          "description": "Haemul Jeon"
+        }
+      ],
+      "tags": "clean, elegant, beginner-friendly, classic",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "국순당 청주 한 병 주세요",
+          "romanized": "Kooksoondang cheongju han byeong juseyo",
+          "english": "One bottle of Kooksoondang cheongju, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-hansan-sogokju",
+      "name": "Hansan Sogokju",
+      "nameKo": "한산소곡주",
+      "category": "yakju",
+      "subcategory": "traditional",
+      "abv": 18.0,
+      "volume": "700ml",
+      "productionType": "artisanal",
+      "region": "Seocheon",
+      "brewery": "Hansan Sogokju",
+      "description": "Called 'the wine that makes you sit down' because it's so delicious you can't stop drinking. Sweet, umami-rich yakju (medicinal wine) from Chungnam province, with 1,500 years of history. Exported to the US and Japan.",
+      "oneLiner": "The sit-down wine",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 50,
+        "earthy": 75,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Sweet Sherry (Cream)",
+        "description": "If you like sweet sherry's depth, Sogokju's rich umami sweetness is equally addictive"
+      },
+      "foodPairings": [
+        {
+          "name": "Hongeojjim",
+          "nameKo": "홍어찜",
+          "description": "Hongeojjim"
+        },
+        {
+          "name": "Kimchi Jjigae",
+          "nameKo": "김치찌개",
+          "description": "Kimchi Jjigae"
+        },
+        {
+          "name": "Dotorimuk",
+          "nameKo": "도토리묵",
+          "description": "Dotorimuk"
+        }
+      ],
+      "tags": "sweet, umami, heritage, addictive",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "room",
+      "featured": true,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "한산소곡주 한 병 주세요",
+          "romanized": "Hansan-sogokju han byeong juseyo",
+          "english": "One bottle of Hansan Sogokju, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-baekseju",
+      "name": "Baekseju",
+      "nameKo": "백세주",
+      "category": "yakju",
+      "subcategory": "herbal",
+      "abv": 13.0,
+      "volume": "375ml",
+      "productionType": "massProduced",
+      "region": "Chungcheong-do",
+      "brewery": "Kooksoondang",
+      "description": "Meaning '100-year wine,' this herbal rice wine is infused with 12 herbs and ginseng. Nutty, slightly medicinal flavor. A staple at Korean BBQ restaurants, often ordered as a lighter alternative to soju.",
+      "oneLiner": "100-year herbal rice wine",
+      "tasteProfile": {
+        "sweet": 55,
+        "dry": 45,
+        "fruity": 15,
+        "earthy": 80,
+        "acidic": 10
+      },
+      "westernMatch": {
+        "similar": "Vermouth",
+        "description": "If you like herbal vermouth, Baekseju's ginseng-infused flavor is a Korean parallel"
+      },
+      "foodPairings": [
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Bulgogi",
+          "nameKo": "불고기",
+          "description": "Bulgogi"
+        },
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        }
+      ],
+      "tags": "herbal, ginseng, classic, health-drink",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "백세주 한 병 주세요",
+          "romanized": "Baekseju han byeong juseyo",
+          "english": "One bottle of Baekseju, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-chuseongju",
+      "name": "Chuseongju",
+      "nameKo": "추성주",
+      "category": "yakju",
+      "subcategory": "herbal",
+      "abv": 15.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Damyang",
+      "brewery": "Chuseongju Brewery",
+      "description": "An herbal rice wine from Damyang, infused with omija (five-flavor berry) and eucommia bark. Comes in a distinctive bamboo-shaped bottle. Complex medicinal-sweet flavor with beautiful amber color.",
+      "oneLiner": "Herbal in bamboo bottle",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 55,
+        "earthy": 70,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Fernet (Herbal Liqueur)",
+        "description": "If you like herbal digestifs, Chuseongju's medicinal complexity is worth exploring"
+      },
+      "foodPairings": [
+        {
+          "name": "Jangeo Gui",
+          "nameKo": "장어구이",
+          "description": "Jangeo Gui"
+        },
+        {
+          "name": "Tteokgalbi",
+          "nameKo": "떡갈비",
+          "description": "Tteokgalbi"
+        },
+        {
+          "name": "Dak Baeksuk",
+          "nameKo": "닭백숙",
+          "description": "Dak Baeksuk"
+        }
+      ],
+      "tags": "herbal, medicinal, bamboo-bottle, complex",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "추성주 한 병 주세요",
+          "romanized": "Chuseongju han byeong juseyo",
+          "english": "One bottle of Chuseongju, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-sansachun",
+      "name": "Sansachun",
+      "nameKo": "산사춘",
+      "category": "yakju",
+      "subcategory": "fruit-infused",
+      "abv": 14.0,
+      "volume": "375ml",
+      "productionType": "massProduced",
+      "region": "Chungcheong-do",
+      "brewery": "Bae Sang Myun Brewery",
+      "description": "A red-tinted rice wine made with Chinese hawthorn berries. Sweet, tart, and fruity with a refreshing finish. Considered a 'medicinal alcohol' for over 400 years. Easy to find at most Korean restaurants.",
+      "oneLiner": "Berry-tart and refreshing",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 70,
+        "earthy": 25,
+        "acidic": 45
+      },
+      "westernMatch": {
+        "similar": "Sangria",
+        "description": "If you like fruity sangria, Sansachun's sweet-tart berry flavor is an easy match"
+      },
+      "foodPairings": [
+        {
+          "name": "Jeon",
+          "nameKo": "전",
+          "description": "Jeon"
+        },
+        {
+          "name": "Salad",
+          "nameKo": "샐러드",
+          "description": "Salad"
+        },
+        {
+          "name": "Mandu",
+          "nameKo": "만두",
+          "description": "Mandu"
+        }
+      ],
+      "tags": "fruity, sweet, tart, beginner-friendly",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "산사춘 한 병 주세요",
+          "romanized": "Sansachun han byeong juseyo",
+          "english": "One bottle of Sansachun, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-maehwasu",
+      "name": "Maehwasu Plum Wine",
+      "nameKo": "매화수",
+      "category": "fruitWine",
+      "subcategory": "plum",
+      "abv": 14.0,
+      "volume": "375ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "Lotte",
+      "description": "A Korean plum wine made with maehwa (apricot blossom) extract, distinct from Japanese umeshu which uses ume plum. Delicate floral sweetness with a lighter, more perfumed character -- less syrupy than its Japanese cousin. Best enjoyed during Korea's spring maehwa festivals in Gwangyang and Yangsan, where blossoms and plum wine are a centuries-old pairing.",
+      "oneLiner": "Sweet plum aperitif",
+      "tasteProfile": {
+        "sweet": 90,
+        "dry": 10,
+        "fruity": 95,
+        "earthy": 5,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Japanese Umeshu",
+        "description": "If you like umeshu (plum wine), try this Korean version"
+      },
+      "foodPairings": [
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        },
+        {
+          "name": "Fruit Platter",
+          "nameKo": "과일",
+          "description": "Fruit Platter"
+        },
+        {
+          "name": "Yugwa",
+          "nameKo": "유과",
+          "description": "Yugwa"
+        }
+      ],
+      "tags": "sweet, fruity, floral, refreshing",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "매화수 한 잔 주세요",
+          "romanized": "Maehwasu han jan juseyo",
+          "english": "One glass of plum wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-bokbunja",
+      "name": "Bokbunjaju (Black Raspberry Wine)",
+      "nameKo": "복분자주",
+      "category": "fruitWine",
+      "subcategory": "berry",
+      "abv": 15.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gochang",
+      "brewery": "Gochang Bokbunja",
+      "description": "A deep ruby wine made from Korean black raspberries (bokbunja). Rich berry aroma, sweet-tart balance, and believed to have health-boosting properties. Available at every convenience store.",
+      "oneLiner": "Deep ruby berry wine",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 100,
+        "earthy": 25,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Port Wine",
+        "description": "If you like ruby port's berry richness, Bokbunjaju has similar depth at lower ABV"
+      },
+      "foodPairings": [
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        },
+        {
+          "name": "Dark Chocolate",
+          "nameKo": "다크 초콜릿",
+          "description": "Dark Chocolate"
+        },
+        {
+          "name": "Hangwa",
+          "nameKo": "한과",
+          "description": "Hangwa"
+        }
+      ],
+      "tags": "berry, sweet, health, deep-ruby",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "복분자주 한 잔 주세요",
+          "romanized": "Bokbunjaju han jan juseyo",
+          "english": "One glass of black raspberry wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-maesilju",
+      "name": "Maesilju (Green Plum Wine)",
+      "nameKo": "매실주",
+      "category": "fruitWine",
+      "subcategory": "plum",
+      "abv": 14.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Hadong",
+      "brewery": "Hadong Maesilju",
+      "description": "Made from Korean green plums (maesil), this is one of Korea's most beloved fruit wines. Sweet-sour with a bright, refreshing finish. Different from Japanese umeshu -- lighter and more tart.",
+      "oneLiner": "Tart green plum classic",
+      "tasteProfile": {
+        "sweet": 70,
+        "dry": 30,
+        "fruity": 95,
+        "earthy": 5,
+        "acidic": 70
+      },
+      "westernMatch": {
+        "similar": "Limoncello",
+        "description": "If you like limoncello's sweet-tart citrus kick, maesilju's plum tanginess is a perfect match"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Mandu",
+          "nameKo": "만두",
+          "description": "Mandu"
+        },
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        }
+      ],
+      "tags": "tart, sweet, refreshing, classic",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "매실주 한 잔 주세요",
+          "romanized": "Maesilju han jan juseyo",
+          "english": "One glass of green plum wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-omijaju",
+      "name": "Myungjak Omijaju",
+      "nameKo": "명작 오미자주",
+      "category": "fruitWine",
+      "subcategory": "berry",
+      "abv": 13.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Mungyeong",
+      "brewery": "Kooksoondang",
+      "description": "Made from omija (Schisandra, the 'five-flavor berry') -- sweet, sour, salty, bitter, and pungent all in one sip. A naturally fermented wine with beautiful pink color and complex taste experience.",
+      "oneLiner": "Five flavors in one sip",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 75,
+        "earthy": 50,
+        "acidic": 50
+      },
+      "westernMatch": {
+        "similar": "Gewurztraminer Wine",
+        "description": "If you like aromatic white wines, omijaju's complex flavor profile will intrigue you"
+      },
+      "foodPairings": [
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        },
+        {
+          "name": "Fruit Platter",
+          "nameKo": "과일",
+          "description": "Fruit Platter"
+        },
+        {
+          "name": "Songpyeon",
+          "nameKo": "송편",
+          "description": "Songpyeon"
+        }
+      ],
+      "tags": "five-flavor, complex, aromatic, unique",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "오미자주 한 잔 주세요",
+          "romanized": "Omijaju han jan juseyo",
+          "english": "One glass of omija wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-gamgyulju",
+      "name": "Jeju Gamgyulju (Citrus Wine)",
+      "nameKo": "제주 감귤주",
+      "category": "fruitWine",
+      "subcategory": "citrus",
+      "abv": 12.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jeju",
+      "brewery": "Jeju Winery",
+      "description": "A bright, aromatic wine made from Jeju Island's famous tangerines. Citrusy, fresh, and slightly sweet. Perfect souvenir from Jeju and a refreshing summer drink.",
+      "oneLiner": "Jeju sunshine in a glass",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 100,
+        "earthy": 5,
+        "acidic": 50
+      },
+      "westernMatch": {
+        "similar": "Aperol Spritz",
+        "description": "If you like Aperol spritz's citrusy sweetness, Jeju tangerine wine is a natural alternative"
+      },
+      "foodPairings": [
+        {
+          "name": "Haemul Pajeon",
+          "nameKo": "해물파전",
+          "description": "Haemul Pajeon"
+        },
+        {
+          "name": "Hwoe",
+          "nameKo": "회",
+          "description": "Hwoe"
+        },
+        {
+          "name": "Jeonbokjuk",
+          "nameKo": "전복죽",
+          "description": "Jeonbokjuk"
+        }
+      ],
+      "tags": "citrus, jeju, refreshing, sweet",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "감귤주 한 잔 주세요",
+          "romanized": "Gamgyulju han jan juseyo",
+          "english": "One glass of tangerine wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-yujaju",
+      "name": "Gohung Yujaju (Yuzu Wine)",
+      "nameKo": "고흥 유자주",
+      "category": "fruitWine",
+      "subcategory": "citrus",
+      "abv": 7.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Goheung",
+      "brewery": "Goheung Yuja Farm",
+      "description": "Made from Korean yuzu (yuja) grown in Goheung, Jeollanam-do. Intensely aromatic with bright citrus notes. Low ABV makes it dangerously drinkable. Popular as a trendy new traditional drink.",
+      "oneLiner": "Aromatic yuzu delight",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 100,
+        "earthy": 0,
+        "acidic": 55
+      },
+      "westernMatch": {
+        "similar": "Yuzu Cocktail",
+        "description": "If you love yuzu in cocktails, try it in Korean wine form -- pure and unadulterated"
+      },
+      "foodPairings": [
+        {
+          "name": "Hwoe",
+          "nameKo": "회",
+          "description": "Hwoe"
+        },
+        {
+          "name": "Saengseon Jjim",
+          "nameKo": "생선찜",
+          "description": "Saengseon Jjim"
+        },
+        {
+          "name": "Haemul Pajeon",
+          "nameKo": "해물파전",
+          "description": "Haemul Pajeon"
+        }
+      ],
+      "tags": "citrus, aromatic, trendy, low-abv",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "유자주 한 잔 주세요",
+          "romanized": "Yujaju han jan juseyo",
+          "english": "One glass of yuzu wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-seokryuju",
+      "name": "Seokryu Yiyagi (Pomegranate Wine)",
+      "nameKo": "석류이야기",
+      "category": "fruitWine",
+      "subcategory": "fruit",
+      "abv": 7.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeongnam",
+      "brewery": "Co-Ho Imports",
+      "description": "A exotic pomegranate wine with deep garnet color. Tart, tannic, and slightly sweet with a wine-like body. A great alternative for grape wine lovers looking to try something Korean.",
+      "oneLiner": "Exotic pomegranate elegance",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 80,
+        "earthy": 25,
+        "acidic": 40
+      },
+      "westernMatch": {
+        "similar": "Pinot Noir (Light)",
+        "description": "If you like light-bodied red wines, this pomegranate wine has a similar elegance"
+      },
+      "foodPairings": [
+        {
+          "name": "Cheese Plate",
+          "nameKo": "치즈 플레이트",
+          "description": "Cheese Plate"
+        },
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        },
+        {
+          "name": "Hangwa",
+          "nameKo": "한과",
+          "description": "Hangwa"
+        }
+      ],
+      "tags": "tart, wine-like, exotic, premium",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "석류주 한 잔 주세요",
+          "romanized": "Seokryuju han jan juseyo",
+          "english": "One glass of pomegranate wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-meoru",
+      "name": "Meoruju (Wild Grape Wine)",
+      "nameKo": "머루주",
+      "category": "fruitWine",
+      "subcategory": "grape",
+      "abv": 12.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Muju",
+      "brewery": "Muju Wild Grape Wine",
+      "description": "Made from Korean wild grapes (meoru) that grow on mountain vines. More intense and tannic than cultivated grapes. Full-bodied with earthy, berry flavors. Korea's answer to natural wine.",
+      "oneLiner": "Korean wild terroir",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 75,
+        "earthy": 75,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Natural Wine (Gamay)",
+        "description": "If you love natural wines, meoruju's wild grape character is an authentic Korean terroir expression"
+      },
+      "foodPairings": [
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        },
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        }
+      ],
+      "tags": "wild-grape, tannic, natural, earthy",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "머루주 한 잔 주세요",
+          "romanized": "Meoruju han jan juseyo",
+          "english": "One glass of wild grape wine, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-masheobeurang",
+      "name": "Ma She Blanc",
+      "nameKo": "마셔블랑",
+      "category": "fruitWine",
+      "subcategory": "citrus",
+      "abv": 5.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Jeju",
+      "brewery": "Jejusam",
+      "description": "A refreshing sparkling citrus wine from Jeju, blending traditional makgeolli technique with tangerine. Low ABV, fizzy, and perfect for a summer day. The name is a pun on 'drink' (ma-sheo) and 'blanc.'",
+      "oneLiner": "Fizzy citrus beach drink",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 95,
+        "earthy": 0,
+        "acidic": 40
+      },
+      "westernMatch": {
+        "similar": "Hard Seltzer (Citrus)",
+        "description": "If you like citrus hard seltzers, this Korean sparkling citrus wine is a natural upgrade"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Salad",
+          "nameKo": "샐러드",
+          "description": "Salad"
+        },
+        {
+          "name": "Gimbap",
+          "nameKo": "김밥",
+          "description": "Gimbap"
+        }
+      ],
+      "tags": "sparkling, citrus, low-abv, trendy",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "마셔블랑 한 병 주세요",
+          "romanized": "Masheobeurang han byeong juseyo",
+          "english": "One bottle of Ma She Blanc, please"
+        }
+      ]
+    },
+    {
+      "id": "other-gukhwaju",
+      "name": "Gukhwaju (Chrysanthemum Wine)",
+      "nameKo": "국화주",
+      "category": "other",
+      "subcategory": "flower-wine",
+      "abv": 16.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Various",
+      "description": "A fragrant flower wine infused with chrysanthemum petals. Traditionally brewed in autumn during the chrysanthemum festival. Floral, delicate, and slightly herbal. A seasonal specialty.",
+      "oneLiner": "Autumn chrysanthemum nectar",
+      "tasteProfile": {
+        "sweet": 45,
+        "dry": 55,
+        "fruity": 55,
+        "earthy": 45,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Elderflower Liqueur (St-Germain)",
+        "description": "If you like elderflower liqueur's delicate floral character, chrysanthemum wine is its Korean counterpart"
+      },
+      "foodPairings": [
+        {
+          "name": "Songpyeon",
+          "nameKo": "송편",
+          "description": "Songpyeon"
+        },
+        {
+          "name": "Yakgwa",
+          "nameKo": "약과",
+          "description": "Yakgwa"
+        },
+        {
+          "name": "Gotgam",
+          "nameKo": "곶감",
+          "description": "Gotgam"
+        }
+      ],
+      "tags": "floral, seasonal, autumn, delicate",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "warm",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "국화주 한 잔 주세요",
+          "romanized": "Gukhwaju han jan juseyo",
+          "english": "One glass of chrysanthemum wine, please"
+        }
+      ]
+    },
+    {
+      "id": "other-dugyeonju",
+      "name": "Dugyeonju (Azalea Wine)",
+      "nameKo": "두견주",
+      "category": "other",
+      "subcategory": "flower-wine",
+      "abv": 18.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Chungju",
+      "brewery": "Dugyeonju Brewery",
+      "description": "A rare spring wine made with azalea petals, giving it a delicate pink hue. One of Korea's most romantic traditional wines. Sweet, floral, and only available in limited quantities.",
+      "oneLiner": "Rare spring azalea romance",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 50,
+        "earthy": 25,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Rose Petal Liqueur",
+        "description": "If you love floral liqueurs, this azalea-petal wine is a rare Korean treasure"
+      },
+      "foodPairings": [
+        {
+          "name": "Hwajeon",
+          "nameKo": "화전",
+          "description": "Hwajeon"
+        },
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        },
+        {
+          "name": "Yugwa",
+          "nameKo": "유과",
+          "description": "Yugwa"
+        }
+      ],
+      "tags": "floral, spring, romantic, rare",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "adventurous",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "두견주 한 잔 주세요",
+          "romanized": "Dugyeonju han jan juseyo",
+          "english": "One glass of azalea wine, please"
+        }
+      ]
+    },
+    {
+      "id": "other-dansul",
+      "name": "Dansul (Sweet Rice Drink)",
+      "nameKo": "단술 (식혜)",
+      "category": "other",
+      "subcategory": "low-alcohol",
+      "abv": 2.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Various",
+      "brewery": "Various",
+      "description": "Barely alcoholic sweet rice drink -- basically the earliest stage of the makgeolli fermentation process. Sweet, grainy, and comforting. Great for non-drinkers who want to experience Korean brewing culture.",
+      "oneLiner": "Barely boozy sweet rice",
+      "tasteProfile": {
+        "sweet": 100,
+        "dry": 0,
+        "fruity": 25,
+        "earthy": 50,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Amazake (Sweet Rice Drink)",
+        "description": "If you know Japanese amazake, dansul is its Korean cousin -- sweet, grainy, barely alcoholic"
+      },
+      "foodPairings": [
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        },
+        {
+          "name": "Hotteok",
+          "nameKo": "호떡",
+          "description": "Hotteok"
+        },
+        {
+          "name": "Yakgwa",
+          "nameKo": "약과",
+          "description": "Yakgwa"
+        }
+      ],
+      "tags": "sweet, non-alcoholic, beginner-friendly, traditional",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "단술 한 잔 주세요",
+          "romanized": "Dansul han jan juseyo",
+          "english": "One glass of sweet rice drink, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-cham-yi-sul-fruit-peach",
+      "name": "Chamisul Peach Soju",
+      "nameKo": "참이슬 복숭아",
+      "category": "soju",
+      "subcategory": "flavored",
+      "abv": 13.0,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "HiteJinro",
+      "description": "Fruit-flavored soju that started the K-soju craze worldwide. Sweet peach flavor makes this an easy entry for anyone new to Korean drinking culture. Extremely popular with international tourists.",
+      "oneLiner": "Peach candy in a bottle",
+      "tasteProfile": {
+        "sweet": 80,
+        "dry": 20,
+        "fruity": 100,
+        "earthy": 0,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Peach Schnapps",
+        "description": "If you like peach schnapps or sweet cocktails, fruit soju is an instant favorite"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Tteokbokki",
+          "nameKo": "떡볶이",
+          "description": "Tteokbokki"
+        },
+        {
+          "name": "Rabokki",
+          "nameKo": "라볶이",
+          "description": "Rabokki"
+        }
+      ],
+      "tags": "sweet, fruity, beginner-friendly, trendy",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "party",
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "복숭아 소주 한 병 주세요",
+          "romanized": "Boksunga soju han byeong juseyo",
+          "english": "One bottle of peach soju, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-cham-yi-sul-fruit-grape",
+      "name": "Chamisul Green Grape Soju",
+      "nameKo": "참이슬 청포도",
+      "category": "soju",
+      "subcategory": "flavored",
+      "abv": 13.0,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "HiteJinro",
+      "description": "Green grape flavored soju -- one of the most popular flavored soju varieties. Sweet and refreshing with a candy-like grape taste. The viral 'Korean soju' flavor that took TikTok by storm.",
+      "oneLiner": "TikTok's favorite K-soju",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 95,
+        "earthy": 0,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Grape Alcopop (like Smirnoff Ice)",
+        "description": "If you like sweet grape alcopops, this K-soju started a global craze"
+      },
+      "foodPairings": [
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Ramyeon",
+          "nameKo": "라면",
+          "description": "Ramyeon"
+        },
+        {
+          "name": "Dakgangjeong",
+          "nameKo": "닭강정",
+          "description": "Dakgangjeong"
+        }
+      ],
+      "tags": "sweet, fruity, viral, trendy",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "party"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "청포도 소주 한 병 주세요",
+          "romanized": "Cheongpodo soju han byeong juseyo",
+          "english": "One bottle of green grape soju, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-good-day",
+      "name": "Good Day Soju",
+      "nameKo": "좋은데이",
+      "category": "soju",
+      "subcategory": "commercial",
+      "abv": 16.9,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Busan",
+      "brewery": "Muhak",
+      "description": "Busan's local soju, a must-try when visiting the port city. Made with natural alkaline water. Slightly sweeter and smoother than Seoul's Chamisul. Ask any Busan local -- they'll tell you it's better.",
+      "oneLiner": "Busan's local pride",
+      "tasteProfile": {
+        "sweet": 30,
+        "dry": 70,
+        "fruity": 0,
+        "earthy": 25,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Regional Vodka",
+        "description": "Like trying the local vodka brand in any country -- a Busan drinking essential"
+      },
+      "foodPairings": [
+        {
+          "name": "Dwaeji Gukbap",
+          "nameKo": "돼지국밥",
+          "description": "Dwaeji Gukbap"
+        },
+        {
+          "name": "Milmyeon",
+          "nameKo": "밀면",
+          "description": "Milmyeon"
+        },
+        {
+          "name": "Eomuk",
+          "nameKo": "어묵",
+          "description": "Eomuk"
+        }
+      ],
+      "tags": "regional, busan, classic, smooth",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "좋은데이 한 병 주세요",
+          "romanized": "Joheundei han byeong juseyo",
+          "english": "One bottle of Good Day, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-cheoeum-cheoreom",
+      "name": "Cheoeum Cheoreom",
+      "nameKo": "처음처럼",
+      "category": "soju",
+      "subcategory": "commercial",
+      "abv": 16.5,
+      "volume": "360ml",
+      "productionType": "massProduced",
+      "region": "Gangwon-do",
+      "brewery": "Lotte Chilsung",
+      "description": "Chamisul's main rival, made with alkaline water from Gangwon-do. The name means 'like the first time.' Slightly softer on the palate. Try both and pick your side -- it's a national debate.",
+      "oneLiner": "Chamisul's eternal rival",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 0,
+        "earthy": 15,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Absolut Vodka",
+        "description": "If Chamisul is Smirnoff, Cheoeum Cheoreom is Absolut -- the eternal rivalry"
+      },
+      "foodPairings": [
+        {
+          "name": "Dakgalbi",
+          "nameKo": "닭갈비",
+          "description": "Dakgalbi"
+        },
+        {
+          "name": "Sundae",
+          "nameKo": "순대",
+          "description": "Sundae"
+        },
+        {
+          "name": "Gopchang",
+          "nameKo": "곱창",
+          "description": "Gopchang"
+        }
+      ],
+      "tags": "classic, smooth, affordable, rival",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "처음처럼 한 병 주세요",
+          "romanized": "Cheoeum-cheoreom han byeong juseyo",
+          "english": "One bottle of Cheoeum Cheoreom, please"
+        }
+      ]
+    },
+    {
+      "id": "other-somaek",
+      "name": "Somaek (Soju + Beer Bomb)",
+      "nameKo": "소맥",
+      "category": "other",
+      "subcategory": "cocktail",
+      "abv": 8.0,
+      "volume": "variable",
+      "productionType": "mixed",
+      "region": "Nationwide",
+      "brewery": "DIY",
+      "description": "Not a product but a cultural ritual: drop a shot of soju into a glass of beer. The golden ratio is 3:7 (soju:beer). Every Korean knows how to make it. Learn the technique and you'll make instant friends.",
+      "oneLiner": "Korea's ritual bomb shot",
+      "tasteProfile": {
+        "sweet": 30,
+        "dry": 70,
+        "fruity": 5,
+        "earthy": 20,
+        "acidic": 10
+      },
+      "westernMatch": {
+        "similar": "Boilermaker",
+        "description": "Like a boilermaker -- drop a shot of soju into beer and chug. Korea's favorite drinking ritual"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Samgyeopsal",
+          "nameKo": "삼겹살",
+          "description": "Samgyeopsal"
+        },
+        {
+          "name": "Dakbal",
+          "nameKo": "닭발",
+          "description": "Dakbal"
+        }
+      ],
+      "tags": "cultural, ritual, fun, social",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": true,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "party",
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "소맥 한 잔 만들어 주세요",
+          "romanized": "Somaek han jan mandeureo juseyo",
+          "english": "Can you make a somaek for me, please?"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-nuruk",
+      "name": "Nuruk Makgeolli (House Makgeolli)",
+      "nameKo": "누룩 생막걸리",
+      "category": "makgeolli",
+      "subcategory": "artisan",
+      "abv": 7.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Various",
+      "brewery": "Various Makgeolli Houses",
+      "description": "House-made makgeolli found at traditional makgeolli bars. Each place has its own recipe. Ask 'jip makgeolli isseoyo?' (Do you have house makgeolli?). The real authentic experience.",
+      "oneLiner": "Every house has its own",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 30,
+        "earthy": 70,
+        "acidic": 35
+      },
+      "westernMatch": {
+        "similar": "House Wine (Vino della Casa)",
+        "description": "Like asking for the house wine in Italy -- every place has their own character"
+      },
+      "foodPairings": [
+        {
+          "name": "Pajeon",
+          "nameKo": "파전",
+          "description": "Pajeon"
+        },
+        {
+          "name": "Bindaetteok",
+          "nameKo": "빈대떡",
+          "description": "Bindaetteok"
+        },
+        {
+          "name": "Jokbal",
+          "nameKo": "족발",
+          "description": "Jokbal"
+        }
+      ],
+      "tags": "authentic, house-made, traditional, local",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "집 막걸리 있어요?",
+          "romanized": "Jip makgeolli isseoyo?",
+          "english": "Do you have house makgeolli?"
+        }
+      ]
+    },
+    {
+      "id": "soju-hwayo-17",
+      "name": "Hwayo X Premium",
+      "nameKo": "화요 X 프리미엄",
+      "category": "soju",
+      "subcategory": "premium",
+      "abv": 17.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Kwangjuyo",
+      "description": "The lightest in the Hwayo lineup at 17% ABV. Designed for easy sipping, smooth enough to drink neat or on the rocks. A gateway to premium Korean soju for craft cocktail enthusiasts.",
+      "oneLiner": "Gateway to premium soju",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 50,
+        "earthy": 25,
+        "acidic": 10
+      },
+      "westernMatch": {
+        "similar": "Light Sipping Spirit",
+        "description": "If you like sipping light spirits on the rocks, Hwayo X is a refined choice"
+      },
+      "foodPairings": [
+        {
+          "name": "Hwoe",
+          "nameKo": "회",
+          "description": "Hwoe"
+        },
+        {
+          "name": "Saengseon Gui",
+          "nameKo": "생선구이",
+          "description": "Saengseon Gui"
+        },
+        {
+          "name": "Jeon",
+          "nameKo": "전",
+          "description": "Jeon"
+        }
+      ],
+      "tags": "premium, smooth, light, cocktail-friendly",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "화요 엑스 한 병 주세요",
+          "romanized": "Hwayo ekseu han byeong juseyo",
+          "english": "One bottle of Hwayo X, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-hwayo-53",
+      "name": "Hwayo 53",
+      "nameKo": "화요 53",
+      "category": "distilledSpirit",
+      "subcategory": "premium",
+      "abv": 53.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Gyeonggi-do",
+      "brewery": "Kwangjuyo",
+      "description": "The pinnacle of Hwayo's range at 53% ABV. Crystal clear and intensely pure. Despite the high proof, it goes down with surprising grace. For serious spirit enthusiasts only.",
+      "oneLiner": "For serious spirit lovers",
+      "tasteProfile": {
+        "sweet": 0,
+        "dry": 100,
+        "fruity": 25,
+        "earthy": 50,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Cask Strength Whisky",
+        "description": "If you appreciate cask strength whisky, Hwayo 53 is a purist's Korean spirit"
+      },
+      "foodPairings": [
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Dark Chocolate",
+          "nameKo": "다크 초콜릿",
+          "description": "Dark Chocolate"
+        },
+        {
+          "name": "Pyeonyuk",
+          "nameKo": "편육",
+          "description": "Pyeonyuk"
+        }
+      ],
+      "tags": "ultra-premium, strong, purist, intense",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "adventurous",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "very_strong",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "화요 53 한 잔 주세요",
+          "romanized": "Hwayo osib-sam han jan juseyo",
+          "english": "One glass of Hwayo 53, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-sogokju-clear",
+      "name": "Hansan Sogokju Clear",
+      "nameKo": "한산소곡주 약주",
+      "category": "yakju",
+      "subcategory": "traditional",
+      "abv": 16.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Seocheon",
+      "brewery": "Hansan Sogokju",
+      "description": "The filtered clear version of Hansan Sogokju. More refined and lighter than the original, with the same addictive sweet-umami character. Like the difference between unfiltered and filtered sake.",
+      "oneLiner": "Refined and addictive",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 25,
+        "earthy": 50,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Filtered Sake (Daiginjo)",
+        "description": "If you like refined filtered sake, this clear version of Sogokju is delicate and compelling"
+      },
+      "foodPairings": [
+        {
+          "name": "Hwoe",
+          "nameKo": "회",
+          "description": "Hwoe"
+        },
+        {
+          "name": "Jeon",
+          "nameKo": "전",
+          "description": "Jeon"
+        },
+        {
+          "name": "Tteok",
+          "nameKo": "떡",
+          "description": "Tteok"
+        }
+      ],
+      "tags": "refined, sweet, umami, elegant",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity",
+          "rich_complex"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "한산소곡주 약주 한 병 주세요",
+          "romanized": "Hansan-sogokju yakju han byeong juseyo",
+          "english": "One bottle of Hansan Sogokju Clear, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-podoju",
+      "name": "Korean Grape Wine (Podoju)",
+      "nameKo": "포도주 (영동 와인)",
+      "category": "fruitWine",
+      "subcategory": "grape",
+      "abv": 12.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Yeongdong",
+      "brewery": "Chateau Mani",
+      "description": "Korea has its own wine region in Yeongdong, Chungcheong-do. Made with Korean grapes (Campbell Early), these wines are lighter and fruitier than European wines. A surprisingly pleasant discovery.",
+      "oneLiner": "Korea's own wine country",
+      "tasteProfile": {
+        "sweet": 50,
+        "dry": 50,
+        "fruity": 70,
+        "earthy": 30,
+        "acidic": 35
+      },
+      "westernMatch": {
+        "similar": "Beaujolais Nouveau",
+        "description": "If you like light, fruity Beaujolais, Korean grape wine has a similar easy-drinking character"
+      },
+      "foodPairings": [
+        {
+          "name": "Cheese Plate",
+          "nameKo": "치즈 플레이트",
+          "description": "Cheese Plate"
+        },
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Japchae",
+          "nameKo": "잡채",
+          "description": "Japchae"
+        }
+      ],
+      "tags": "grape, wine-region, light, fruity",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "포도주 한 잔 주세요",
+          "romanized": "Podoju han jan juseyo",
+          "english": "One glass of Korean wine, please"
+        }
+      ]
+    },
+    {
+      "id": "soju-jinro-gold",
+      "name": "Jinro 24 Gold",
+      "nameKo": "진로 24 골드",
+      "category": "soju",
+      "subcategory": "premium",
+      "abv": 24.0,
+      "volume": "375ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "HiteJinro",
+      "description": "A premium version of Korea's most iconic soju brand. Higher ABV than standard Chamisul, with bamboo charcoal filtering for extra smoothness. The gold label signals 'stepping up' from regular soju.",
+      "oneLiner": "A step up from basic soju",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 75,
+        "fruity": 0,
+        "earthy": 55,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Premium Vodka (Stolichnaya)",
+        "description": "If you drink mid-range vodka, Jinro Gold is the Korean equivalent -- better than basic"
+      },
+      "foodPairings": [
+        {
+          "name": "Korean BBQ",
+          "nameKo": "고기구이",
+          "description": "Korean BBQ"
+        },
+        {
+          "name": "Gopchang",
+          "nameKo": "곱창",
+          "description": "Gopchang"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Galbi"
+        }
+      ],
+      "tags": "premium, smooth, classic, upgrade",
+      "priceRange": "$$",
+      "availability": "common",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "clean_crisp"
+        ],
+        "familiar": "spirits_cocktails",
+        "mood": [
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "진로 골드 한 병 주세요",
+          "romanized": "Jinro goldeu han byeong juseyo",
+          "english": "One bottle of Jinro Gold, please"
+        }
+      ]
+    },
+    {
+      "id": "fruitwine-gamnoju",
+      "name": "Gamnoju (Persimmon Wine)",
+      "nameKo": "감노주",
+      "category": "fruitWine",
+      "subcategory": "fruit",
+      "abv": 13.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Sangju",
+      "brewery": "Sangju Persimmon Wine",
+      "description": "A golden wine made from dried persimmons (gotgam), a Korean autumn specialty. Honey-like sweetness with warm spice notes. Pairs beautifully with Korean desserts.",
+      "oneLiner": "Persimmon autumn warmth",
+      "tasteProfile": {
+        "sweet": 70,
+        "dry": 30,
+        "fruity": 80,
+        "earthy": 40,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Late Harvest Riesling",
+        "description": "If you like honeyed, late harvest wines, persimmon wine's autumn sweetness is a match"
+      },
+      "foodPairings": [
+        {
+          "name": "Yakgwa",
+          "nameKo": "약과",
+          "description": "Yakgwa"
+        },
+        {
+          "name": "Gotgam",
+          "nameKo": "곶감",
+          "description": "Gotgam"
+        },
+        {
+          "name": "Hangwa",
+          "nameKo": "한과",
+          "description": "Hangwa"
+        }
+      ],
+      "tags": "sweet, autumn, honey, unique",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "wine_sangria",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "감노주 한 잔 주세요",
+          "romanized": "Gamnoju han jan juseyo",
+          "english": "One glass of persimmon wine, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-banana",
+      "name": "Banana Makgeolli",
+      "nameKo": "바나나 막걸리",
+      "category": "makgeolli",
+      "subcategory": "flavored",
+      "abv": 4.0,
+      "volume": "750ml",
+      "productionType": "massProduced",
+      "region": "Seoul",
+      "brewery": "Kooksoondang",
+      "description": "A fun, banana-flavored makgeolli that tastes like a banana milkshake with a slight kick. Not traditional, but wildly popular with tourists and at convenience stores. Great for makgeolli beginners.",
+      "oneLiner": "Banana milkshake with a kick",
+      "tasteProfile": {
+        "sweet": 95,
+        "dry": 5,
+        "fruity": 90,
+        "earthy": 10,
+        "acidic": 5
+      },
+      "westernMatch": {
+        "similar": "Banana Daiquiri",
+        "description": "If you like banana cocktails, this bottled banana rice wine is pure fun"
+      },
+      "foodPairings": [
+        {
+          "name": "Fried Chicken",
+          "nameKo": "치킨",
+          "description": "Fried Chicken"
+        },
+        {
+          "name": "Tteokbokki",
+          "nameKo": "떡볶이",
+          "description": "Tteokbokki"
+        },
+        {
+          "name": "Hotteok",
+          "nameKo": "호떡",
+          "description": "Hotteok"
+        }
+      ],
+      "tags": "sweet, fun, beginner-friendly, convenience-store",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "sweet_fruity"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "party",
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "바나나 막걸리 한 병 주세요",
+          "romanized": "Banana makgeolli han byeong juseyo",
+          "english": "One bottle of banana makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-dongdongju",
+      "name": "Dongdongju",
+      "nameKo": "동동주",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Various",
+      "brewery": "Various",
+      "description": "Similar to makgeolli but with floating rice grains on top (dong-dong = floating). A rustic, traditional drinking experience. Served in a large brass pot (jugeonja) and scooped with a ladle.",
+      "oneLiner": "Floating rice rustic charm",
+      "tasteProfile": {
+        "sweet": 60,
+        "dry": 40,
+        "fruity": 20,
+        "earthy": 65,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Unfiltered Cider (Farmhouse)",
+        "description": "Like a farmhouse cider with bits of apple -- rustic, honest, and charming"
+      },
+      "foodPairings": [
+        {
+          "name": "Pajeon",
+          "nameKo": "파전",
+          "description": "Pajeon"
+        },
+        {
+          "name": "Bindaetteok",
+          "nameKo": "빈대떡",
+          "description": "Bindaetteok"
+        },
+        {
+          "name": "Jokbal",
+          "nameKo": "족발",
+          "description": "Jokbal"
+        }
+      ],
+      "tags": "rustic, traditional, floating-rice, authentic",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "동동주 한 주전자 주세요",
+          "romanized": "Dongdongju han jujeonja juseyo",
+          "english": "One pot of dongdongju, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-omegisul",
+      "name": "Omegisul",
+      "nameKo": "오메기술",
+      "category": "makgeolli",
+      "subcategory": "millet",
+      "abv": 11.0,
+      "volume": "500ml",
+      "productionType": "artisanal",
+      "region": "Jeju",
+      "brewery": "Jeju Folk Wine",
+      "description": "Jeju's unique millet wine, exclusive to the island. Made with Jeju's native millet (omegi) and nuruk. Sweet and slightly tart with a distinctive grain character. The base for Jeju's traditional Gosorisul distillation.",
+      "oneLiner": "Jeju's millet makgeolli",
+      "tasteProfile": {
+        "sweet": 75,
+        "dry": 25,
+        "fruity": 25,
+        "earthy": 75,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Belgian Farmhouse Ale (Saison)",
+        "description": "If you like funky farmhouse ales, Omegisul's millet character has similar artisanal depth"
+      },
+      "foodPairings": [
+        {
+          "name": "Heuk Dwaeji",
+          "nameKo": "흑돼지",
+          "description": "Heuk Dwaeji"
+        },
+        {
+          "name": "Gogi Guksu",
+          "nameKo": "고기국수",
+          "description": "Gogi Guksu"
+        },
+        {
+          "name": "Bingddeok",
+          "nameKo": "빙떡",
+          "description": "Bingddeok"
+        }
+      ],
+      "tags": "jeju, millet, regional, unique",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "오메기술 한 잔 주세요",
+          "romanized": "Omegisul han jan juseyo",
+          "english": "One glass of Omegisul, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-idong",
+      "name": "Idong Makgeolli",
+      "nameKo": "이동 막걸리",
+      "category": "makgeolli",
+      "subcategory": "traditional",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Pocheon",
+      "brewery": "Idong Brewing",
+      "description": "A rustic, full-flavored makgeolli from Pocheon, famous for its strong nuruk (fermentation starter) character. Thicker and earthier than most — this is the countryside grandmother's recipe. A favorite among Koreans who prefer bold, traditional flavors over modern smooth styles.",
+      "oneLiner": "Countryside grandma's bold recipe",
+      "tasteProfile": {
+        "sweet": 40,
+        "dry": 60,
+        "fruity": 15,
+        "earthy": 80,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Farmhouse Cider (Scrumpy)",
+        "description": "If you like rough, unfiltered farmhouse cider, this raw makgeolli has the same honest character"
+      },
+      "foodPairings": [
+        {
+          "name": "Bindaetteok",
+          "nameKo": "빈대떡",
+          "description": "Bindaetteok"
+        },
+        {
+          "name": "Dubu Kimchi",
+          "nameKo": "두부김치",
+          "description": "Dubu Kimchi"
+        },
+        {
+          "name": "Sundae",
+          "nameKo": "순대",
+          "description": "Sundae"
+        }
+      ],
+      "tags": "traditional, earthy, bold, rustic, affordable",
+      "priceRange": "$",
+      "availability": "common",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "이동 막걸리 한 병 주세요",
+          "romanized": "Idong makgeolli han byeong juseyo",
+          "english": "One bottle of Idong makgeolli, please"
+        }
+      ]
+    },
+    {
+      "id": "makgeolli-kooksoondang-raw",
+      "name": "Kooksoondang Raw Makgeolli",
+      "nameKo": "국순당 생막걸리",
+      "category": "makgeolli",
+      "subcategory": "unfiltered",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "massProduced",
+      "region": "Chungcheong-do",
+      "brewery": "Kooksoondang",
+      "description": "A widely available unfiltered makgeolli with more depth than typical convenience store options. Made with 100% rice and traditional nuruk, it has a grainy, slightly tangy richness. The best bang-for-your-buck complex makgeolli — find it at any Korean convenience store.",
+      "oneLiner": "Best budget complex makgeolli",
+      "tasteProfile": {
+        "sweet": 45,
+        "dry": 55,
+        "fruity": 20,
+        "earthy": 65,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Unfiltered Wheat Beer (Kellerbier)",
+        "description": "If you like cloudy, unfiltered German Kellerbier, this raw makgeolli has similar grainy depth"
+      },
+      "foodPairings": [
+        {
+          "name": "Pajeon",
+          "nameKo": "파전",
+          "description": "Pajeon"
+        },
+        {
+          "name": "Odeng",
+          "nameKo": "어묵",
+          "description": "Odeng"
+        },
+        {
+          "name": "Gamja Jeon",
+          "nameKo": "감자전",
+          "description": "Gamja Jeon"
+        }
+      ],
+      "tags": "traditional, earthy, affordable, convenience-store, unfiltered",
+      "priceRange": "$",
+      "availability": "everywhere",
+      "difficulty": "beginner",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "first_timer"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a restaurant",
+          "korean": "국순당 생막걸리 한 병 주세요",
+          "romanized": "Kooksoondang saeng-makgeolli han byeong juseyo",
+          "english": "One bottle of Kooksoondang raw makgeolli, please"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1045 @@
+{
+  "version": "1.0",
+  "places": [
+    {
+      "id": "place-anssi-makgeolli",
+      "nameEn": "Mr. Ahn's Craft Makgeolli",
+      "nameKo": "안씨막걸리",
+      "category": "makgeolli_bar",
+      "categoryLabel": "막걸리바",
+      "gu": "용산구",
+      "neighborhood": "경리단길",
+      "address": "서울 용산구 경리단길 일대",
+      "description": "Korea's first Michelin Bib Gourmand traditional liquor bar (2023–2024). Curates additive-free artisan makgeolli from small breweries nationwide.",
+      "descriptionKo": "한국 최초 미슐랭 빕구르망 전통주점. 전국 소규모 수제 양조장의 무첨가 막걸리만 엄선.",
+      "signatureDrinks": "Anssi Makgeolli 7.5% ABV, rotating regional picks",
+      "priceRange": "₩₩",
+      "hours": "Evenings (check Instagram for updates)",
+      "bestFor": [
+        "couple_date",
+        "tourist_cultural",
+        "group_fun"
+      ],
+      "vibe": [
+        "trendy",
+        "artisan"
+      ],
+      "drinkFocus": "makgeolli",
+      "instagram": "@anssi_makgeolli",
+      "googleMapsQuery": "안씨막걸리 서울 용산구",
+      "googleMapsUrl": "https://maps.google.com/?q=안씨막걸리+서울+용산구+경리단길",
+      "imageUrl": "https://www.epicureasia.com/wp-content/uploads/2025/02/Mr-Ahn-drink-2.jpg",
+      "tags": [
+        "michelin",
+        "makgeolli",
+        "itaewon",
+        "craft"
+      ]
+    },
+    {
+      "id": "place-magpie-brewing",
+      "nameEn": "Magpie Brewing Co.",
+      "nameKo": "매그파이 브루잉",
+      "category": "craft_beer",
+      "categoryLabel": "크래프트 맥주",
+      "gu": "용산구",
+      "neighborhood": "이태원/을지로",
+      "address": "서울 용산구 이태원동 (녹사평역 인근)",
+      "description": "Pioneer of Korea's craft beer boom since 2011. Known for seasonal Jeju Island ingredient releases and the 'Hipjiro' vibe at their Euljiro location.",
+      "descriptionKo": "2011년 이후 한국 크래프트 맥주 붐의 선구자. 제주 재료 시즌 한정 맥주와 힙지로 을지로점으로 유명.",
+      "signatureDrinks": "Pale Ale, Ghost Gose (Jeju tangerine), Session IPA",
+      "priceRange": "₩₩",
+      "hours": "Evening – late night",
+      "bestFor": [
+        "group_fun",
+        "couple_date",
+        "expats"
+      ],
+      "vibe": [
+        "hip",
+        "craft",
+        "modern"
+      ],
+      "drinkFocus": "craft_beer",
+      "instagram": "@magpiebrewing",
+      "googleMapsUrl": "https://maps.google.com/?q=Magpie+Brewing+Seoul+Noksapyeong",
+      "imageUrl": "https://www.cktravels.com/wp-content/uploads/2023/05/craft-beer-seoul-7.jpg",
+      "tags": [
+        "craft-beer",
+        "itaewon",
+        "euljiro"
+      ]
+    },
+    {
+      "id": "place-usadan-bar-street",
+      "nameEn": "Usadan-ro Bar Street",
+      "nameKo": "우사단로 바 거리",
+      "category": "bar_street",
+      "categoryLabel": "인디 바 거리",
+      "gu": "용산구",
+      "neighborhood": "이태원 우사단로",
+      "address": "서울 용산구 이태원동 우사단로10길·12길",
+      "description": "Itaewon's hillside alternative bar scene. Indie record shops, creative bars, rooftop river views at Supermarket bar. Home to Seoul's main LGBTQ+ bar district.",
+      "descriptionKo": "이태원 언덕 인디 바 거리. LP 샵·창작 주점·한강 뷰 루프탑 바. 서울 LGBTQ+ 바 밀집 지역.",
+      "signatureDrinks": "Craft cocktails, natural wine, fermented spirits",
+      "priceRange": "₩₩",
+      "hours": "6PM – 2AM+",
+      "bestFor": [
+        "solo",
+        "group_fun",
+        "late_night"
+      ],
+      "vibe": [
+        "alternative",
+        "underground",
+        "multicultural"
+      ],
+      "drinkFocus": "variety",
+      "googleMapsUrl": "https://maps.google.com/?q=우사단로10길+이태원+서울",
+      "imageUrl": "https://southkoreahallyu.com/wp-content/uploads/2024/01/Itaewon-new-30.jpg",
+      "tags": [
+        "alternative",
+        "underground",
+        "indie",
+        "itaewon"
+      ]
+    },
+    {
+      "id": "place-makgeolli-salon",
+      "nameEn": "Makgeolli Salon",
+      "nameKo": "막걸리싸롱",
+      "category": "makgeolli_bar",
+      "categoryLabel": "막걸리바",
+      "gu": "마포구",
+      "neighborhood": "홍대",
+      "address": "서울 마포구 서교동 홍대입구역 인근",
+      "description": "Seoul's best-value makgeolli institution since 2011. All-you-can-drink regional makgeolli from ₩5,600. Owner explains every variety. Free samples before you order.",
+      "descriptionKo": "2011년부터 서울 최고 가성비 막걸리 명소. ₩5,600 전국 막걸리 무한 제공. 주인장 설명 포함, 주문 전 무료 시음.",
+      "signatureDrinks": "Unlimited regional makgeolli (₩5,600) — corn, pear, lotus & more",
+      "priceRange": "₩",
+      "hours": "Evening – late night",
+      "bestFor": [
+        "group_fun",
+        "solo",
+        "budget"
+      ],
+      "vibe": [
+        "casual",
+        "fun",
+        "variety"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=막걸리싸롱+홍대+마포구+서울",
+      "imageUrl": "https://10mag.com/wp-content/uploads/2017/10/salon.jpg",
+      "tags": [
+        "budget",
+        "makgeolli",
+        "unlimited",
+        "hongdae"
+      ]
+    },
+    {
+      "id": "place-sanullim-1992",
+      "nameEn": "Sanullim 1992",
+      "nameKo": "산울림1992",
+      "category": "traditional_bar",
+      "categoryLabel": "전통주점",
+      "gu": "마포구",
+      "neighborhood": "합정동",
+      "address": "서울 마포구 서강로9길 60",
+      "description": "30+ year history, one of Seoul's longest-running traditional liquor bars. Over 180 types of traditional Korean alcohol. Cozy old-tavern atmosphere.",
+      "descriptionKo": "30년 이상의 역사, 서울 최장수 전통주점 중 하나. 전통주 180종+. 아늑한 구옥 선술집 분위기.",
+      "signatureDrinks": "180+ traditional spirits: makgeolli, yakju, soju",
+      "priceRange": "₩₩",
+      "hours": "Tue–Thu 5PM–midnight, Fri–Sat 5PM–1AM, Sun 4PM–midnight",
+      "bestFor": [
+        "couple_date",
+        "enthusiast",
+        "solo"
+      ],
+      "vibe": [
+        "traditional",
+        "cozy",
+        "authentic"
+      ],
+      "drinkFocus": "variety",
+      "googleMapsUrl": "https://maps.google.com/?q=산울림1992+마포구+서울",
+      "imageUrl": "https://thesoolcompany.com/wp-content/uploads/2023/11/news15_01-1.webp",
+      "tags": [
+        "traditional",
+        "history",
+        "wide-selection",
+        "mapo"
+      ]
+    },
+    {
+      "id": "place-juan-makgeolliano",
+      "nameEn": "Juan Makgeolliano",
+      "nameKo": "후앙 막걸리아노",
+      "category": "makgeolli_bar",
+      "categoryLabel": "막걸리집",
+      "gu": "마포구",
+      "neighborhood": "연남동",
+      "address": "서울 마포구 연남동",
+      "description": "Top-rated craft makgeolli bar in trendy Yeonnam-dong. Traditional style with elevated, carefully plated anju. Known for excellent jeon pairings.",
+      "descriptionKo": "트렌디한 연남동 최고 평점 막걸리집. 정성스레 플레이팅된 고급 안주. 전 페어링으로 유명.",
+      "signatureDrinks": "Curated makgeolli, traditional anju",
+      "priceRange": "₩₩",
+      "hours": "Evenings",
+      "bestFor": [
+        "couple_date",
+        "group_fun"
+      ],
+      "vibe": [
+        "trendy",
+        "hip",
+        "neighborhood"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=후앙막걸리아노+연남동+서울",
+      "imageUrl": "https://firefortysix.com/wp-content/uploads/2023/08/John-Makgeolliano-Interior-01.jpg",
+      "tags": [
+        "yeonnam",
+        "makgeolli",
+        "date-night",
+        "local"
+      ]
+    },
+    {
+      "id": "place-baekusaeng",
+      "nameEn": "Baekusaeng Makgeolli Brewery",
+      "nameKo": "백우생 막걸리",
+      "category": "brewery_class",
+      "categoryLabel": "양조장 체험",
+      "gu": "마포구",
+      "neighborhood": "아현동",
+      "address": "서울 마포구 아현동 346-35",
+      "description": "Active makgeolli brewery inside a traditional market. English-language classes from quick tastings to 3-day intensive courses. Led by Korean alcohol sommelier Joe Kim.",
+      "descriptionKo": "전통시장 내 활성 양조장. 영어 수업 운영 (빠른 시음~3일 집중 과정). 전통주 소믈리에 운영.",
+      "signatureDrinks": "Seasonal house makgeolli, premium soju blind tasting",
+      "priceRange": "₩₩",
+      "hours": "By class schedule / reservation",
+      "bestFor": [
+        "tourist_cultural",
+        "group_fun",
+        "expats"
+      ],
+      "vibe": [
+        "educational",
+        "hands-on"
+      ],
+      "drinkFocus": "makgeolli",
+      "instagram": "baekusaeng.com",
+      "googleMapsUrl": "https://maps.google.com/?q=백우생막걸리+아현동+마포구+서울",
+      "imageUrl": "https://baekusaeng.com/wp-content/uploads/2024/12/home-about.png",
+      "tags": [
+        "class",
+        "english",
+        "brewing",
+        "experience"
+      ]
+    },
+    {
+      "id": "place-samhae-soju",
+      "nameEn": "Samhae Soju Distillery",
+      "nameKo": "삼해소주 양조장",
+      "category": "brewery_class",
+      "categoryLabel": "소주 양조장 투어",
+      "gu": "마포구",
+      "neighborhood": "홍대 인근",
+      "address": "서울 마포구 홍익대학교역 인근",
+      "description": "900-year-old Joseon-dynasty soju tradition. 80-min tasting of 7+ samples (45–50% ABV traditional soju). English guide. Max 10 people—intimate and premium.",
+      "descriptionKo": "900년 역사 조선 전통 소주. 7종+ 시음 80분 (45–50% ABV). 영어 가이드. 최대 10인 소규모 프리미엄 체험.",
+      "signatureDrinks": "Samhae Soju 45–50% ABV, takju, cheongju",
+      "priceRange": "₩₩₩",
+      "hours": "Reservation required, 80 min session",
+      "bestFor": [
+        "special_event",
+        "tourist_cultural",
+        "enthusiast"
+      ],
+      "vibe": [
+        "heritage",
+        "premium",
+        "intimate"
+      ],
+      "drinkFocus": "soju",
+      "googleMapsUrl": "https://maps.google.com/?q=삼해소주+서울+마포구",
+      "imageUrl": "https://www.saveur.com/uploads/2025/10/Photo-Matty-Yangwoo-Kim_Samhae_08-scaled.jpg",
+      "tags": [
+        "heritage",
+        "premium",
+        "distillery",
+        "english",
+        "joseon"
+      ]
+    },
+    {
+      "id": "place-mapo-pocha",
+      "nameEn": "Mapo Pocha Street",
+      "nameKo": "마포 포차 거리",
+      "category": "pojangmacha",
+      "categoryLabel": "포장마차 거리",
+      "gu": "마포구",
+      "neighborhood": "마포동",
+      "address": "서울 마포구 마포역~공덕역 사이 (마포역 2번 출구)",
+      "description": "Romantic orange-tented outdoor pojangmacha street. Perfect for couples and after-work drinks. K-drama atmosphere under the trees.",
+      "descriptionKo": "낭만적인 오렌지 천막 야외 포차 거리. 커플과 퇴근 후 음주에 최적. 나무 아래 K드라마 감성.",
+      "signatureDrinks": "Soju, draft beer, makgeolli",
+      "priceRange": "₩",
+      "hours": "Evening – late night",
+      "bestFor": [
+        "couple_date",
+        "work_after"
+      ],
+      "vibe": [
+        "romantic",
+        "outdoor",
+        "cozy"
+      ],
+      "drinkFocus": "soju",
+      "googleMapsUrl": "https://maps.google.com/?q=마포포차거리+마포역+서울",
+      "imageUrl": "https://thesmartlocal.com/korea/wp-content/uploads/2021/01/Pocha-Streets-in-Seoul-27.jpg",
+      "tags": [
+        "pojangmacha",
+        "romantic",
+        "outdoor",
+        "k-drama"
+      ]
+    },
+    {
+      "id": "place-mangwon-pocha",
+      "nameEn": "Mangwon-dong Local Pocha",
+      "nameKo": "망원동 로컬 포차",
+      "category": "local_bar",
+      "categoryLabel": "동네 술집",
+      "gu": "마포구",
+      "neighborhood": "망원동",
+      "address": "서울 마포구 망원동 (망원역 6호선 인근)",
+      "description": "Seoul's unhyped local neighborhood bar culture. Fresh seafood from Mangwon Market. Hidden bars like Suljan Mangwon (traditional cocktails) and Zoooop (izakaya-style).",
+      "descriptionKo": "힙스터화 덜 된 진짜 서울 동네 술집. 망원시장 신선 식재료. 술잔 망원(전통주 칵테일)·Zoooop(이자카야) 등.",
+      "signatureDrinks": "Traditional liquor cocktails, Hwayo soju, fresh seafood anju",
+      "priceRange": "₩",
+      "hours": "6PM – 1AM",
+      "bestFor": [
+        "solo",
+        "couple_date",
+        "work_after"
+      ],
+      "vibe": [
+        "local",
+        "hidden_gem",
+        "authentic"
+      ],
+      "drinkFocus": "variety",
+      "googleMapsUrl": "https://maps.google.com/?q=망원동+술집+마포구+서울",
+      "imageUrl": "https://travelpenchant.wordpress.com/wp-content/uploads/2022/11/mangwon-market-01.jpg",
+      "tags": [
+        "local",
+        "hidden-gem",
+        "mangwon",
+        "authentic"
+      ]
+    },
+    {
+      "id": "place-seoul-brewery",
+      "nameEn": "Seoul Brewery",
+      "nameKo": "서울브루어리",
+      "category": "craft_beer",
+      "categoryLabel": "크래프트 양조장",
+      "gu": "성동구",
+      "neighborhood": "성수동",
+      "address": "서울 성동구 연무장길 28-12",
+      "description": "Korea's largest craft brewery (B1–6F). Thu/Fri/Sat evening brewery tours. Regular jazz performances. 50+ unique ales produced. Open daily 11AM–midnight.",
+      "descriptionKo": "한국 최대 크래프트 양조장 (지하~6층). 목·금·토 저녁 양조장 투어. 정기 재즈 공연. 50종+ 에일 생산.",
+      "signatureDrinks": "Night Bloom Gose, Irish Coffee Red Ale, Stout, IPA",
+      "priceRange": "₩₩",
+      "hours": "Daily 11AM – midnight",
+      "bestFor": [
+        "couple_date",
+        "group_fun",
+        "craft_enthusiast"
+      ],
+      "vibe": [
+        "modern",
+        "industrial",
+        "artisan"
+      ],
+      "drinkFocus": "craft_beer",
+      "instagram": "seoulbrewery.com",
+      "googleMapsUrl": "https://maps.google.com/?q=서울브루어리+성수동+성동구+서울",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0609/9376/5551/files/seoul-brewery-seongsu-craft-beer_3.jpg?v=1704951244",
+      "tags": [
+        "seongsu",
+        "brewery",
+        "jazz",
+        "tour",
+        "craft"
+      ]
+    },
+    {
+      "id": "place-daelim-warehouse",
+      "nameEn": "Daelim Warehouse",
+      "nameKo": "대림창고",
+      "category": "cultural_bar",
+      "categoryLabel": "갤러리 복합문화 바",
+      "gu": "성동구",
+      "neighborhood": "성수동",
+      "address": "서울 성동구 성수이로 78",
+      "description": "1970s rice mill turned iconic cultural space. Red brick, exposed steel, rooftop terrace. Gallery exhibitions + cafe by day, bar by evening. Seoul's most Instagrammed venue.",
+      "descriptionKo": "1970년대 정미소 → 복합문화공간. 적벽돌·노출 철골·루프탑 테라스. 갤러리+카페 → 저녁 바 전환. 서울 가장 인스타그래머블한 장소.",
+      "signatureDrinks": "Craft coffee (daytime) → beer & cocktails (evening)",
+      "priceRange": "₩₩",
+      "hours": "Daily 11AM – 10PM",
+      "bestFor": [
+        "couple_date",
+        "instagram",
+        "daytime_culture"
+      ],
+      "vibe": [
+        "trendy",
+        "industrial",
+        "photogenic"
+      ],
+      "drinkFocus": "variety",
+      "googleMapsUrl": "https://maps.google.com/?q=대림창고+성수동+성동구+서울",
+      "imageUrl": "https://danielfooddiary.com/wp-content/uploads/2023/01/daelimchanggo1.JPG",
+      "tags": [
+        "seongsu",
+        "gallery",
+        "rooftop",
+        "instagram",
+        "cultural"
+      ]
+    },
+    {
+      "id": "place-jongno3ga-pojangmacha",
+      "nameEn": "Jongno 3-ga Pojangmacha Street",
+      "nameKo": "종로3가 포장마차 거리",
+      "category": "pojangmacha",
+      "categoryLabel": "포장마차 거리",
+      "gu": "종로구",
+      "neighborhood": "종로3가",
+      "address": "서울 종로구 종로3가역 5·6번 출구 사이 200m",
+      "description": "Seoul's most iconic pojangmacha street. 200m of orange canvas tents come alive at night. The beating heart of working-class Seoul drinking culture. Most alive 9PM–2AM.",
+      "descriptionKo": "서울 가장 상징적인 포장마차 거리. 밤마다 오렌지 천막 200m. 서울 서민 음주 문화의 심장. 밤 9시~새벽 2시 절정.",
+      "signatureDrinks": "Soju, hof draft beer, makgeolli",
+      "priceRange": "₩",
+      "hours": "6PM – 2AM",
+      "bestFor": [
+        "solo",
+        "group_fun",
+        "authentic_experience"
+      ],
+      "vibe": [
+        "authentic",
+        "lively",
+        "street"
+      ],
+      "drinkFocus": "soju",
+      "googleMapsUrl": "https://maps.google.com/?q=종로3가+포장마차+서울+종로구",
+      "imageUrl": "https://thesmartlocal.com/korea/wp-content/uploads/2021/01/Pocha-Streets-in-Seoul-22.jpg",
+      "tags": [
+        "pojangmacha",
+        "authentic",
+        "budget",
+        "nightlife",
+        "street-food"
+      ]
+    },
+    {
+      "id": "place-sool-gallery",
+      "nameEn": "The Sool Gallery",
+      "nameKo": "전통주갤러리",
+      "category": "museum",
+      "categoryLabel": "전통주 갤러리",
+      "gu": "종로구",
+      "neighborhood": "안국동",
+      "address": "서울 종로구 안국동 (안국역 3호선 인근)",
+      "description": "Government-supported exhibition & free tasting space. Sommelier guides you through 4 types of traditional Korean liquor. Best first stop for beginners. Monthly themed events.",
+      "descriptionKo": "정부 지원 전통주 전시·무료 시음 공간. 소믈리에 가이드로 4종 전통주 시음. 초보자 최고 입문 코스. 월별 테마 이벤트.",
+      "signatureDrinks": "Free 4-variety tasting (makgeolli, yakju, soju, fruit wine)",
+      "priceRange": "₩",
+      "hours": "Check Visit Seoul official website",
+      "bestFor": [
+        "tourist_cultural",
+        "solo",
+        "beginner"
+      ],
+      "vibe": [
+        "educational",
+        "cultural",
+        "quiet"
+      ],
+      "drinkFocus": "variety",
+      "googleMapsUrl": "https://maps.google.com/?q=전통주갤러리+안국동+종로구+서울",
+      "imageUrl": "https://torontoseoulcialite.com/wp-content/uploads/2016/12/The-Toronto-Seoulcialite-The-Sool-Gallery-Seoul-10.jpg",
+      "tags": [
+        "museum",
+        "free",
+        "educational",
+        "tourist-friendly",
+        "beginner"
+      ]
+    },
+    {
+      "id": "place-bar-cham",
+      "nameEn": "Bar Cham",
+      "nameKo": "바참",
+      "category": "cocktail_bar",
+      "categoryLabel": "전통주 칵테일 바",
+      "gu": "종로구",
+      "neighborhood": "익선동",
+      "address": "서울 종로구 익선동 (종로3가역 인근)",
+      "description": "Asia's 50 Best Bars 2025 #6. Set in a Joseon-era hanok. Pioneer of Korean spirit cocktails. Every drink celebrates Korea's regions and seasonal produce.",
+      "descriptionKo": "아시아 50 베스트 바 2025 6위. 조선 시대 한옥. 한국 전통주 칵테일의 선구자. 한국 지역·계절 재료로 만든 칵테일.",
+      "signatureDrinks": "Chungju Gimbap (soju+makgeolli, wasabi), Hamyang (butter-washed traditional soju)",
+      "priceRange": "₩₩₩",
+      "hours": "Evenings, reservation required",
+      "bestFor": [
+        "couple_date",
+        "special_event",
+        "enthusiast"
+      ],
+      "vibe": [
+        "premium",
+        "hanok",
+        "award-winning"
+      ],
+      "drinkFocus": "cocktail",
+      "googleMapsUrl": "https://maps.google.com/?q=Bar+Cham+익선동+종로구+서울",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c311ba2697a98937f5a1a98/1679947726880-JN0WDD2X5HT95ODKLD4Z/Entrance-at-Bar-Cham-in-South-Korea.jpg",
+      "tags": [
+        "cocktail",
+        "asia50best",
+        "hanok",
+        "premium",
+        "ikseon"
+      ]
+    },
+    {
+      "id": "place-gong-gan",
+      "nameEn": "Gong-Gan",
+      "nameKo": "공간",
+      "category": "cocktail_bar",
+      "categoryLabel": "전통주 칵테일 바",
+      "gu": "종로구",
+      "neighborhood": "안국동 삼청동",
+      "address": "서울 종로구 율곡로3길 66-4 안국동",
+      "description": "Asia's 50 Best Bars 2024 #89. Stunning hanok with glassed inner courtyard. Zero-waste philosophy. Cocktails rooted in Korean childhood memories.",
+      "descriptionKo": "아시아 50 베스트 바 2024 89위. 유리 중정 한옥. 제로 웨이스트 철학. 한국 어린 시절 기억에서 영감받은 칵테일.",
+      "signatureDrinks": "Sijang (traditional market spirit), Jindallae (spring azalea honey)",
+      "priceRange": "₩₩₩",
+      "hours": "Evenings, reservation strongly recommended",
+      "bestFor": [
+        "couple_date",
+        "special_event"
+      ],
+      "vibe": [
+        "premium",
+        "elegant",
+        "sustainable"
+      ],
+      "drinkFocus": "cocktail",
+      "googleMapsUrl": "https://maps.google.com/?q=Gong-Gan+Bar+안국동+종로구+서울",
+      "imageUrl": "https://barstalker.de/wp-content/uploads/2025/02/IMG_3504-scaled.jpeg",
+      "tags": [
+        "cocktail",
+        "asia50best",
+        "hanok",
+        "zero-waste",
+        "premium"
+      ]
+    },
+    {
+      "id": "place-gwangjang-market",
+      "nameEn": "Gwangjang Market",
+      "nameKo": "광장시장 빈대떡 골목",
+      "category": "market",
+      "categoryLabel": "전통 시장",
+      "gu": "종로구",
+      "neighborhood": "종로4가",
+      "address": "서울 종로구 창경궁로 88 (종로5가역 1호선)",
+      "description": "Korea's oldest market (est. 1905). Legendary for bindaetteok (mung bean pancakes) + makgeolli pairing. Cramped stalls, smoke, and steam—viscerally authentic.",
+      "descriptionKo": "1905년 설립 한국 최고(最古) 시장. 빈대떡+막걸리 조합 성지. 비좁은 좌판, 연기, 증기 속 생생한 음주 문화.",
+      "signatureDrinks": "Makgeolli (₩3,000)",
+      "priceRange": "₩",
+      "hours": "Daily ~9AM – 11PM",
+      "bestFor": [
+        "tourist_cultural",
+        "group_fun",
+        "all"
+      ],
+      "vibe": [
+        "authentic",
+        "bustling",
+        "traditional"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=광장시장+종로구+서울",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Gwangjangmarket_inside.jpg",
+      "tags": [
+        "market",
+        "bindaetteok",
+        "makgeolli",
+        "authentic",
+        "tourist"
+      ]
+    },
+    {
+      "id": "place-insadong-makgeolli-tour",
+      "nameEn": "Insadong Makgeolli Tour",
+      "nameKo": "인사동 막걸리 체험 투어",
+      "category": "guided_tour",
+      "categoryLabel": "막걸리 가이드 투어",
+      "gu": "종로구",
+      "neighborhood": "인사동",
+      "address": "서울 종로구 인사동길 일대 (안국역 3호선 6번 출구)",
+      "description": "English-guided 3-hour makgeolli pub crawl by The Sool Company. 3 bars, 5 tastings—starting in a hanok, ending in a hidden tavern. Or explore independently at Kkotpineun Sangol.",
+      "descriptionKo": "더술컴퍼니 영어 가이드 막걸리 펍 크롤 3시간. 3개 바·5종 시음. 한옥 시작 → 숨겨진 선술집 마무리. 또는 꽃피는상골 독립 방문.",
+      "signatureDrinks": "5+ regional makgeolli, dongdongju, yakju",
+      "priceRange": "₩₩",
+      "hours": "Guided tour 6PM (3 hrs); self-guided bars 5PM–midnight",
+      "bestFor": [
+        "tourist_cultural",
+        "group_fun",
+        "beginner"
+      ],
+      "vibe": [
+        "educational",
+        "cultural",
+        "traditional"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=인사동+전통주+서울",
+      "imageUrl": "https://veronikasadventure.com/wp-content/uploads/2024/01/insadong-makgeolli-taster-tour.jpg",
+      "tags": [
+        "insadong",
+        "tour",
+        "english",
+        "cultural",
+        "guided"
+      ]
+    },
+    {
+      "id": "place-bukchon-brewmaster",
+      "nameEn": "Bukchon Brewmaster Dinner",
+      "nameKo": "북촌 양조 마스터 체험",
+      "category": "premium_experience",
+      "categoryLabel": "전통주 체험 저녁",
+      "gu": "종로구",
+      "neighborhood": "북촌 / 인사동",
+      "address": "서울 종로구 북촌한옥마을 인근 (Viator 예약 후 주소 안내)",
+      "description": "Private dinner with a 10th-generation brewmaster designated 'Human National Treasure' by Seoul. Traditional Korean dinner + Joseon-recipe makgeolli with guided history.",
+      "descriptionKo": "서울시 지정 인간문화재 10대 양조 명인과의 프라이빗 저녁. 조선 레시피 막걸리 + 전통 한식 코스 + 역사 설명.",
+      "signatureDrinks": "10th-generation family makgeolli (Joseon royal recipe)",
+      "priceRange": "₩₩₩",
+      "hours": "Evenings, reservation required",
+      "bestFor": [
+        "special_event",
+        "tourist_cultural"
+      ],
+      "vibe": [
+        "premium",
+        "intimate",
+        "heritage"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=북촌한옥마을+종로구+서울",
+      "imageUrl": "https://gastrotourseoul.com/wp-content/uploads/2021/03/막걸리디너_이미지.jpg",
+      "tags": [
+        "premium",
+        "heritage",
+        "brewmaster",
+        "bukchon",
+        "10th-generation"
+      ]
+    },
+    {
+      "id": "place-tongin-market",
+      "nameEn": "Tongin Market",
+      "nameKo": "통인시장",
+      "category": "market",
+      "categoryLabel": "전통 시장",
+      "gu": "종로구",
+      "neighborhood": "서촌 통인동",
+      "address": "서울 종로구 통인동 18 (경복궁역 3호선 2번 출구)",
+      "description": "1941 traditional market in Seochon. Famous for yeopjeon dosirak café. Local pojangmacha stalls serve makgeolli from midday—a genuinely off-the-tourist-track experience.",
+      "descriptionKo": "1941년 서촌 전통시장. 엽전 도시락 카페 유명. 낮부터 포장마차서 막걸리—진짜 비관광지 서울 체험.",
+      "signatureDrinks": "Makgeolli (₩3,000–5,000/jug)",
+      "priceRange": "₩",
+      "hours": "Tue–Sun 11AM–3PM (yeopjeon coin café)",
+      "bestFor": [
+        "tourist_cultural",
+        "solo",
+        "daytime"
+      ],
+      "vibe": [
+        "traditional",
+        "daytime",
+        "local"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=통인시장+서촌+종로구+서울",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf97qL3_hXxnRuCtZaM7gy8ON1muL1Cxf01w7Qg3HJxPwV_D0BxNWxzCxmAIqW0PvklINrtYsdqSBKGGMmw-tyNy_PnTM38rVhFFEwMAlLBSLmj9Ky0xV6XJ2lq-uu-Rv3Iz8dAyXUyQ/w1200-h630-p-k-no-nu/Tongin+Market.jpg",
+      "tags": [
+        "seochon",
+        "market",
+        "daytime",
+        "cultural",
+        "gyeongbokgung"
+      ]
+    },
+    {
+      "id": "place-seochon-jalppajin-memil",
+      "nameEn": "Jalppajin Memil (Seochon)",
+      "nameKo": "잘빠진메밀 서촌",
+      "category": "traditional_bar",
+      "categoryLabel": "전통주 바",
+      "gu": "종로구",
+      "neighborhood": "서촌 자하문로",
+      "address": "서울 종로구 자하문로11길 4 (경복궁역 3호선)",
+      "description": "Quiet Seochon neighborhood makgeolli bar. Signature 5-variety makgeolli sampler (₩9,000). 100% buckwheat noodles + makgeolli—the ideal post-Gyeongbokgung stop.",
+      "descriptionKo": "조용한 서촌 동네 막걸리 바. 막걸리 5종 샘플러 (₩9,000) 명물. 메밀 국수+막걸리—경복궁 관람 후 최적 코스.",
+      "signatureDrinks": "5-variety makgeolli sampler (₩9,000), dongdongju",
+      "priceRange": "₩",
+      "hours": "Mon–Sat 11AM–9:30PM, Sun 11AM–9PM",
+      "bestFor": [
+        "solo",
+        "couple_date",
+        "tourist_cultural"
+      ],
+      "vibe": [
+        "neighborhood",
+        "quiet",
+        "traditional"
+      ],
+      "drinkFocus": "makgeolli",
+      "googleMapsUrl": "https://maps.google.com/?q=잘빠진메밀+서촌+종로구+서울",
+      "imageUrl": "https://i0.wp.com/oo-foodielicious.com/wp-content/uploads/2024/06/Jalppajin-Memil-Seochon-Seoul-Review-1.jpg",
+      "tags": [
+        "seochon",
+        "hanok",
+        "makgeolli-sampler",
+        "quiet",
+        "neighborhood"
+      ]
+    },
+    {
+      "id": "place-euljiro-nogari",
+      "nameEn": "Euljiro Nogari Alley",
+      "nameKo": "을지로 노가리골목",
+      "category": "beer_alley",
+      "categoryLabel": "호프집 거리",
+      "gu": "중구",
+      "neighborhood": "을지로3가",
+      "address": "서울 중구 을지로13길·충무로11길 사이 (을지로3가역 2·3호선)",
+      "description": "Seoul Future Heritage site. Since 1980. Arrive and you're automatically served draft beer + nogari (dried pollack)—no ordering required. Iconic working-class Seoul drinking culture.",
+      "descriptionKo": "서울 미래유산. 1980년부터. 도착하면 자동으로 생맥주+노가리 제공 (주문 불필요). 서울 서민 음주 문화의 아이콘.",
+      "signatureDrinks": "OB draft beer (₩3,500), nogari dried pollack (₩1,000)",
+      "priceRange": "₩",
+      "hours": "~5PM – midnight",
+      "bestFor": [
+        "work_after",
+        "group_fun"
+      ],
+      "vibe": [
+        "heritage",
+        "authentic",
+        "casual"
+      ],
+      "drinkFocus": "beer",
+      "googleMapsUrl": "https://maps.google.com/?q=을지로노가리골목+을지로3가+서울",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Korea-Pojangmacha-01.jpg",
+      "tags": [
+        "heritage",
+        "budget",
+        "beer",
+        "nogari",
+        "euljiro"
+      ]
+    },
+    {
+      "id": "place-euljiro-brewing",
+      "nameEn": "Euljiro Brewing",
+      "nameKo": "을지로브루잉",
+      "category": "craft_beer",
+      "categoryLabel": "크래프트 맥주",
+      "gu": "중구",
+      "neighborhood": "을지로",
+      "address": "서울 중구 을지로 일대",
+      "description": "Hipjiro industrial-aesthetic microbrewery. Well-crafted Korean-sensibility beers. Great for an Euljiro craft bar crawl combined with the nearby Nogari Alley.",
+      "descriptionKo": "힙지로 산업 감성 마이크로 브루어리. 한국 감성 수제 맥주. 인근 노가리 골목과 함께 올드·뉴 을지로 바 크롤에 최적.",
+      "signatureDrinks": "Seersucker IPA 5.5%, Pink Chambray Saison 5.2%",
+      "priceRange": "₩₩",
+      "hours": "Evenings",
+      "bestFor": [
+        "group_fun",
+        "work_after"
+      ],
+      "vibe": [
+        "industrial",
+        "hip",
+        "alternative"
+      ],
+      "drinkFocus": "craft_beer",
+      "googleMapsUrl": "https://maps.google.com/?q=을지로브루잉+중구+서울",
+      "imageUrl": "https://bartrekseoul.wordpress.com/wp-content/uploads/2018/07/bartrek_euljimaekgo_euljiro4.jpg",
+      "tags": [
+        "craft-beer",
+        "euljiro",
+        "microbrewery",
+        "industrial",
+        "hipjiro"
+      ]
+    },
+    {
+      "id": "place-soolsool-store",
+      "nameEn": "Soolsool Store",
+      "nameKo": "술술상점",
+      "category": "bottle_shop",
+      "categoryLabel": "전통주 보틀샵",
+      "gu": "중구",
+      "neighborhood": "필동",
+      "address": "서울 중구 퇴계로30길 10 필동",
+      "description": "Beautifully curated Korean traditional liquor bottle shop. Every bottle tagged with flavor profile + food pairings. English & French-speaking staff. Free tastings before purchase.",
+      "descriptionKo": "큐레이션 전통주 보틀샵. 모든 병에 풍미·페어링 태그. 영어·프랑스어 직원 상주. 구매 전 시음 가능.",
+      "signatureDrinks": "Curated artisan makgeolli, cheongju, yakju & traditional soju from across Korea",
+      "priceRange": "₩–₩₩₩",
+      "hours": "Mon–Sat 11AM–9PM",
+      "bestFor": [
+        "solo",
+        "gift_shopping",
+        "tourist_cultural"
+      ],
+      "vibe": [
+        "educational",
+        "curated",
+        "quiet"
+      ],
+      "drinkFocus": "variety",
+      "instagram": "@soolsoolstore",
+      "googleMapsUrl": "https://maps.google.com/?q=술술상점+필동+중구+서울",
+      "imageUrl": "https://thesoolcompany.com/wp-content/uploads/2023/11/news15_06-1.webp",
+      "tags": [
+        "bottle-shop",
+        "gift",
+        "english",
+        "curated",
+        "retail"
+      ]
+    },
+    {
+      "id": "place-woori-yeahsool",
+      "nameEn": "Woori Yeahsool",
+      "nameKo": "우리예술",
+      "category": "makgeolli_bar",
+      "categoryLabel": "막걸리 브루펍",
+      "gu": "중구",
+      "neighborhood": "동대문역사문화공원",
+      "address": "서울 중구 동대문역사문화공원역 인근",
+      "description": "Seoul's only bar brewing makgeolli in-house and serving it on tap. Founded 2023 by Gen-Z entrepreneurs. Wild flavors: basil-yuzu, wasabi, peppercorn.",
+      "descriptionKo": "서울 유일 자체 양조 막걸리 탭 바. 2023년 MZ세대 창업. 바질유자·와사비·산초 등 혁신적 플레이버.",
+      "signatureDrinks": "Tap makgeolli: basil-yuzu, wasabi, peppercorn, everyday adventure",
+      "priceRange": "₩₩",
+      "hours": "Evenings (check Instagram)",
+      "bestFor": [
+        "group_fun",
+        "couple_date"
+      ],
+      "vibe": [
+        "modern",
+        "innovative",
+        "young"
+      ],
+      "drinkFocus": "makgeolli",
+      "instagram": "@woori_yeahsool",
+      "googleMapsUrl": "https://maps.google.com/?q=우리예술+동대문역사문화공원+서울",
+      "imageUrl": "https://www.epicureasia.com/wp-content/uploads/2025/02/Woori-drinks.jpeg",
+      "tags": [
+        "brewpub",
+        "tap",
+        "gen-z",
+        "innovative",
+        "makgeolli"
+      ]
+    },
+    {
+      "id": "place-sinsajeon",
+      "nameEn": "Sinsajeon (Honeycomb Makgeolli)",
+      "nameKo": "신사전 꿀막걸리",
+      "category": "makgeolli_bar",
+      "categoryLabel": "막걸리 전문점",
+      "gu": "강남구",
+      "neighborhood": "신사동 가로수길",
+      "address": "서울 강남구 도산대로11길 18 신사동 (신사역 3호선 8번 출구)",
+      "description": "Viral honeycomb makgeolli bar in upscale Garosu-gil. Pour raw honeycomb directly into your rice wine. Instagram-perfect and genuinely delicious. No reservation for groups under 6.",
+      "descriptionKo": "가로수길 바이럴 꿀막걸리 명소. 생 허니콤을 막걸리에 직접. 인스타 완벽 + 진짜 맛있음. 6인 이상만 예약 필요.",
+      "signatureDrinks": "Honeycomb makgeolli (raw honeycomb served at table, ₩15,000–20,000)",
+      "priceRange": "₩₩",
+      "hours": "Daily 10:30AM – 1AM",
+      "bestFor": [
+        "couple_date",
+        "group_fun",
+        "instagram"
+      ],
+      "vibe": [
+        "trendy",
+        "upscale",
+        "photogenic"
+      ],
+      "drinkFocus": "makgeolli",
+      "instagram": "@sinsajeon_official",
+      "googleMapsUrl": "https://maps.google.com/?q=신사전+꿀막걸리+신사동+강남구+서울",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/51c8b108e4b050e44c477323/d1493d62-d4df-4d6c-9294-cbe3d8402e48/Greysuitcase+-+Sinsajeon+%E1%84%89%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%A5%E1%86%AB+01.jpg",
+      "tags": [
+        "gangnam",
+        "honeycomb",
+        "viral",
+        "instagram",
+        "garosu-gil"
+      ]
+    },
+    {
+      "id": "place-sinchon-hof-street",
+      "nameEn": "Sinchon Hof Street",
+      "nameKo": "신촌 호프 거리",
+      "category": "bar_street",
+      "categoryLabel": "대학가 호프 거리",
+      "gu": "서대문구",
+      "neighborhood": "신촌동",
+      "address": "서울 서대문구 신촌동 신촌역 연세대 정문 방향 (신촌역 2호선 3·4번 출구)",
+      "description": "Seoul's original university bar district—cheaper and more local than Hongdae. Decades of MT drinking culture. Hof bars, noraebang, and pojangmacha around Yonsei University.",
+      "descriptionKo": "홍대보다 저렴하고 로컬한 서울 원조 대학가 바 거리. 수십 년 MT 음주 문화. 연세대 주변 호프·노래방·포장마차.",
+      "signatureDrinks": "Draft beer pitcher (₩10,000–15,000), somaek (soju+beer)",
+      "priceRange": "₩",
+      "hours": "5PM – 3AM+",
+      "bestFor": [
+        "group_fun",
+        "work_after",
+        "budget"
+      ],
+      "vibe": [
+        "student",
+        "lively",
+        "casual"
+      ],
+      "drinkFocus": "beer",
+      "googleMapsUrl": "https://maps.google.com/?q=신촌+호프거리+연세대+서울",
+      "imageUrl": "https://discoveringkorea.com/wp-content/uploads/2019/10/Sinchon-Street.jpg",
+      "tags": [
+        "sinchon",
+        "university",
+        "hof",
+        "budget",
+        "student"
+      ]
+    },
+    {
+      "id": "place-noryangjin-fish-market",
+      "nameEn": "Noryangjin Fish Market",
+      "nameKo": "노량진수산시장 회포차",
+      "category": "market",
+      "categoryLabel": "수산시장 회포차",
+      "gu": "동작구",
+      "neighborhood": "노량진동",
+      "address": "서울 동작구 노들로 674 (노량진역 1·9호선 육교 직결)",
+      "description": "Korea's largest seafood market—open around the clock. Buy live seafood downstairs, eat as hoe upstairs. The definitive 'hoe + soju' experience in Seoul.",
+      "descriptionKo": "한국 최대 수산시장, 24시간 운영. 1층서 생 해산물 구입 → 2층서 회로. 서울 '회+소주' 원조 체험.",
+      "signatureDrinks": "Soju, somaek (soju+beer)",
+      "priceRange": "₩₩",
+      "hours": "24 hours (most lively evening – late night)",
+      "bestFor": [
+        "group_fun",
+        "late_night",
+        "adventure"
+      ],
+      "vibe": [
+        "authentic",
+        "raw",
+        "late_night"
+      ],
+      "drinkFocus": "soju",
+      "googleMapsUrl": "https://maps.google.com/?q=노량진수산시장+동작구+서울",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Korea-Seoul-Noryangjin_Fish_Market-02.jpg",
+      "tags": [
+        "seafood",
+        "noryangjin",
+        "soju",
+        "late-night",
+        "market"
+      ]
+    },
+    {
+      "id": "place-hangang-chimaek",
+      "nameEn": "Han River Park Chimaek",
+      "nameKo": "한강 공원 치맥",
+      "category": "outdoor",
+      "categoryLabel": "야외 치맥 문화",
+      "gu": "여러 구",
+      "neighborhood": "한강 공원 (여의도·반포·뚝섬)",
+      "address": "서울 한강공원 (여의나루역 5호선 / 뚝섬유원지역 7호선)",
+      "description": "Seoul's most iconic outdoor drinking ritual. Order fried chicken via delivery app to the riverbank. Watch the skyline, spread a mat, and enjoy chimaek (chicken + beer) by the Han River.",
+      "descriptionKo": "서울 가장 상징적인 야외 음주 문화. 배달앱으로 치킨 주문 → 한강변 배달. 야경 감상하며 치맥 (치킨+맥주).",
+      "signatureDrinks": "Convenience store beer (₩2,000–4,000), delivery chicken + beer (chimaek)",
+      "priceRange": "₩",
+      "hours": "Park open 24hrs; delivery until ~11PM (May–Sep peak season)",
+      "bestFor": [
+        "group_fun",
+        "couple_date",
+        "solo"
+      ],
+      "vibe": [
+        "outdoor",
+        "iconic",
+        "relaxed"
+      ],
+      "drinkFocus": "beer",
+      "googleMapsUrl": "https://maps.google.com/?q=여의도한강공원+서울",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Typical_evening_in_Han_river_park_Seoul.jpg",
+      "tags": [
+        "hangang",
+        "chimaek",
+        "outdoor",
+        "iconic",
+        "delivery",
+        "summer"
+      ]
+    },
+    {
+      "id": "place-the-sool-company",
+      "nameEn": "The Sool Company",
+      "nameKo": "더술컴퍼니",
+      "category": "guided_tour",
+      "categoryLabel": "전통주 투어",
+      "gu": "서울 전역",
+      "neighborhood": "서울 전역 (전국 투어)",
+      "address": "서울 거점 (투어별 출발지 상이)",
+      "description": "Korea's leading English-language traditional liquor education org. Curated brewery tours, tastings, and workshops. Gold standard for English-speaking visitors.",
+      "descriptionKo": "한국 최고 영어 전통주 교육 기관. 양조장 투어·시음·워크샵 운영. 외국인 방문객 전통주 교육 최고 기관.",
+      "signatureDrinks": "Full range of Korean traditional spirits (education-focused tastings)",
+      "priceRange": "₩₩–₩₩₩",
+      "hours": "By reservation",
+      "bestFor": [
+        "tourist_cultural",
+        "expats",
+        "special_event"
+      ],
+      "vibe": [
+        "educational",
+        "professional"
+      ],
+      "drinkFocus": "variety",
+      "instagram": "thesoolcompany.com",
+      "googleMapsUrl": "https://maps.google.com/?q=The+Sool+Company+서울",
+      "imageUrl": "https://thesoolcompany.com/wp-content/uploads/2023/11/news15_03.webp",
+      "tags": [
+        "english",
+        "tour",
+        "education",
+        "guide",
+        "expat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "version": "2.0.0",
+  "categories": [
+    {
+      "id": "at-a-restaurant",
+      "category": "AT A RESTAURANT",
+      "description": "Essential phrases for at a restaurant",
+      "phrases": [
+        {
+          "korean": "자리 있어요?",
+          "romanized": "Jari isseoyo?",
+          "english": "Do you have a table?"
+        },
+        {
+          "korean": "두 명이요",
+          "romanized": "Du myeong-iyo",
+          "english": "Two people, please"
+        },
+        {
+          "korean": "메뉴판 주세요",
+          "romanized": "Menyu-pan juseyo",
+          "english": "Menu, please"
+        },
+        {
+          "korean": "추천해 주세요",
+          "romanized": "Chucheon-hae juseyo",
+          "english": "What do you recommend?"
+        },
+        {
+          "korean": "이거 주세요",
+          "romanized": "Igeo juseyo",
+          "english": "This one, please (point at menu)"
+        },
+        {
+          "korean": "안주 뭐 있어요?",
+          "romanized": "Anju mwo isseoyo?",
+          "english": "What drinking snacks do you have?"
+        },
+        {
+          "korean": "하나 더 주세요",
+          "romanized": "Hana deo juseyo",
+          "english": "One more, please"
+        },
+        {
+          "korean": "물 주세요",
+          "romanized": "Mul juseyo",
+          "english": "Water, please"
+        }
+      ]
+    },
+    {
+      "id": "ordering-drinks",
+      "category": "ORDERING DRINKS",
+      "description": "Essential phrases for ordering drinks",
+      "phrases": [
+        {
+          "korean": "막걸리 한 주전자 주세요",
+          "romanized": "Makgeolli han jujeonja juseyo",
+          "english": "One kettle of makgeolli, please"
+        },
+        {
+          "korean": "소주 한 병 주세요",
+          "romanized": "Soju han byeong juseyo",
+          "english": "One bottle of soju, please"
+        },
+        {
+          "korean": "맥주 한 잔 주세요",
+          "romanized": "Maekju han jan juseyo",
+          "english": "One glass of beer, please"
+        },
+        {
+          "korean": "이 술 있어요?",
+          "romanized": "I sul isseoyo?",
+          "english": "Do you have this drink? (show screen)"
+        },
+        {
+          "korean": "전통주 있어요?",
+          "romanized": "Jeontongju isseoyo?",
+          "english": "Do you have traditional Korean liquor?"
+        },
+        {
+          "korean": "달지 않은 술 있어요?",
+          "romanized": "Dalji anheun sul isseoyo?",
+          "english": "Do you have something not sweet?"
+        },
+        {
+          "korean": "도수 낮은 거 주세요",
+          "romanized": "Dosu najeun geo juseyo",
+          "english": "Something low-alcohol, please"
+        },
+        {
+          "korean": "잔 하나 더 주세요",
+          "romanized": "Jan hana deo juseyo",
+          "english": "One more glass, please"
+        }
+      ]
+    },
+    {
+      "id": "at-a-convenience-store",
+      "category": "AT A CONVENIENCE STORE",
+      "description": "Essential phrases for at a convenience store",
+      "phrases": [
+        {
+          "korean": "이거 얼마예요?",
+          "romanized": "Igeo eolmayeyo?",
+          "english": "How much is this?"
+        },
+        {
+          "korean": "봉투 주세요",
+          "romanized": "Bongtu juseyo",
+          "english": "A bag, please"
+        },
+        {
+          "korean": "따뜻한 거 있어요?",
+          "romanized": "Ttatteutan geo isseoyo?",
+          "english": "Do you have warm ones?"
+        },
+        {
+          "korean": "차가운 거 주세요",
+          "romanized": "Chagaun geo juseyo",
+          "english": "A cold one, please"
+        },
+        {
+          "korean": "일회용 잔 있어요?",
+          "romanized": "Ilhoeyong jan isseoyo?",
+          "english": "Do you have disposable cups?"
+        },
+        {
+          "korean": "밖에서 마셔도 돼요?",
+          "romanized": "Bakkeseo masyeodo dwaeyo?",
+          "english": "Can I drink outside?"
+        }
+      ]
+    },
+    {
+      "id": "at-a-bar---pub",
+      "category": "AT A BAR / PUB",
+      "description": "Essential phrases for at a bar / pub",
+      "phrases": [
+        {
+          "korean": "여기 뭐가 맛있어요?",
+          "romanized": "Yeogi mwoga masisseoyo?",
+          "english": "What's good here?"
+        },
+        {
+          "korean": "생막걸리 한 사발 주세요",
+          "romanized": "Saeng-makgeolli han sabal juseyo",
+          "english": "One bowl of fresh makgeolli, please"
+        },
+        {
+          "korean": "안주 없이 술만 돼요?",
+          "romanized": "Anju eopsi sulman dwaeyo?",
+          "english": "Can I order just drinks, no food?"
+        },
+        {
+          "korean": "오늘의 추천 술 있어요?",
+          "romanized": "Oneului chucheon sul isseoyo?",
+          "english": "Is there a drink special today?"
+        },
+        {
+          "korean": "한 잔만 시켜도 돼요?",
+          "romanized": "Han janman sikyeodo dwaeyo?",
+          "english": "Can I order just one glass?"
+        },
+        {
+          "korean": "이 술 도수가 얼마예요?",
+          "romanized": "I sul dosuga eolmayeyo?",
+          "english": "What's the alcohol percentage of this?"
+        }
+      ]
+    },
+    {
+      "id": "ordering-food-(anju)",
+      "category": "ORDERING FOOD (ANJU)",
+      "description": "Essential phrases for ordering food (anju)",
+      "phrases": [
+        {
+          "korean": "해물파전 하나 주세요",
+          "romanized": "Haemul-pajeon hana juseyo",
+          "english": "One seafood pancake, please"
+        },
+        {
+          "korean": "김치전 주세요",
+          "romanized": "Kimchi-jeon juseyo",
+          "english": "Kimchi pancake, please"
+        },
+        {
+          "korean": "두부김치 주세요",
+          "romanized": "Dubu-kimchi juseyo",
+          "english": "Tofu with stir-fried kimchi, please"
+        },
+        {
+          "korean": "골뱅이무침 주세요",
+          "romanized": "Golbaengi-muchim juseyo",
+          "english": "Spicy sea snail salad, please"
+        },
+        {
+          "korean": "치킨 한 마리 주세요",
+          "romanized": "Chikin han mari juseyo",
+          "english": "One whole fried chicken, please"
+        },
+        {
+          "korean": "과일 안주 있어요?",
+          "romanized": "Gwail anju isseoyo?",
+          "english": "Do you have a fruit platter?"
+        }
+      ]
+    },
+    {
+      "id": "paying",
+      "category": "PAYING",
+      "description": "Essential phrases for paying",
+      "phrases": [
+        {
+          "korean": "계산해 주세요",
+          "romanized": "Gyesan-hae juseyo",
+          "english": "Check, please"
+        },
+        {
+          "korean": "카드 돼요?",
+          "romanized": "Kadeu dwaeyo?",
+          "english": "Can I pay by card?"
+        },
+        {
+          "korean": "현금만 돼요?",
+          "romanized": "Hyeongeum-man dwaeyo?",
+          "english": "Cash only?"
+        },
+        {
+          "korean": "영수증 주세요",
+          "romanized": "Yeongsujeung juseyo",
+          "english": "Receipt, please"
+        },
+        {
+          "korean": "각자 계산할게요",
+          "romanized": "Gakja gyesan-halgeyo",
+          "english": "We'll pay separately"
+        }
+      ]
+    },
+    {
+      "id": "drinking-culture-tips",
+      "category": "DRINKING CULTURE TIPS",
+      "description": "Essential phrases for drinking culture tips",
+      "phrases": [
+        {
+          "korean": "건배!",
+          "romanized": "Geonbae!",
+          "english": "Cheers!"
+        },
+        {
+          "korean": "원샷!",
+          "romanized": "Won-syat!",
+          "english": "Bottoms up! (one shot)"
+        },
+        {
+          "korean": "맛있어요!",
+          "romanized": "Masisseoyo!",
+          "english": "It's delicious!"
+        },
+        {
+          "korean": "한 잔 받으세요",
+          "romanized": "Han jan badeuseyo",
+          "english": "Let me pour you a drink"
+        },
+        {
+          "korean": "제가 따를게요",
+          "romanized": "Jega ttareulgeyo",
+          "english": "I'll pour for you"
+        }
+      ]
+    },
+    {
+      "id": "useful-phrases",
+      "category": "USEFUL PHRASES",
+      "description": "Essential phrases for useful phrases",
+      "phrases": [
+        {
+          "korean": "화장실 어디예요?",
+          "romanized": "Hwajangsil eodiyeyo?",
+          "english": "Where is the restroom?"
+        },
+        {
+          "korean": "영어 메뉴 있어요?",
+          "romanized": "Yeongeo menyu isseoyo?",
+          "english": "Do you have an English menu?"
+        },
+        {
+          "korean": "사진 찍어도 돼요?",
+          "romanized": "Sajin jjigeodo dwaeyo?",
+          "english": "Can I take a photo?"
+        },
+        {
+          "korean": "와이파이 비번 뭐예요?",
+          "romanized": "Waipai bimeon mwoyeyo?",
+          "english": "What's the Wi-Fi password?"
+        },
+        {
+          "korean": "택시 불러주세요",
+          "romanized": "Taeksi bulleo-juseyo",
+          "english": "Please call a taxi for me"
+        },
+        {
+          "korean": "감사합니다",
+          "romanized": "Gamsahamnida",
+          "english": "Thank you"
+        },
+        {
+          "korean": "괜찮아요",
+          "romanized": "Gwaenchana-yo",
+          "english": "It's okay / No thanks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Contents - Jumak</title>
+  <link rel="stylesheet" href="shared.css">
+  <!-- Amplitude Analytics -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+  <script>
+    window.amplitude.init("5c9108f6f1aeab52f56dad94c7fa81e8", { autocapture: true });
+  </script>
+  <style>
+    .page-header {
+      padding: 24px 20px 8px;
+    }
+    .page-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .page-subtitle {
+      font-size: 14px;
+      color: var(--buncheong);
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+
+    /* ── Video scroll row ───────────────────────────── */
+    .video-scroll {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding: 0 20px 8px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .video-card {
+      flex-shrink: 0;
+      width: 220px;
+      scroll-snap-align: start;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--cream-50);
+      border: 1px solid var(--cream-200);
+      box-shadow: 0 2px 8px rgba(45,41,38,0.07);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s;
+      display: block;
+    }
+    .video-card:active { transform: scale(0.97); }
+
+    .video-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      background: linear-gradient(135deg, #2D2926 0%, #4A4543 100%);
+      overflow: hidden;
+    }
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .video-play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.35) 100%);
+      transition: background 0.15s;
+    }
+    .video-play-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(196,70,58,0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .video-meta {
+      padding: 12px 14px 14px;
+    }
+    .video-date {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--buncheong);
+      margin-bottom: 4px;
+    }
+    .video-title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--charcoal-900);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* "View all" card */
+    .video-card-all {
+      flex-shrink: 0;
+      width: 160px;
+      scroll-snap-align: start;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #C4463A 0%, #A63830 100%);
+      color: white;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      box-shadow: 0 2px 8px rgba(196,70,58,0.25);
+      transition: transform 0.15s;
+      text-align: center;
+    }
+    .video-card-all:active { transform: scale(0.97); }
+    .video-card-all-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .video-card-all-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+    .video-card-all-sub {
+      font-size: 11px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.3;
+    }
+
+    /* ── Stories ────────────────────────────────────── */
+    .stories-section {
+      margin-top: 16px;
+    }
+    .story-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 20px 20px;
+    }
+    .story-card {
+      background: var(--cream-50);
+      border: 1px solid var(--cream-200);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(45,41,38,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .story-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 4px;
+      background: var(--accent-color);
+    }
+    .story-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .story-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      background: var(--accent-bg);
+      flex-shrink: 0;
+    }
+    .story-cat {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-color);
+    }
+    .story-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--charcoal-900);
+      margin-bottom: 10px;
+    }
+    .story-body {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--charcoal-700);
+    }
+    .story-dyk {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: var(--cream-100);
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--charcoal-700);
+      display: flex;
+      gap: 8px;
+    }
+    .story-dyk-emoji { flex-shrink: 0; }
+    .story-dyk b {
+      font-weight: 700;
+      color: var(--charcoal-900);
+    }
+
+    /* Loading skeleton */
+    .skeleton {
+      background: linear-gradient(90deg, var(--cream-100) 0%, var(--cream-200) 50%, var(--cream-100) 100%);
+      background-size: 200% 100%;
+      animation: skeleton 1.4s ease-in-out infinite;
+      border-radius: 16px;
+    }
+    @keyframes skeleton {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-content">
+
+    <!-- Header -->
+    <div class="page-header">
+      <h1 class="page-title">Contents</h1>
+      <p class="page-subtitle">Videos &amp; stories from Team Jumak.</p>
+    </div>
+
+    <!-- ── Latest videos ──────────────────────── -->
+    <section style="margin-top:16px;margin-bottom:36px">
+      <div class="section-header">
+        <h2>Latest Videos</h2>
+        <a href="https://www.youtube.com/@soolysoolsool" target="_blank" rel="noopener">
+          Channel
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+        </a>
+      </div>
+      <div class="video-scroll scrollbar-hide" id="video-scroll">
+        <div class="video-card" style="background:transparent;border:none;box-shadow:none">
+          <div class="skeleton" style="aspect-ratio:16/9;width:100%"></div>
+          <div style="padding:12px 4px"><div class="skeleton" style="height:14px;width:80%;margin-bottom:6px"></div><div class="skeleton" style="height:12px;width:60%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stories ────────────────────────────── -->
+    <section class="stories-section">
+      <div class="section-header">
+        <h2>Sool Stories</h2>
+      </div>
+      <p style="padding:0 20px 14px;font-size:13px;color:var(--buncheong);line-height:1.5">
+        Quick reads on the history, culture, and modern revival of Korean drinking.
+      </p>
+      <div class="story-list" id="story-list"></div>
+    </section>
+
+  </div>
+
+  <script src="shared.js"></script>
+  <script>
+    document.body.insertAdjacentHTML('beforeend', renderTabBar('contents'));
+
+    // ── Video thumbnail URL with HD → SD fallback ─────────────
+    function ytThumb(id) {
+      // maxresdefault doesn't always exist; fall back via onerror to hqdefault.
+      return `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+    }
+    function ytThumbFallback(id) {
+      return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    }
+    function ytWatchUrl(id) {
+      return `https://www.youtube.com/watch?v=${id}`;
+    }
+
+    // ── Date helpers ──────────────────────────────────────────
+    const TODAY = new Date('2026-05-04T00:00:00');
+    function relativeDate(iso) {
+      const d = new Date(iso + 'T00:00:00');
+      const diff = Math.round((TODAY - d) / (1000 * 60 * 60 * 24));
+      if (diff <= 0)   return 'Today';
+      if (diff === 1)  return 'Yesterday';
+      if (diff < 7)    return `${diff} days ago`;
+      if (diff < 14)   return '1 week ago';
+      if (diff < 30)   return `${Math.floor(diff/7)} weeks ago`;
+      if (diff < 60)   return '1 month ago';
+      return `${Math.floor(diff/30)} months ago`;
+    }
+
+    // ── Accent color tokens (matches stories.json `accent`) ──
+    const ACCENT = {
+      onggi:     { color: '#A67C52', bg: 'rgba(166,124,82,0.12)' },
+      celadon:   { color: '#5C8A72', bg: 'rgba(123,166,140,0.18)' },
+      dancheong: { color: '#C4463A', bg: 'rgba(196,70,58,0.10)' },
+      buncheong: { color: '#6B6562', bg: 'rgba(107,101,98,0.10)' }
+    };
+
+    // ── Render videos ─────────────────────────────────────────
+    function renderVideos(data) {
+      const scroll = document.getElementById('video-scroll');
+      scroll.innerHTML = '';
+      const top3 = data.videos.slice(0, 3);
+      top3.forEach(v => {
+        const a = document.createElement('a');
+        a.className = 'video-card';
+        a.href = ytWatchUrl(v.id);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.innerHTML = `
+          <div class="video-thumb">
+            <img src="${ytThumb(v.id)}" alt="${v.title}" loading="lazy"
+                 onerror="this.onerror=null;this.src='${ytThumbFallback(v.id)}'">
+            <div class="video-play">
+              <div class="video-play-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-meta">
+            <div class="video-date">${relativeDate(v.publishedAt)}</div>
+            <div class="video-title">${v.title}</div>
+          </div>
+        `;
+        scroll.appendChild(a);
+      });
+
+      // 4th: View all card
+      const all = document.createElement('a');
+      all.className = 'video-card-all';
+      all.href = data.channelUrl;
+      all.target = '_blank';
+      all.rel = 'noopener noreferrer';
+      all.innerHTML = `
+        <div class="video-card-all-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </div>
+        <div class="video-card-all-title">View All</div>
+        <div class="video-card-all-sub">on YouTube</div>
+      `;
+      scroll.appendChild(all);
+    }
+
+    // ── Render stories ────────────────────────────────────────
+    function renderStories(data) {
+      const list = document.getElementById('story-list');
+      list.innerHTML = '';
+      data.stories.forEach(s => {
+        const tone = ACCENT[s.accent] || ACCENT.buncheong;
+        const card = document.createElement('article');
+        card.className = 'story-card';
+        card.style.setProperty('--accent-color', tone.color);
+        card.style.setProperty('--accent-bg', tone.bg);
+        card.innerHTML = `
+          <div class="story-head">
+            <div class="story-icon">${s.icon}</div>
+            <div class="story-cat">${s.category}</div>
+          </div>
+          <h3 class="story-title">${s.title}</h3>
+          <p class="story-body">${s.body}</p>
+          ${s.didYouKnow ? `
+            <div class="story-dyk">
+              <span class="story-dyk-emoji">💡</span>
+              <span><b>Did you know?</b> ${s.didYouKnow}</span>
+            </div>` : ''}
+        `;
+        list.appendChild(card);
+      });
+    }
+
+    async function init() {
+      try {
+        const [videos, stories] = await Promise.all([getVideos(), getStories()]);
+        renderVideos(videos);
+        renderStories(stories);
+      } catch (err) {
+        console.error('Failed to load contents data', err);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
