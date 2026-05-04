@@ -33,7 +33,7 @@ sool-project/
 ├── shared.css          # 디자인 시스템 (CSS 변수, 컴포넌트)
 ├── vercel.json         # Vercel 정적 사이트 설정 (캐시 헤더 포함)
 ├── data/
-│   ├── sools.json          # 56종 전통주 (items[])
+│   ├── sools.json          # 62종 전통주 (items[])
 │   ├── places.json         # 30곳 서울 스팟 (places[])
 │   ├── todays-picks.json   # 큐레이션 카드
 │   ├── order-phrases.json  # 한국어 회화 (categories[])

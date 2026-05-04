@@ -3709,6 +3709,406 @@
           "english": "One bottle of Kooksoondang raw makgeolli, please"
         }
       ]
+    },
+    {
+      "id": "makgeolli-bongpyeong-buckwheat",
+      "name": "Bongpyeong Buckwheat Makgeolli",
+      "nameKo": "봉평 메밀 막걸리",
+      "category": "makgeolli",
+      "subcategory": "buckwheat",
+      "abv": 6.0,
+      "volume": "750ml",
+      "productionType": "artisanal",
+      "region": "Pyeongchang",
+      "brewery": "Bongpyeong Brewery",
+      "description": "A small-batch makgeolli from Bongpyeong, Pyeongchang — the literary village immortalized by Lee Hyo-seok's novel 'When Buckwheat Flowers Bloom.' Made with local buckwheat instead of pure rice for a nuttier, earthier finish than typical makgeolli.",
+      "oneLiner": "Buckwheat from a literary highland village",
+      "tasteProfile": {
+        "sweet": 35,
+        "dry": 55,
+        "fruity": 20,
+        "earthy": 75,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Belgian Witbier",
+        "description": "If you like cloudy, grain-forward wheat beer, this nutty buckwheat makgeolli will feel familiar"
+      },
+      "foodPairings": [
+        {
+          "name": "Memil-jeon",
+          "nameKo": "메밀전",
+          "description": "Buckwheat pancake"
+        },
+        {
+          "name": "Bossam",
+          "nameKo": "보쌈",
+          "description": "Boiled pork wraps"
+        },
+        {
+          "name": "Dotorimuk",
+          "nameKo": "도토리묵",
+          "description": "Acorn jelly"
+        }
+      ],
+      "tags": "earthy, nutty, regional, buckwheat, literary",
+      "priceRange": "$$",
+      "availability": "specialty",
+      "difficulty": "intermediate",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "light",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "beer_cider",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a Gangwon restaurant",
+          "korean": "봉평 메밀 막걸리 있어요?",
+          "romanized": "Bongpyeong memil makgeolli isseoyo?",
+          "english": "Do you have Bongpyeong buckwheat makgeolli?"
+        }
+      ]
+    },
+    {
+      "id": "yakju-jeongseon-deodeok",
+      "name": "Jeongseon Deodeokju",
+      "nameKo": "정선 더덕주",
+      "category": "yakju",
+      "subcategory": "herbal",
+      "abv": 18.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jeongseon",
+      "brewery": "Jeongseon Local Brewery",
+      "description": "An infusion-style yakju from the steep mountains of Jeongseon, made with wild deodeok root (Codonopsis lanceolata) — a prized Korean medicinal plant. Earthy, slightly bitter, with a clean herbal finish. Long served as a tonic for stamina in Gangwon's mountain villages.",
+      "oneLiner": "Mountain root tonic from Gangwon's deep valleys",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 70,
+        "fruity": 10,
+        "earthy": 90,
+        "acidic": 15
+      },
+      "westernMatch": {
+        "similar": "Italian Amaro",
+        "description": "If you like bittersweet herbal Italian Amaro, this rooty Korean tonic plays in the same register"
+      },
+      "foodPairings": [
+        {
+          "name": "Sanchae Bibimbap",
+          "nameKo": "산채 비빔밥",
+          "description": "Wild greens bibimbap"
+        },
+        {
+          "name": "Dak-galbi",
+          "nameKo": "닭갈비",
+          "description": "Spicy stir-fried chicken"
+        },
+        {
+          "name": "Pyogo-jeon",
+          "nameKo": "표고전",
+          "description": "Shiitake mushroom pancake"
+        }
+      ],
+      "tags": "herbal, earthy, medicinal, mountain, regional",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "advanced",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "whiskey_spirit",
+        "mood": [
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "Asking at a herbal liquor shop",
+          "korean": "정선 더덕주 한 잔 주세요",
+          "romanized": "Jeongseon deodeokju han jan juseyo",
+          "english": "One glass of Jeongseon deodeok liquor, please"
+        }
+      ]
+    },
+    {
+      "id": "yakju-yangyang-songi",
+      "name": "Yangyang Songiju",
+      "nameKo": "양양 송이주",
+      "category": "yakju",
+      "subcategory": "mushroom-infused",
+      "abv": 13.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Yangyang",
+      "brewery": "Yangyang Songi Cooperative",
+      "description": "A rare yakju from Yangyang, Gangwon — Korea's most famous pine mushroom (songi) region. Whole pine mushrooms are infused into rice wine, lending an unmistakable forest-floor aroma. Traditionally drunk during the brief autumn songi harvest.",
+      "oneLiner": "Korea's prized pine mushroom in a glass",
+      "tasteProfile": {
+        "sweet": 30,
+        "dry": 60,
+        "fruity": 15,
+        "earthy": 85,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Aged White Burgundy",
+        "description": "If you like earthy, mushroomy whites with rich umami, this Korean equivalent will surprise you"
+      },
+      "foodPairings": [
+        {
+          "name": "Songi Bulgogi",
+          "nameKo": "송이 불고기",
+          "description": "Pine mushroom bulgogi"
+        },
+        {
+          "name": "Hoe",
+          "nameKo": "회",
+          "description": "Sashimi"
+        },
+        {
+          "name": "Galbi",
+          "nameKo": "갈비",
+          "description": "Grilled short ribs"
+        }
+      ],
+      "tags": "umami, earthy, premium, seasonal, mushroom",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "advanced",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "medium",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "wine_grape",
+        "mood": [
+          "premium",
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a high-end Korean restaurant",
+          "korean": "양양 송이주 있나요?",
+          "romanized": "Yangyang songiju innayo?",
+          "english": "Do you have Yangyang pine mushroom liquor?"
+        }
+      ]
+    },
+    {
+      "id": "distilled-jindo-hongju",
+      "name": "Jindo Hongju",
+      "nameKo": "진도 홍주",
+      "category": "distilledSpirit",
+      "subcategory": "infused-distilled",
+      "abv": 40.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jindo",
+      "brewery": "Jindo Hongju Cooperative",
+      "description": "Korea's only red liquor. Distilled rice spirit is filtered through jicho (purple gromwell root), which dyes it a brilliant ruby color and adds a faint herbal note. A regional specialty of Jindo island in South Jeolla, designated a Korean intangible cultural property.",
+      "oneLiner": "Korea's one and only red distilled spirit",
+      "tasteProfile": {
+        "sweet": 20,
+        "dry": 75,
+        "fruity": 25,
+        "earthy": 60,
+        "acidic": 30
+      },
+      "westernMatch": {
+        "similar": "Aquavit or Akvavit",
+        "description": "If you like clear infused spirits like Scandinavian aquavit, Jindo Hongju brings a dramatic Korean color and subtle herbal twist"
+      },
+      "foodPairings": [
+        {
+          "name": "Hong-eo Samhap",
+          "nameKo": "홍어 삼합",
+          "description": "Fermented skate with pork & kimchi"
+        },
+        {
+          "name": "Modeumhoe",
+          "nameKo": "모듬회",
+          "description": "Mixed sashimi"
+        },
+        {
+          "name": "Galbijjim",
+          "nameKo": "갈비찜",
+          "description": "Braised short ribs"
+        }
+      ],
+      "tags": "red, herbal, premium, ceremonial, jeolla, intangible-heritage",
+      "priceRange": "$$$",
+      "availability": "specialty",
+      "difficulty": "advanced",
+      "servingTemp": "chilled",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "whiskey_spirit",
+        "mood": [
+          "unique",
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a Jeolla regional restaurant",
+          "korean": "진도 홍주 한 잔 주세요",
+          "romanized": "Jindo hongju han jan juseyo",
+          "english": "One glass of Jindo Hongju, please"
+        }
+      ]
+    },
+    {
+      "id": "distilled-songhwa-baekiljoo",
+      "name": "Songhwa Baekiljoo",
+      "nameKo": "송화백일주",
+      "category": "distilledSpirit",
+      "subcategory": "temple-spirit",
+      "abv": 38.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Wanju",
+      "brewery": "Sukwangsa Tradition (Cho Family)",
+      "description": "A legendary temple-tradition spirit from Sukwangsa monastery on Mt. Moaksan, Wanju. Pine pollen (songhwa) is fermented with rice and aged a full 100 days before being distilled. Designated a Korean intangible cultural property and one of Korea's most prestigious traditional liquors.",
+      "oneLiner": "100-day Buddhist temple pine spirit",
+      "tasteProfile": {
+        "sweet": 35,
+        "dry": 65,
+        "fruity": 20,
+        "earthy": 75,
+        "acidic": 25
+      },
+      "westernMatch": {
+        "similar": "Single-Malt Scotch (Highland)",
+        "description": "If you like complex distilled spirits with floral and herbal layers, this monastery-aged Korean spirit deserves the same reverence"
+      },
+      "foodPairings": [
+        {
+          "name": "Hanjeongsik",
+          "nameKo": "한정식",
+          "description": "Korean royal-style course meal"
+        },
+        {
+          "name": "Jeon Modum",
+          "nameKo": "전 모둠",
+          "description": "Assorted Korean savory pancakes"
+        },
+        {
+          "name": "Yukhoe",
+          "nameKo": "육회",
+          "description": "Korean beef tartare"
+        }
+      ],
+      "tags": "temple, premium, distilled, pine, intangible-heritage, ceremonial",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "advanced",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "whiskey_spirit",
+        "mood": [
+          "premium",
+          "unique"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a premium Korean restaurant or duty-free",
+          "korean": "송화백일주 한 잔 부탁드려요",
+          "romanized": "Songhwa baekiljoo han jan butakdeuryeoyo",
+          "english": "May I have a glass of Songhwa Baekiljoo, please?"
+        }
+      ]
+    },
+    {
+      "id": "yakju-jukryeokgo",
+      "name": "Jukryeokgo",
+      "nameKo": "죽력고",
+      "category": "yakju",
+      "subcategory": "medicinal",
+      "abv": 32.0,
+      "volume": "375ml",
+      "productionType": "artisanal",
+      "region": "Jeongeup",
+      "brewery": "Taein Tradition",
+      "description": "A medicinal liquor from Jeongeup, Jeollabuk-do — distilled with bamboo extract (jukryeok) along with pine and ginger. Recorded in Joseon-era medical texts and once prescribed as a remedy for fever and heat. Today it's a cult traditional spirit, one of the 'Three Great Liquors of the South.'",
+      "oneLiner": "Bamboo-extract medicinal spirit from Joseon",
+      "tasteProfile": {
+        "sweet": 25,
+        "dry": 70,
+        "fruity": 15,
+        "earthy": 80,
+        "acidic": 20
+      },
+      "westernMatch": {
+        "similar": "Chartreuse",
+        "description": "If you like complex herbal liqueurs like Chartreuse, this Korean medicinal cousin earns its place on the same shelf"
+      },
+      "foodPairings": [
+        {
+          "name": "Sanjeok",
+          "nameKo": "산적",
+          "description": "Skewered grilled meat"
+        },
+        {
+          "name": "Hanjeongsik",
+          "nameKo": "한정식",
+          "description": "Royal-style course meal"
+        },
+        {
+          "name": "Yangnyeom Tongdak",
+          "nameKo": "양념 통닭",
+          "description": "Spicy fried chicken"
+        }
+      ],
+      "tags": "medicinal, herbal, bamboo, premium, intangible-heritage, three-great-liquors",
+      "priceRange": "$$$",
+      "availability": "rare",
+      "difficulty": "advanced",
+      "servingTemp": "room",
+      "featured": false,
+      "finderTags": {
+        "strength": "strong",
+        "vibe": [
+          "rich_complex"
+        ],
+        "familiar": "whiskey_spirit",
+        "mood": [
+          "unique",
+          "premium"
+        ]
+      },
+      "orderPhrases": [
+        {
+          "situation": "At a traditional Korean liquor specialty shop",
+          "korean": "죽력고 한 잔 주실 수 있나요?",
+          "romanized": "Jukryeokgo han jan jusil su innayo?",
+          "english": "Could I have a glass of Jukryeokgo?"
+        }
+      ]
     }
   ]
 }
