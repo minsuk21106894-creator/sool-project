@@ -350,6 +350,26 @@
       font-size: 13px;
       color: var(--buncheong);
     }
+    .region-view-all {
+      grid-column: 1 / -1;
+      margin-top: 4px;
+      padding: 12px 16px;
+      background: var(--cream-100);
+      border: 1px solid var(--cream-200);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--charcoal-900);
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.15s;
+    }
+    .region-view-all:active { background: var(--cream-200); }
+    .region-view-all svg { color: var(--dancheong); }
 
     /* Loading skeleton */
     .skeleton {
@@ -574,9 +594,17 @@
         const matched = sools.filter(s => (region.matchRegions || []).includes(s.region));
         const tone = ACCENT[region.accent] || ACCENT.buncheong;
 
+        const PREVIEW_COUNT = 3;
+        const preview = matched.slice(0, PREVIEW_COUNT);
+        const viewAllBtn = matched.length > PREVIEW_COUNT
+          ? `<a class="region-view-all" href="sool-guide.html?region=${region.id}">
+               View all ${matched.length} sools in ${region.label}
+               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+             </a>`
+          : '';
         const cardsHtml = matched.length === 0
           ? `<div class="region-empty">No sools yet for this region.</div>`
-          : matched.map(soolCardHtml).join('');
+          : preview.map(soolCardHtml).join('') + viewAllBtn;
 
         panelEl.innerHTML = `
           <div class="region-intro" style="--accent-color:${tone.color}">
