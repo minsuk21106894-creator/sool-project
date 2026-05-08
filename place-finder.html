@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Place Finder - Find Your Seoul Spot</title>
+  <title>Find your pour-fect Jumak</title>
   <link rel="stylesheet" href="shared.css">
   <!-- Amplitude Analytics -->
   <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
@@ -271,9 +271,9 @@
 
     <!-- Q1: Vibe (2×2) -->
     <div class="question-screen active" id="q1">
-      <div class="q-number">Question 1 of 5</div>
-      <div class="q-title">What kind of vibe?</div>
-      <div class="q-subtitle">Pick the atmosphere that fits your mood</div>
+      <div class="q-number">1 of 5</div>
+      <div class="q-title">Pick your vibe</div>
+      <div class="q-subtitle">Atmosphere that fits your mood</div>
       <div class="choices-grid">
         <div class="choice-card" onclick="selectAnswer(1,'traditional')">
           <div class="choice-icon">🏮</div>
@@ -300,8 +300,8 @@
 
     <!-- Q2: Budget (2×2) -->
     <div class="question-screen" id="q2">
-      <div class="q-number">Question 2 of 5</div>
-      <div class="q-title">What's your budget?</div>
+      <div class="q-number">2 of 5</div>
+      <div class="q-title">Pick your budget</div>
       <div class="q-subtitle">Per person, drinks included</div>
       <div class="choices-grid">
         <div class="choice-card" onclick="selectAnswer(2,'budget')">
@@ -322,15 +322,15 @@
         <div class="choice-card" onclick="selectAnswer(2,'any')">
           <div class="choice-icon">💎</div>
           <div class="choice-label">No limit</div>
-          <div class="choice-desc">Best match only</div>
+          <div class="choice-desc">Budget doesn't matter</div>
         </div>
       </div>
     </div>
 
     <!-- Q3: Area (vertical list) -->
     <div class="question-screen" id="q3">
-      <div class="q-number">Question 3 of 5</div>
-      <div class="q-title">Which area of Seoul?</div>
+      <div class="q-number">3 of 5</div>
+      <div class="q-title">Pick your area</div>
       <div class="q-subtitle">We'll prioritize spots near you</div>
       <div class="choices-list">
         <div class="choice-card" onclick="selectAnswer(3,'jongno')">
@@ -365,7 +365,7 @@
           <div class="choice-icon">🗺️</div>
           <div class="choice-text">
             <div class="choice-label">Anywhere in Seoul</div>
-            <div class="choice-desc">Show me the best overall match</div>
+            <div class="choice-desc">Location doesn't matter</div>
           </div>
         </div>
       </div>
@@ -373,7 +373,7 @@
 
     <!-- Q4: Who are you going with? (vertical list) -->
     <div class="question-screen" id="q4">
-      <div class="q-number">Question 4 of 5</div>
+      <div class="q-number">4 of 5</div>
       <div class="q-title">Who are you going with?</div>
       <div class="q-subtitle">We'll find the right size and setting</div>
       <div class="choices-list">
@@ -388,14 +388,14 @@
           <div class="choice-icon">💑</div>
           <div class="choice-text">
             <div class="choice-label">Romantic date</div>
-            <div class="choice-desc">Special ambience for two</div>
+            <div class="choice-desc">Intimate vibes and dimmed lights</div>
           </div>
         </div>
         <div class="choice-card" onclick="selectAnswer(4,'group')">
           <div class="choice-icon">👥</div>
           <div class="choice-text">
             <div class="choice-label">Group of friends</div>
-            <div class="choice-desc">The more the merrier</div>
+            <div class="choice-desc">Squad-ready spaces</div>
           </div>
         </div>
         <div class="choice-card" onclick="selectAnswer(4,'cultural')">
@@ -410,9 +410,9 @@
 
     <!-- Q5: Drink focus (2×2) -->
     <div class="question-screen" id="q5">
-      <div class="q-number">Question 5 of 5</div>
-      <div class="q-title">What do you want to drink?</div>
-      <div class="q-subtitle">Last one — promise</div>
+      <div class="q-number">5 of 5</div>
+      <div class="q-title">Pick your drink</div>
+      <div class="q-subtitle">You're almost there!</div>
       <div class="choices-grid">
         <div class="choice-card" onclick="selectAnswer(5,'makgeolli')">
           <div class="choice-icon">🍶</div>
@@ -440,7 +440,7 @@
     <!-- Loading -->
     <div class="loading-screen" id="loading">
       <div class="loading-icon">📍</div>
-      <div class="loading-text">Finding your perfect spot...</div>
+      <div class="loading-text">Finding your pour-fect Jumak...</div>
       <div class="loading-sub">Matching across 30 Seoul locations</div>
       <div class="spinner" style="margin-top:12px;border-top-color:#2A5C45"></div>
     </div>
@@ -674,7 +674,7 @@
       const { main, similar } = getRecommendations();
       const c = document.getElementById('results');
       c.innerHTML = `
-        <div class="results-title">Your Spot! 📍</div>
+        <div class="results-title">Your Jumak! 📍</div>
         <div class="results-subtitle">Based on your preferences</div>
         ${renderPlaceCard(main, '⭐ Best Match', '#2A5C45')}
         <div class="similar-label">You Might Also Like</div>

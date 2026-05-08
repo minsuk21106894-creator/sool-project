@@ -284,7 +284,7 @@
     <!-- Tab Switcher -->
     <div class="guide-tabs">
       <button class="guide-tab-btn" id="tab-btn-sool" onclick="switchTab('sool')">🍶 Sool</button>
-      <button class="guide-tab-btn" id="tab-btn-places" onclick="switchTab('places')">📍 Places</button>
+      <button class="guide-tab-btn" id="tab-btn-places" onclick="switchTab('places')">📍 Jumak</button>
     </div>
 
     <!-- Sool Panel -->
@@ -389,7 +389,7 @@
       if (filtered.length === 0) {
         list.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 32px;text-align:center">
           <div style="font-size:48px;margin-bottom:16px;opacity:0.3">&#x1F376;</div>
-          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No sools found</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No sool found</div>
           <div style="font-size:14px;color:var(--buncheong)">Try adjusting your filters</div>
         </div>`;
         return;
@@ -491,13 +491,13 @@
     function renderPlaceList() {
       let filtered = allPlaces;
       if (activePlaceCat !== 'all') filtered = filtered.filter(p => p.category === activePlaceCat);
-      document.getElementById('place-result-count').textContent = `${filtered.length} places`;
+      document.getElementById('place-result-count').textContent = `${filtered.length} jumaks`;
       const list = document.getElementById('place-list');
       list.innerHTML = '';
       if (filtered.length === 0) {
         list.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 32px;text-align:center">
           <div style="font-size:48px;margin-bottom:16px;opacity:0.3">📍</div>
-          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No places found</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:8px">No place found</div>
           <div style="font-size:14px;color:var(--buncheong)">Try a different category</div>
         </div>`;
         return;

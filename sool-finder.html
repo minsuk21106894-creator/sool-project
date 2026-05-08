@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Sool Finder - Find Your Perfect Korean Drink</title>
+  <title>Find Your Pour-fect Sool</title>
   <link rel="stylesheet" href="shared.css">
   <!-- Amplitude Analytics -->
   <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
@@ -287,9 +287,9 @@
 
     <!-- Q1: Taste (2x2 grid) -->
     <div class="question-screen active" id="q1">
-      <div class="q-number">Question 1 of 4</div>
-      <div class="q-title">What sounds good?</div>
-      <div class="q-subtitle">Pick the flavor that calls to you</div>
+      <div class="q-number">1 of 4</div>
+      <div class="q-title">Pick your flavor</div>
+      <div class="q-subtitle">Let us match your palate</div>
       <div class="choices-grid">
         <div class="choice-card" onclick="selectAnswer(1,'sweet_fruity')">
           <div class="choice-icon">&#x1F353;</div>
@@ -316,9 +316,9 @@
 
     <!-- Q2: Situation (vertical list) -->
     <div class="question-screen" id="q2">
-      <div class="q-number">Question 2 of 4</div>
-      <div class="q-title">Where are you drinking?</div>
-      <div class="q-subtitle">Helps us pick something you can actually find</div>
+      <div class="q-number">2 of 4</div>
+      <div class="q-title">Pick your vibe</div>
+      <div class="q-subtitle">Where would you grab your drink?</div>
       <div class="choices-list">
         <div class="choice-card" onclick="selectAnswer(2,'quick_grab')">
           <div class="choice-icon">&#x1F3EA;</div>
@@ -337,8 +337,8 @@
         <div class="choice-card" onclick="selectAnswer(2,'special')">
           <div class="choice-icon">&#x1F381;</div>
           <div class="choice-text">
-            <div class="choice-label">Something special</div>
-            <div class="choice-desc">Gift, tasting, celebration</div>
+            <div class="choice-label">Somewhere special</div>
+            <div class="choice-desc">Celebration and special occasion</div>
           </div>
         </div>
       </div>
@@ -346,8 +346,8 @@
 
     <!-- Q3: Budget (2x2 grid) -->
     <div class="question-screen" id="q3">
-      <div class="q-number">Question 3 of 4</div>
-      <div class="q-title">How much per bottle?</div>
+      <div class="q-number">3 of 4</div>
+      <div class="q-title">Pick your budget</div>
       <div class="q-subtitle">Great sool exists at every price</div>
       <div class="choices-grid">
         <div class="choice-card" onclick="selectAnswer(3,'budget')">
@@ -368,16 +368,16 @@
         <div class="choice-card" onclick="selectAnswer(3,'any')">
           <div class="choice-icon">&#x1F48E;</div>
           <div class="choice-label">No limit</div>
-          <div class="choice-desc">Best match only</div>
+          <div class="choice-desc">Budget doesn't matter</div>
         </div>
       </div>
     </div>
 
     <!-- Q4: Adventure (vertical list) -->
     <div class="question-screen" id="q4">
-      <div class="q-number">Question 4 of 4</div>
-      <div class="q-title">How adventurous are you?</div>
-      <div class="q-subtitle">There's no wrong answer</div>
+      <div class="q-number">4 of 4</div>
+      <div class="q-title">Pick your thrill</div>
+      <div class="q-subtitle">How adventurous are you?</div>
       <div class="choices-list">
         <div class="choice-card" onclick="selectAnswer(4,'safe')">
           <div class="choice-icon">&#x1F6E1;&#xFE0F;</div>
@@ -406,7 +406,7 @@
     <!-- Loading -->
     <div class="loading-screen" id="loading">
       <div class="loading-icon">&#x1F376;</div>
-      <div class="loading-text">Finding your perfect sool...</div>
+      <div class="loading-text">Finding your pour-fect sool...</div>
       <div class="loading-sub">Matching from 62 Korean liquors</div>
       <div class="spinner" style="margin-top:12px"></div>
     </div>
@@ -534,8 +534,8 @@
       const c = document.getElementById('results');
       c.innerHTML = `
         <div class="results-title">Your Sool Match!</div>
-        <div class="results-subtitle">Top picks based on your taste</div>
-        ${isFallback ? '<div class="fallback-msg">We expanded our search to find great matches.</div>' : ''}
+        <div class="results-subtitle">Top picks based on your preference</div>
+        ${isFallback ? '<div class="fallback-msg">We expanded our search to find better matches.</div>' : ''}
         ${results.map((s, i) => {
           const imgUrl = _imgData ? getSoolImageUrl(_imgData, s.id, s.category) : null;
           return `
