@@ -4,6 +4,11 @@
   "channelUrl": "https://www.youtube.com/@soolysoolsool",
   "videos": [
     {
+      "id": "I71vxWkc9rQ",
+      "title": "What I learned from spending a week with strangers in Gimje trip",
+      "publishedAt": "2026-06-03"
+    },
+    {
       "id": "oFLWtNrmWcI",
       "title": "living a week like a Korean countryside girl",
       "publishedAt": "2026-05-30"
@@ -27,11 +32,6 @@
       "id": "ABuYvuGBtwg",
       "title": "Mixing Korean rice drink with makgeolli",
       "publishedAt": "2026-05-19"
-    },
-    {
-      "id": "0N2ELRm0-40",
-      "title": "Korean Kumquat Cocktail 🍊🍹",
-      "publishedAt": "2026-05-16"
     }
   ]
 }
