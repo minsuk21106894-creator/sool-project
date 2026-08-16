@@ -4,6 +4,11 @@
   "channelUrl": "https://www.youtube.com/@soolysoolsool",
   "videos": [
     {
+      "id": "BxX_Icpxeiw",
+      "title": "Went to #Jeju #DaeJeong 5-day",
+      "publishedAt": "2026-08-09"
+    },
+    {
       "id": "hRTEehWXr8g",
       "title": "Jeju life day2",
       "publishedAt": "2026-07-31"
@@ -27,11 +32,6 @@
       "id": "owHHUN9J7HQ",
       "title": "9 Things to check before renting a room in Korea 🇰🇷",
       "publishedAt": "2026-06-30"
-    },
-    {
-      "id": "0HyxJlMRjS4",
-      "title": "where book quotes and unlimited highballs are provided",
-      "publishedAt": "2026-06-28"
     }
   ]
 }
